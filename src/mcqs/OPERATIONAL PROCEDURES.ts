@@ -1,0 +1,10548 @@
+const operationalProcedures = [
+  {
+    question:
+      "An aeroplane whose maximum approved passenger seating configuration is 7 to 30 seats must be equipped with at least",
+    choices: {
+      A: "1 hand fire-extinguishers conveniently located in the passenger compartment",
+      B: "2 hand fire-extinguishers conveniently located in the passenger compartment",
+      C: "3 hand fire-extinguishers conveniently located in the passenger compartment",
+      D: "4 hand fire-extinguishers conveniently located in the passenger compartment",
+    },
+    correct: "A",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "For aircraft specified before the 1 April 1998, cockpit voice recorder must keep the conversations and sound alarms recorded during the last",
+    choices: {
+      A: "flight",
+      B: "25 hours of operation",
+      C: "30 minutes of operation",
+      D: "48 hours of operation",
+    },
+    correct: "C",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "Before any flight is commenced, forms have to be completed certifying that the aeroplane is airworthy. Who has to be satisfied that the aeroplane is airworthy?",
+    choices: {
+      A: "The commander",
+      B: "The operator",
+      C: "The maintenance supervisor",
+      D: "a CAA authorised person",
+    },
+    correct: "A",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "Who checks, before flight, that the aircraft's weight is such that flight can be safely made, and that any transported cargo is properly distributed and secured? (Annex 6, Part ll)",
+    choices: {
+      A: "The operator",
+      B: "The captain",
+      C: "The mechanic on board, or in his absence the co-pilot",
+      D: "the company's cargo technicians",
+    },
+    correct: "B",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "For turbo-jet aircraft, in the flight preparation stage, the landing distance at the scheduled destination aerodrome shall be less than the available landing distance multiplied by a factor of",
+    choices: {
+      A: "0.5 OPERATIONAL PROCEDURES GENERAL - Annex 6 parts I, II and III",
+      B: "0.7",
+      C: "0.6",
+      D: "0.8",
+    },
+    correct: "C",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "Selecting an alternate aerodrome the runway of this facility must be sufficiently long to allow a full stop landing from 50 ft above the threshold (jet type aircraft, dry runway) within",
+    choices: {
+      A: "80% of the landing distance available",
+      B: "70% of the landing distance available",
+      C: "60% of the landing distance available",
+      D: "50% of the landing distance available",
+    },
+    correct: "C",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "The standby power supply powering the standby artificial horizon must be operable on board any aircraft of more than 5,700 kg or more than 9 passengers during at least",
+    choices: {
+      A: "15 minutes",
+      B: "60 minutes",
+      C: "30 minutes",
+      D: "2 hours",
+    },
+    correct: "C",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "For turbo-propeller aircraft, in the flight preparation stage, the landing distance on at alternate aerodrome shall be less than the available landing distance multiplied by a factor of",
+    choices: {
+      A: "0.7",
+      B: "0.6",
+      C: "0.5",
+      D: "0.8",
+    },
+    correct: "A",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "On board a pressurised aircraft, a flight shall be undertaken only if the aircraft is provided with an oxygen reserve enabling all the crew members and part of the passengers to be supplied with oxygen in the event of a cabin depressurisation, throughout the flight period, during which the pressure altitude is greater than: Answers",
+    choices: {
+      A: "12,000 ft OPERATIONAL PROCEDURES GENERAL - Annex 6 parts I, II and III",
+      B: "11,000 ft",
+      C: "10,000 ft",
+      D: "13,000 ft",
+    },
+    correct: "C",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question: "The minimum time track is a track defined for",
+    choices: {
+      A: "a period of 12 hours",
+      B: "a given travel",
+      C: "a period of 24 hours",
+      D: "aircraft flying in MNPS airspace",
+    },
+    correct: "B",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "On over-water flights, an operator shall not operate an aeroplane at a distance away from land, which is suitable for making a emergency landing greater than that corresponding to",
+    choices: {
+      A: "400 NM or 120 minutes at cruising speed",
+      B: "300 NM or 90 minutes at cruising speed",
+      C: "200 NM or 45 minutes at cruising speed",
+      D: "100 NM or 30 minutes at cruising speed",
+    },
+    correct: "A",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "For twin-engined aircraft, the take-off alternate shall be located at a distance that: (Annex 6, Part l)",
+    choices: {
+      A: "Does not exceed the equivalent of two hour of flight time at cruising speed all enginesoperating",
+      B: "Does not exceed the equivalent of two hours of flight time at cruising speed with only oneengine operative",
+      C: "Does not exceed the equivalent of one hour of flight time at cruising speed all enginesoperating",
+      D: "Does not exceed the equivalent of one hour of flight time, at cruising speed with only oneengine operative",
+    },
+    correct: "D",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question: "When must a radiation indicator be carried?",
+    choices: {
+      A: "For flights above 29,000 ft",
+      B: "For flights above 39,000 ft",
+      C: "For flights above 49,000 ft",
+      D: "For flights above 59,000 ft",
+    },
+    correct: "C",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "An aeroplane flying at 30,000 ft would be required to provide oxygen dispensing units in the passenger cabin for",
+    choices: {
+      A: "the total number of passengers + 10%",
+      B: "the total number of passengers",
+      C: "the total number of seats",
+      D: "the total number of seats + at least 10% additional units",
+    },
+    correct: "D",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "A modern aircraft must be provided with a flight data recorder when its certified take-off gross weight is greater than",
+    choices: {
+      A: "27,000 kg",
+      B: "5,700 kg",
+      C: "20,000 kg",
+      D: "14,000 kg",
+    },
+    correct: "B",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "A transport category aircraft suffers an unserviceability on the ground prior to take-off. What document do you refer to?",
+    choices: {
+      A: "Aircraft Operating Manual",
+      B: "Minimum Equipment List",
+      C: "CARS",
+      D: "Operations Manual relevant chapter",
+    },
+    correct: "B",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question: "To operate an aircraft as commander a pilot must have",
+    choices: {
+      A: "Carried out at least 3 take-offs and 3 landings in an aeroplane of the same type or a flight OPERATIONAL PROCEDURES GENERAL - Annex 6 parts I, II and III",
+      B: "Carried out at least 5 take-offs and 3 landings in an aeroplane of the same type or a flightsimulator in the preceding 60 days",
+      C: "Carried out at least 3 take-offs and 3 landings in an aeroplane of the same type or a flightsimulator in the preceding 90 days",
+      D: "Carried out at least 5 take-offs and 3 landings in an aeroplane of the same type or a flightsimulator in the preceding 90 days",
+    },
+    correct: "C",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "For the flight crew members, quickly-fitted oxygen masks are compulsory on board any pressurised aircraft flying at a pressure altitude greater than",
+    choices: {
+      A: "13,000 ft",
+      B: "29,000 ft",
+      C: "10,000 ft",
+      D: "25,000 ft",
+    },
+    correct: "D",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question: "For a pressurised aircraft, the first-aid oxygen is designed to",
+    choices: {
+      A: "provide oxygen to 10% of passengers at a cabin altitude exceeding 13000 ft after 30 minutes",
+      B: "protect the flight crew and cabin attendants against fumes and noxious gases",
+      C: "protect all the occupants against the effects of accidental depressurisation",
+      D: "provide undiluted oxygen for passengers who, for physiological reasons, might require oxygenfollowing a cabin depressurisation",
+    },
+    correct: "B",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question: "What is VAT?",
+    choices: {
+      A: "VSO x 1.3",
+      B: "VS1G x 1.3",
+      C: "The lesser of VSO or VSIG",
+      D: "VSO x 1.23",
+    },
+    correct: "A",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "The minimum equipment list (MEL) gives the equipment which can be inoperative when undertaking a flight and the additional procedures to be observed accordingly. This list is prepared by",
+    choices: {
+      A: "the operator, and it is inserted in the operations manual",
+      B: "the manufacturer, and it is inserted in the operations manual",
+      C: "the operator, and it is appended to the flight manual",
+      D: "the manufacturer, and it is appended to the flight manual",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "The coverage angle of the regulatory red position light, continuously lit in flight and located at the tip of the left wing is",
+    choices: {
+      A: "140o",
+      B: "110o",
+      C: "70o",
+      D: "220o",
+    },
+    correct: "B",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "An operator must ensure that the lowest MDH for a non-precision approach procedure which is based upon the use of a VOR is not lower than",
+    choices: {
+      A: "150 ft",
+      B: "200 ft",
+      C: "250 ft",
+      D: "300 ft",
+    },
+    correct: "D",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "When refuelling is being performed while passengers are boarding or disembarking the aircraft, it is necessary that: (Annex 6, Part I)",
+    choices: {
+      A: "All the flight crew be on board",
+      B: "The aircraft's stairs be completely extended",
+      C: "Refuelling is prohibited while passengers are boarding and/or disembarking",
+      D: "Communications be maintained between ground personnel and qualified personnel on board",
+    },
+    correct: "D",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "During a night flight, an observer located in the cockpit, seeing an aircraft coming from the front right will first see the",
+    choices: {
+      A: "green flashing light",
+      B: "green steady light OPERATIONAL PROCEDURES GENERAL - Annex 6 parts I, II and III",
+      C: "white steady light",
+      D: "red steady light",
+    },
+    correct: "D",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "One shall not initiate any flight made in accordance with instrument flight rules unless the available information indicates that the conditions at the aerodrome of predicted destination or, at an aerodrome of alternative destination, are: (Annex 6, Part l)",
+    choices: {
+      A: "At the predicted time of arrival equal to or better than the minimum conditions required foraerodrome use",
+      B: "At the predicted time of take-off equal to or better than the minimum conditions required foraerodrome use",
+      C: "At the predicted time of arrival, and for a reasonable period before and after such a predictedtime, equal to or better than the minimum conditions required for aerodrome use",
+      D: "At the predicted time of arrival better than the minimum conditions required for aerodrome use",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "The recent experience conditions of a captain assigned to a flight on an aircraft by an operator must not be less than",
+    choices: {
+      A: "6 take-offs and 6 landings as pilot in command on this type of aircraft during the last 90 days",
+      B: "3 take-offs and 3 landings as pilot in command on this type of aircraft during the last 90 days",
+      C: "6 take-offs and 6 landings as pilot in command on this type of aircraft during the last 6 months",
+      D: "3 take-offs and 3 landings as pilot in command on this type of aircraft during the last 6 months",
+    },
+    correct: "B",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "The coverage angle of the regulatory white position lights, continuously lit in flight and located at the rear of the aircraft, is",
+    choices: {
+      A: "140o",
+      B: "100o",
+      C: "70o",
+      D: "220o",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "The operator will include in the operations manual a list of minimum required equipment approved by: (Annex 6, Part l)",
+    choices: {
+      A: "The country where the aircraft is operated OPERATIONAL PROCEDURES GENERAL - Annex 6 parts I, II and III",
+      B: "The country where the aircraft was manufactured",
+      C: "The country of the operator",
+      D: "It is not mandatory that such a book be approved by aviation authorities",
+    },
+    correct: "C",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "The regulatory green navigation light is located on the starboard wing tip, with a coverage angle of",
+    choices: {
+      A: "70o",
+      B: "140o",
+      C: "110o",
+      D: "220o",
+    },
+    correct: "C",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "The determination of the aerodrome minimum operating conditions must take the following into account: 1. equipment available for navigation 2. dimensions and characteristics of the runways 3. composition of the flight crew 4. obstacles in the vicinity of approach and missed approach areas 5. facilities for determining and communicating the weather conditions The combination regrouping all the correct statements is",
+    choices: {
+      A: "1, 2, 4, 5",
+      B: "1, 2, 3, 4, 5",
+      C: "2, 4, 5",
+      D: "2, 3, 5",
+    },
+    correct: "B",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "Flight crew members on the flight deck shall keep their safety belt fastened",
+    choices: {
+      A: "from take off to landing",
+      B: "only during take off and landing",
+      C: "only during take off and landing and whenever necessary by the commander in the interest of OPERATIONAL PROCEDURES GENERAL - Annex 6 parts I, II and III",
+      D: "while at their station",
+    },
+    correct: "D",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "The MMEL (Master Minimum Equipment List) is drawn up by",
+    choices: {
+      A: "the operator",
+      B: "the manufacturer",
+      C: "the aircraft manufacturers list",
+      D: "the aircraft state of registry",
+    },
+    correct: "B",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "Who shall provide the flight operations personal with an operations manual and also issue the amendments to keep it up to date?",
+    choices: {
+      A: "Owner of the aircraft",
+      B: "Aircraft producer",
+      C: "Aircraft operator",
+      D: "ATS authority of the state of registry",
+    },
+    correct: "C",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "Who accepts the MEL?",
+    choices: {
+      A: "The country where the flight takes place",
+      B: "The country of the operator",
+      C: "The country of the designers",
+      D: "The country of the manufacturers",
+    },
+    correct: "B",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "On board a non-pressurised aircraft, 10% of the passengers must be supplied with oxygen throughout the period of flight, reduced by 30 minutes, during which the pressure altitude is between",
+    choices: {
+      A: "10,000 ft and 12,000 ft",
+      B: "10,000 ft and 13,000 ft",
+      C: "11,000 ft and 13,000 ft",
+      D: "11,000 ft and 12,000 ft",
+    },
+    correct: "B",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "A life jacket is mandatory for any passenger on board an aircraft flying away from the shore by more than",
+    choices: {
+      A: "100 NM",
+      B: "50 NM",
+      C: "200 NM",
+      D: "400 NM",
+    },
+    correct: "B",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "Who compiles the MEL and where does it go?",
+    choices: {
+      A: "The manufacturer and in the Flight Manual",
+      B: "The manufacturer and in the Operations Manual",
+      C: "The operator and in the Flight Manual",
+      D: "The operator and in the Operations Manual",
+    },
+    correct: "D",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "Who makes up the MMEL?",
+    choices: {
+      A: "The operator",
+      B: "The manufacturer and it must be approved by the state of certification",
+      C: "The authority",
+      D: "The state of registry",
+    },
+    correct: "B",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "FDRs must keep data and parameters for at least the last",
+    choices: {
+      A: "30 hours of operation",
+      B: "48 hours of operation",
+      C: "25 hours of operation",
+      D: "The whole flight",
+    },
+    correct: "C",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "When is MDH referenced to the threshold as opposed to the aerodrome elevation?",
+    choices: {
+      A: "The threshold is more than 2m above the ARP OPERATIONAL PROCEDURES GENERAL - Annex 6 parts I, II and III",
+      B: "The threshold is less than 2m above the ARP",
+      C: "The threshold is less than 2m below the ARP",
+      D: "The threshold is more than 2m below the ARP",
+    },
+    correct: "D",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "When you have been unlawfully interfered with the commander is required to inform certain people: 1. State of the Operator 2. ICAO 3. State of registration of aircraft 4. CAA",
+    choices: {
+      A: "(i), (ii) and (iii)",
+      B: "(ii), (iii) and (iv)",
+      C: "1. , (iii) and (iv)",
+      D: "all of the above",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "On board a non-pressurised aircraft, the crew and all the passengers must be fed with oxygen throughout the flight period during which the pressure altitude is greater than",
+    choices: {
+      A: "12,000 ft",
+      B: "11,000 ft",
+      C: "10,000 ft",
+      D: "13,000 ft",
+    },
+    correct: "D",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "Who has the responsibility to take adequate measures for the safety of passengers and crew of an aircraft which is subjected to an act of unlawful interference until their journey can be continued?",
+    choices: {
+      A: "CAA",
+      B: "Commander of the aircraft",
+      C: "Aeroplanes operator",
+      D: "Contracting State in which the unlawful interference occurs",
+    },
+    correct: "D",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "What is the requirement regarding the carriage of a CVR for aircraft registered before April 1998?",
+    choices: {
+      A: "Record last 30 mins of flight",
+      B: "Record for the duration of the flight",
+      C: "Record the last 25 hours of operation",
+      D: "Record the last 48 hours of flight",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "Is it necessary to carry the entire Operations Manual on each flight?",
+    choices: {
+      A: "No, only the parts required for the conduct of the flight and those concerning crew duty",
+      B: "No, only the parts required for the conduct of the flight",
+      C: "Yes",
+      D: "No, only the parts concerning crew duty",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "To act as co-pilot for take-off or landing you must have",
+    choices: {
+      A: "acted as PIC or co-pilot on type in the last 90 days",
+      B: "acted as PIC or co-pilot on type in the last 30 days",
+      C: "acted as PIC or co-pilot on type in the last 60 days",
+      D: "been at the controls for landing in the same type recently",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "A copy of which of the following documents must be kept on the ground by an operator for the duration of each flight?",
+    choices: {
+      A: "The journey log",
+      B: "The ATC (Air Traffic Control) flight plan",
+      C: "The operational flight plan",
+      D: "The meteorological forecast",
+    },
+    correct: "C",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "A Flight Data Recorder is required in aeroplanes over",
+    choices: {
+      A: "20,000 kg OPERATIONAL PROCEDURES GENERAL - Annex 6 parts I, II and III",
+      B: "5,700 kg",
+      C: "10,000 kg",
+      D: "7,000 kg",
+    },
+    correct: "B",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "Oxygen should be supplied for all crew members and some passengers above which altitude",
+    choices: {
+      A: "10,000 ft",
+      B: "12,000 ft",
+      C: "13,000 ft",
+      D: "11,000 ft",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "What is the oxygen requirement for the crew and 100% of the passengers in an un-pressurised aircraft",
+    choices: {
+      A: "10,000 ft",
+      B: "11,000 ft",
+      C: "12,000 ft",
+      D: "13,000 ft",
+    },
+    correct: "D",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "What manuals are to be carried on board the aircraft?",
+    choices: {
+      A: "Operations Manual in toto",
+      B: "Company instructions for all flight crew",
+      C: "All those specified in the Certificate of Airworthiness",
+      D: "Relevant parts of the ops manual and AFM",
+    },
+    correct: "D",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "From the flight deck you observe an aeroplane in the forward left position on an opposite parallel track. What Nav light will be observed",
+    choices: {
+      A: "Green",
+      B: "Red",
+      C: "White OPERATIONAL PROCEDURES GENERAL - Annex 6 parts I, II and III",
+      D: "All of the above",
+    },
+    correct: "B",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "First Aid (therapeutic) oxygen is carried for which of the following",
+    choices: {
+      A: "All crew and passengers in the event of an unexpected rapid depressurisation",
+      B: "The crew in the event of noxious fumes entering the flight deck",
+      C: "30% of passengers between 10,000 ft and 13,000 ft",
+      D: "Any passengers who require it for pathological respiratory disorders",
+    },
+    correct: "D",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "During a night flight, an observer located in the cockpit, seeing an aircraft coming from front right on approximate opposite parallel track, will first see the",
+    choices: {
+      A: "red light",
+      B: "green light",
+      C: "white light",
+      D: "red and white flashing light",
+    },
+    correct: "B",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "What skills constitute pilot proficiency checks?",
+    choices: {
+      A: "Simulator flying skills",
+      B: "The ability to land safely",
+      C: "Flying technique, emergency procedures and IFR",
+      D: "The ability to conform with set procedures",
+    },
+    correct: "C",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "How often should pilot proficiency checks be performed?",
+    choices: {
+      A: "No less than 6 months between checks",
+      B: "2 checks every 13 months",
+      C: "3 checks within the year with no less than 4 months between checks",
+      D: "2 within a year, more than 4 months between checks",
+    },
+    correct: "D",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "Coverage of permanently illuminated white lights at the rear of the aircraft is",
+    choices: {
+      A: "140o",
+      B: "70o",
+      C: "110o",
+      D: "220o",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "What is the definition of a minimum time route?",
+    choices: {
+      A: "Closest diversion on route",
+      B: "Shortest distance between two points of a route",
+      C: "Shortest time between dest and dep adhering to ATC restrictions",
+      D: "Route using the least amount of fuel",
+    },
+    correct: "C",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "Regarding an observer in the cockpit seeing an aeroplane coming from the forward left, what colour is the first light seen (at night)?",
+    choices: {
+      A: "Flashing white",
+      B: "Steady red",
+      C: "Steady green",
+      D: "Steady white",
+    },
+    correct: "C",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "Through what angle can the green navigation light be seen?",
+    choices: {
+      A: "70o",
+      B: "110o",
+      C: "130o",
+      D: "140o",
+    },
+    correct: "B",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "If you are squawking 3770 and have a transponder failure, what do you squawk?",
+    choices: {
+      A: "0000 OPERATIONAL PROCEDURES GENERAL - Annex 6 parts I, II and III",
+      B: "3770",
+      C: "4096",
+      D: "7600",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "The abbreviation AOC stands for",
+    choices: {
+      A: "Aircrew operators certificate",
+      B: "Air operator competence",
+      C: "Aircraft operations certificate",
+      D: "Air operators certificate",
+    },
+    correct: "D",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "What is the definition of a damp runway?",
+    choices: {
+      A: "Surface not dry but moisture does not give the surface a shiny appearance",
+      B: "Surface dry but moisture does not give the surface a shiny appearance",
+      C: "Surface not dry and moisture gives the surface a shiny appearance",
+      D: "Surface dry and moisture gives the surface a shiny appearance",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "Therapeutic oxygen carried on a pressurised aircraft is used for",
+    choices: {
+      A: "passengers following a decompression",
+      B: "passengers or crew when required",
+      C: "crew only",
+      D: "passengers notified as having a medical condition",
+    },
+    correct: "B",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "Annexes to the Chicago Convention contain",
+    choices: {
+      A: "Standards and approved Practices",
+      B: "Recommendations and Means of Compliance",
+      C: "Articles and Terms OPERATIONAL PROCEDURES GENERAL - Annex 6 parts I, II and III",
+      D: "Standards and Recommended Practices",
+    },
+    correct: "D",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "When changing the transponder code for radar identification the selections to be made are",
+    choices: {
+      A: "ON then STBY then ON",
+      B: "ON then STBY",
+      C: "STBY",
+      D: "OFF",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "A helicopter with a Maximum take-off mass exceeding 5,700 kg conducting Helicopter Emergency Medical Service shall be operated in accordance with",
+    choices: {
+      A: "performance class 1 at night, 1 or 2 by daylight",
+      B: "performance class 1 or 2",
+      C: "performance class 1",
+      D: "any class of performance due to the emergency situation",
+    },
+    correct: "C",
+    ref: "CPL H AND ATPL H",
+  },
+  {
+    question:
+      "A category D aeroplane can carry out a circling approach only if the meteorological visibility is higher than or equal to",
+    choices: {
+      A: "1,500 m",
+      B: "1,600 m",
+      C: "2,400 m",
+      D: "3,600 m",
+    },
+    correct: "D",
+    ref: "I.R.",
+  },
+  {
+    question:
+      "A category D aircraft can carry out an indirect approach followed by a visual manoeuvre only if the horizontal visibility is higher than or equal to",
+    choices: {
+      A: "1500 m",
+      B: "2400 m",
+      C: "1600 m",
+      D: "3600 m",
+    },
+    correct: "D",
+    ref: "I.R.",
+  },
+  {
+    question:
+      "The aircraft is of Category A. The runway has edge lights and high intensity centre line lights. There is an accessible alternate aerodrome and the two pilot crew is IFR qualified on type. The minimum horizontal visibility required for take-off is",
+    choices: {
+      A: "150 m if a threshold RVR is available",
+      B: "200 m",
+      C: "300 m",
+      D: "150 m",
+    },
+    correct: "D",
+    ref: "I.R.",
+  },
+  {
+    question:
+      "A category A aircraft can carry out an indirect approach followed by a visual manoeuvre only if the horizontal visibility is higher than or equal to",
+    choices: {
+      A: "1,600 m",
+      B: "2,400 m",
+      C: "1,500 m",
+      D: "3,600 m",
+    },
+    correct: "C",
+    ref: "I.R.",
+  },
+  {
+    question:
+      "A category B aircraft can carry out an indirect approach followed by a visual manoeuvre only if the horizontal visibility is higher than or equal to",
+    choices: {
+      A: "2,400 m",
+      B: "1,500 m",
+      C: "3,600 m",
+      D: "1,600 m",
+    },
+    correct: "D",
+    ref: "I.R.",
+  },
+  {
+    question:
+      "At the planning stage for a Class B performance aircraft, what minimum climb gradient do you use?",
+    choices: {
+      A: "300 ft min climb speed with one engine out",
+      B: "500 ft min climb speed with one engine out",
+      C: "300 ft min climb speed with all engines operating",
+      D: "500 ft min climb speed with all engines operating",
+    },
+    correct: "C",
+    ref: "I.R.",
+  },
+  {
+    question:
+      "The pilot of a category A aircraft is flying a non-precision direct IFR approach with the following operational minimums: MDH 250 feet and visibility 750 metres. RVR for threshold, mid and end of the runway are given by the controller",
+    choices: {
+      A: "the pilot may start the final approach if the three RVR are higher than 750 metres",
+      B: "the pilot may start the final approach if the threshold and mid-runway RVR are higher than 750metres",
+      C: "the pilot may start the final approach if the threshold RVR is higher than 750 metres",
+      D: "flying a non-precision approach, the pilot may start the final approach only if he has a meteorological visibility higher than 750 metres. RVR are to be taken into account only forprecision approaches",
+    },
+    correct: "C",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "An aircraft flies a VOR/DME direct approach for which the operational minima are: MDH = 360 feet Horizontal visibility = 1,500 metres Visibility given by ATC and received by the crew is 2,500 metres The pilot may start the final approach",
+    choices: {
+      A: "if the ceiling transmitted by ATC and received by the crew is higher than 360 feet",
+      B: "whatever the ceiling given by ATC",
+      C: "if the ceiling transmitted by ATC and received by the crew is higher than 240 feet",
+      D: "if the ceiling transmitted by ATC and received by the crew is higher than 240 feet during theday and 360 feet at night",
+    },
+    correct: "B",
+    ref: "ATPL A, H AND I.R.",
+  },
+  {
+    question:
+      "The information to consider for a standard straight-in approach is: Which of the following combinations contains all of the correct statements? 1. the horizontal visibility 2. the ceiling 3. the minimum descending altitude (MDA) 4. the decision altitude (DA)",
+    choices: {
+      A: "1, 3",
+      B: "1, 4",
+      C: "1, 2, 3",
+      D: "1, 2, 4 OPERATIONAL PROCEDURES GENERAL - JAR-OPS Requirements",
+    },
+    correct: "A",
+    ref: "ATPL A, H AND I.R.",
+  },
+  {
+    question: "The Cat I minimum decision height is",
+    choices: {
+      A: "No decision height",
+      B: "50 feet",
+      C: "100 feet",
+      D: "200 feet",
+    },
+    correct: "D",
+    ref: "ATPL A, H AND I.R.",
+  },
+  {
+    question: "What is DH used for",
+    choices: {
+      A: "Visual manoeuvring",
+      B: "Circling to land",
+      C: "Precision approaches",
+      D: "Non-precision approaches",
+    },
+    correct: "C",
+    ref: "ATPL A, H AND I.R.",
+  },
+  {
+    question:
+      "The minimum MDH and meteorological visibility for a category D aircraft circling are respectively",
+    choices: {
+      A: "700 ft 3.600 m",
+      B: "800 ft 2.400 m",
+      C: "500 ft 1.600 m",
+      D: "400 ft 1.500 m",
+    },
+    correct: "A",
+    ref: "ATPL A, H AND I.R.",
+  },
+  {
+    question:
+      "A category 1 precision approach (CAT 1) is an approach which may be carried out with a runway visual range of at least",
+    choices: {
+      A: "800 m",
+      B: "500 m",
+      C: "550 m",
+      D: "350 m",
+    },
+    correct: "C",
+    ref: "ATPL A, H AND I.R.",
+  },
+  {
+    question: "MDA is",
+    choices: {
+      A: "a specified height in a Non-precision Approach or Circling Approach below which the descent mustnot be made without the required visual reference",
+      B: "a specified altitude in a Non-precision Approach or Circling Approach below which the descent must not be made without the required visual reference",
+      C: "referenced to the Runway Threshold (THR) elevation",
+      D: "b and c are correct",
+    },
+    correct: "B",
+    ref: "ATPL A, H AND I.R.",
+  },
+  {
+    question: "What is the system minimum for an NDB approach?",
+    choices: {
+      A: "200 ft",
+      B: "250 ft",
+      C: "300 ft",
+      D: "350 ft",
+    },
+    correct: "C",
+    ref: "ATPL A, H AND I.R.",
+  },
+  {
+    question:
+      "On an ILS, you are told that the weather has dropped below company minima. When must you abort the approach?",
+    choices: {
+      A: "Start of the glide slope descent",
+      B: "FAF",
+      C: "Inner Marker",
+      D: "Outer Marker",
+    },
+    correct: "D",
+    ref: "ATPL A, H AND I.R.",
+  },
+  {
+    question:
+      "The considerations for a non-precision approach are: 1. MDA (H) 2. DH 3. Ceiling The considerations for a non-precision approach are: 1. MDA (H) 2. DH 3. Ceiling 4. Horizontal visibility",
+    choices: {
+      A: "2, 3, 4",
+      B: "1, 3, 4",
+      C: "1, 3",
+      D: "2, 4",
+    },
+    correct: "B",
+    ref: "ATPL A, H AND I.R.",
+  },
+  {
+    question:
+      "The information to be considered for a non-precision approach is: 1.Horizontal visibility 1. Ceiling 2. Minimum Descent Altitude 3. Decision Altitude",
+    choices: {
+      A: "1, 2, 4",
+      B: "1, 3",
+      C: "1, 4",
+      D: "1, 2, 3",
+    },
+    correct: "D",
+    ref: "ATPL A, H AND I.R.",
+  },
+  {
+    question:
+      "The ATIS reports destination weather as RVR 200 m, overcast at 100 ft throughout the approach. The approach procedure is NDB to ILS with a locator NDB at the OM. The minima for the approach are DH 200 ft, RVR 600m. Which of the following statements is true?",
+    choices: {
+      A: "The approach may not be commenced",
+      B: "The approach may be commenced but not continued beyond the OM",
+      C: "The approach may be commenced but not continued below 1000 ft",
+      D: "The approach may be commenced but not continued below DH unless the required visual referencesare present",
+    },
+    correct: "B",
+    ref: "ATPL A, H AND I.R.",
+  },
+  {
+    question:
+      "If the RVR is found to be below the minimum before an approach is commenced the approach may not be continued",
+    choices: {
+      A: "beyond the Final Approach Fix",
+      B: "below 1000 ft AAL",
+      C: "below MDA/MDH or DA/DH OPERATIONAL PROCEDURES GENERAL - JAR-OPS Requirements",
+      D: "beyond the Outer Marker or equivalent",
+    },
+    correct: "D",
+    ref: "ATPL A, H AND I.R.",
+  },
+  {
+    question:
+      "The minimum flight crew for night transport of passengers according to the instrument flight rules is",
+    choices: {
+      A: "2 pilots for any aircraft weighing more than 5.7 tons or having more than 9 passenger seats",
+      B: "2 pilots for turbo-jet aircraft and turbo-prop aircraft with more than 9 passenger seats",
+      C: "1 pilot for any aircraft weighing less than 5.7 tons, provided that the maximum certified numberof passenger seats is less than 9",
+      D: "2 pilots for any turbo-prop aircraft weighing more than 5.7 tons or for any turbo-jet aircraft",
+    },
+    correct: "B",
+    ref: "ATPL AND H",
+  },
+  {
+    question:
+      "Which of the following forms or information are NOT required to be carried on all flight? 1. The Operational Flight Plan (OFP) 2. Mass and Balance Documentation 3. NOTAMS 4. The Technical Log 5. Maps and Charts 6. Passenger and Cargo Manifests",
+    choices: {
+      A: "All except 1",
+      B: "All except 3",
+      C: "All except 6",
+      D: "All except 4",
+    },
+    correct: "C",
+    ref: "All",
+  },
+  {
+    question: "What is the angle of the red navigation light?",
+    choices: {
+      A: "90o",
+      B: "110o",
+      C: "140o",
+      D: "70o",
+    },
+    correct: "B",
+    ref: "All",
+  },
+  {
+    question:
+      "An observer in the cockpit sees an aeroplane closing from the forward left, what colour is the first light seen (at night)?",
+    choices: {
+      A: "Flashing white",
+      B: "Steady red",
+      C: "Steady green",
+      D: "Steady white",
+    },
+    correct: "C",
+    ref: "All",
+  },
+  {
+    question: "SVFR may not be commenced when the visibility is less than",
+    choices: {
+      A: "1.5 km",
+      B: "3 km",
+      C: "5 km",
+      D: "6 km",
+    },
+    correct: "B",
+    ref: "All",
+  },
+  {
+    question:
+      "To conduct a special VFR flight, the minimum visibility required is",
+    choices: {
+      A: "3000 m",
+      B: "1500 m",
+      C: "2500 m",
+      D: "5000 m",
+    },
+    correct: "B",
+    ref: "All",
+  },
+  {
+    question:
+      "One shall not initiate any flight made in accordance with instrument flight rules unless the available information indicates that the conditions at the aerodrome of predicted destination or, at an aerodrome of alternate destination, are, at the predicted time of",
+    choices: {
+      A: "Take-off equal to or better than the minimum conditions required for aerodrome use",
+      B: "Arrival, and for a reasonable time before and after such a predicted time, equal to or betterthan the minimum conditions required for aerodrome use",
+      C: "Arrival equal to or better than the minimum conditions required for aerodrome use",
+      D: "Arrival better that the minimum conditions required for aerodrome use",
+    },
+    correct: "C",
+    ref: "All",
+  },
+  {
+    question:
+      "When are all flight crewmembers required to be at their stations?",
+    choices: {
+      A: "Take-off and landing",
+      B: "Throughout the flight",
+      C: "At all times other than take-off and landing",
+      D: "As specified in the operations manual",
+    },
+    correct: "A",
+    ref: "All",
+  },
+  {
+    question: "the operator is to provide an Operations Manual for",
+    choices: {
+      A: "Operations staff",
+      B: "All company personnel",
+      C: "Only for flight crew",
+      D: "For the Authority",
+    },
+    correct: "A",
+    ref: "All",
+  },
+  {
+    question: "Who is to ensure safe handling of flights?",
+    choices: {
+      A: "The Operator",
+      B: "The Authority",
+      C: "The State of Registration",
+      D: "The Operations Officer",
+    },
+    correct: "A",
+    ref: "All",
+  },
+  {
+    question:
+      "Who is responsible for ensuring that the aeroplane is airworthy prior to flight?",
+    choices: {
+      A: "Operator",
+      B: "State of Registration",
+      C: "Captain",
+      D: "State of the Operator",
+    },
+    correct: "C",
+    ref: "All",
+  },
+  {
+    question:
+      "Who provides the operations personnel with the operations manual and the amendments to keep it up to date?",
+    choices: {
+      A: "Aircraft manufacturer OPERATIONAL PROCEDURES GENERAL - JAR-OPS Requirements",
+      B: "ATS authority of the state of registry",
+      C: "Aircraft operator",
+      D: "Owner of aircraft",
+    },
+    correct: "C",
+    ref: "All",
+  },
+  {
+    question:
+      "A pilot in command: The correct combination is: 1. Must comply with ATC instructions immediately 2. Is only responsible when airborne 3. May deviate in an emergency 4. May deviate from complying with rules of the air in order to comply with an ATC instruction 5. May request a new clearance if unsatisfied",
+    choices: {
+      A: "1, 3, 4, 5",
+      B: "3, 5",
+      C: "3, 4, 5",
+      D: "All of the above",
+    },
+    correct: "B",
+    ref: "All",
+  },
+  {
+    question: "When can special VFR be commenced?",
+    choices: {
+      A: "Visibility greater than 1500 m",
+      B: "Greater than 3 km vis",
+      C: "Visibility no more than 3000 m",
+      D: "Greater than 5 km vis",
+    },
+    correct: "B",
+    ref: "All",
+  },
+  {
+    question:
+      "The take-off alternate is to be located within which distance for a 2 engined aircraft?",
+    choices: {
+      A: "1 hour with one engine operating",
+      B: "1 hour with both engines operating",
+      C: "2 hours with one engine operating",
+      D: "2 hours with both engines operating",
+    },
+    correct: "A",
+    ref: "All",
+  },
+  {
+    question:
+      "if required, the number of life rafts to be carried on board an aeroplane must allow the transportation of the entire aeroplane occupants",
+    choices: {
+      A: "in the case of a loss of one raft of the largest rated capacity",
+      B: "plus 10%",
+      C: "plus 20%",
+      D: "plus 30%",
+    },
+    correct: "A",
+    ref: "CPL A",
+  },
+  {
+    question:
+      "an aeroplane whose maximum approved passenger seating configuration is 201 to 300 seats must be equipped with at least",
+    choices: {
+      A: "6 hand fire-extinguishers conveniently located in the passenger compartment",
+      B: "3 hand fire-extinguishers conveniently located in the passenger compartment",
+      C: "5 hand fire-extinguishers conveniently located in the passenger compartment",
+      D: "4 hand fire-extinguishers conveniently located in the passenger compartment",
+    },
+    correct: "D",
+    ref: "CPL A",
+  },
+  {
+    question:
+      "an aeroplane whose maximum approved passenger seating configuration is 301 to 400 seats must be equipped with at least",
+    choices: {
+      A: "4 hand fire-extinguishers conveniently located in the passenger compartment",
+      B: "5 hand fire-extinguishers conveniently located in the passenger compartment",
+      C: "6 hand fire-extinguisher conveniently located in the passenger compartment",
+      D: "3 hand fire-extinguisher conveniently located in the passenger compartment",
+    },
+    correct: "B",
+    ref: "CPL A",
+  },
+  {
+    question:
+      "an aeroplane whose maximum approved passenger seating configuration is 31 to 60 seats must be equipped with at least",
+    choices: {
+      A: "2 hand fire-extinguishers conveniently located in the passenger compartment",
+      B: "3 hand fire-extinguishers conveniently located in the passenger compartment",
+      C: "4 hand fire-extinguishers conveniently located in the passenger compartment",
+      D: "5 hand fire-extinguishers conveniently located in the passenger compartment",
+    },
+    correct: "A",
+    ref: "CPL A",
+  },
+  {
+    question:
+      "an aeroplane whose maximum approved passenger seating configuration is 401 to 500 seats must be equipped with at least",
+    choices: {
+      A: "7 hand fire-extinguishers conveniently located in the passenger compartment OPERATIONAL PROCEDURES GENERAL - JAR-OPS Requirements",
+      B: "5 hand fire-extinguishers conveniently located in the passenger compartment",
+      C: "6 hand fire-extinguishers conveniently located in the passenger compartment",
+      D: "8 hand fire- extinguishers conveniently located in the passenger compartment",
+    },
+    correct: "C",
+    ref: "CPL A",
+  },
+  {
+    question:
+      "an operator shall ensure that a pilot does not operate an aeroplane as pilot-in-command unless",
+    choices: {
+      A: "he has carried out at least three take-off and three landings as pilot flying in any type of aeroplane or an approved simulator, under the supervision of an examiner, in the preceding 60days",
+      B: "he has carried out at least three flights as pilot-in-command in an aeroplane or an approvedflight simulator of the type to be used, in the preceding 90 days",
+      C: "he has carried out at least three take-off and three landings as pilot flying in an aeroplane oran approved flight simulator of the type to be used, in the preceding 90 days",
+      D: "he has carried out at least three take-off and three landings as pilot flying in an aeroplane oran approved flight simulator of the type to be used, in the preceding 30 days",
+    },
+    correct: "C",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "After an accident, the operator of an airplane equipped with a flight recorder must keep the original recordings for a minimum period of",
+    choices: {
+      A: "60 days",
+      B: "30 days",
+      C: "90 days",
+      D: "45 days",
+    },
+    correct: "A",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "In VFR public transport on an aircraft for which the flight manual indicates a minimum crew of one pilot, when do the regulations require the presence of a second pilot?",
+    choices: {
+      A: "If the flight lasts more than 3 hours",
+      B: "If the aircraft is a twin-engine",
+      C: "If part or all the flight is done at night",
+      D: "Never",
+    },
+    correct: "D",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "As cabin altitude increases, what happens to the differential pressure?",
+    choices: {
+      A: "Decreases",
+      B: "Increases",
+      C: "Stays the same",
+      D: "None of the above",
+    },
+    correct: "A",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question: "Above what altitude are quick-donning masks required",
+    choices: {
+      A: "25,000",
+      B: "15,000",
+      C: "10,000",
+      D: "32,000",
+    },
+    correct: "A",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "Destination alternate for a turbojet- what is the required fuel overhead?",
+    choices: {
+      A: "30 minutes at cruise speed",
+      B: "30 minutes at 1,500 in standard conditions",
+      C: "2 hours at 1,500 in standard conditions",
+      D: "30 minutes at endurance speed",
+    },
+    correct: "B",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "For a medium then a light aeroplane on the approach, what is the required separation?",
+    choices: {
+      A: "2 mins",
+      B: "3 mins",
+      C: "1 min",
+      D: "4 mins",
+    },
+    correct: "B",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "For an aeroplane powered by turbo-jet engines, the fuel and oil to be carried is at least the amount sufficient to allow the aeroplane",
+    choices: {
+      A: "to fly to and execute an approach and a missed approach, at the aerodrome to which the flight is OPERATIONAL PROCEDURES GENERAL - JAR-OPS Requirements",
+      B: "to have an additional amount of fuel sufficient to provide for the increased consumption on the occurrence of any of the potential contingencies specified by the operator to the satisfactionof the State of the operator; or",
+      C: "to fly to the alternate aerodrome via any predetermined point and thereafter for 30 minutes at450m (1500 ft) above the alternate aerodrome",
+      D: "All of the above",
+    },
+    correct: "D",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question: "When landing in heavy rain",
+    choices: {
+      A: "Decrease air speed on landing, area may be more slippery",
+      B: "Increase air speed as rain affects boundary layer",
+      C: "Keep the speed the same until landing",
+      D: "Decrease the landing speed to stick shaker",
+    },
+    correct: "B",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "In accordance with Aerodrome Operating Minima, an operator must ensure that system minima for non-precision approach procedures, which are based upon the use of ILS without glide path (LLZ only), VOR NDB, SRA, and VDF are no lower than MDH following value with",
+    choices: {
+      A: "NDB facility, lowest MDH = 300 ft",
+      B: "ILS facility without glide path (localiser) lowest MDH = 200 ft",
+      C: "VOR facility, lowest MDH = 250 ft",
+      D: "VOR/DME facility, lowest MDH = 300 ft",
+    },
+    correct: "A",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "a co-pilot is not assigned to operate at the flight controls during take-off and landing unless",
+    choices: {
+      A: "he has carried out at least three flights as pilot-in-command or as a co- pilot at the controlsof the type to be used, in the preceding 90 days",
+      B: "he has operated as pilot-in-command or as co-pilot at the controls during take-off and landingof the type to be used in the preceding 90 days",
+      C: "he has carried out as pilot-in-command or as co-pilot at least three take-off and three landingsin an aeroplane or an approved flight simulator of the type used, in the preceding 90 days",
+      D: "he has carried out as pilot-in-command or as co-pilot at least three take-off and three landings in an aeroplane or an approved flight simulator of the type used, in the preceding 30days",
+    },
+    correct: "B",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question: "The minimum crew for all turbo propeller aeroplanes is 2 when",
+    choices: {
+      A: "There are 9 or more passengers carried",
+      B: "The seating configuration is more than 9",
+      C: "The seating configuration is more than 19",
+      D: "There are more than 19 passengers carried",
+    },
+    correct: "B",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "a transport aircraft carrying passengers with a door to the flight deck must",
+    choices: {
+      A: "Have distinctive red or yellow access marks in case of blockage",
+      B: "Have a pressure seal to maintain pressure in event of cabin pressure loss",
+      C: "Be lockable from the inside to prevent unauthorised access",
+      D: "Be lockable from the outside",
+    },
+    correct: "C",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "Aeroplanes with a take-off mass greater than 5.700 kg shall be fitted with an independent automatically operated emergency power supply to operate and illuminate the artificial horizon for",
+    choices: {
+      A: "15 mins",
+      B: "30 mins",
+      C: "60 mins",
+      D: "2 hours",
+    },
+    correct: "B",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "An aeroplane door would be rendered inoperative for the following unserviceabilities: 1. External opening mechanism 2. Internal opening mechanism 3. The emergency lighting 4. Doors hold open device 5. The door open assist device 6. Slide unserviceable",
+    choices: {
+      A: "all of the above",
+      B: "1, 2, 5, 6 OPERATIONAL PROCEDURES GENERAL - JAR-OPS Requirements",
+      C: "2, 3, 4 , 6",
+      D: "1, 2, 3, 4",
+    },
+    correct: "A",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "If there is unauthorised use of equipment that affects the aeroplane's system, the commander",
+    choices: {
+      A: "may authorise its use for take-off and landing",
+      B: "must not authorise its use",
+      C: "may authorise its use for the whole flight",
+      D: "may authorise its use at his discretion",
+    },
+    correct: "B",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "According to DOC 4444 (ICAO), a wake turbulence non-radar separation minima of 2 minutes shall be applied to",
+    choices: {
+      A: "MEDIUM aircraft landing behind a HEAVY aircraft",
+      B: "MEDIUM aircraft taking-off behind a HEAVY aircraft from an intermediate part of a parallelrunway separated by less than 760 m",
+      C: "LIGHT aircraft taking-off behind a MEDIUM aircraft from an intermediate part of the same runway",
+      D: "LIGHT aircraft landing behind a MEDIUM aircraft",
+    },
+    correct: "A",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "in an aeroplane with a maximum configuration of more than 19 passengers, the door between the passenger compartment and the flight deck compartment shall have locking means",
+    choices: {
+      A: "capable of being locked only from outside the flight deck compartment",
+      B: "to prevent passengers from opening it without permission of a member of the flight crew",
+      C: "capable of being remotely locked by cabin crew from outside the flight deck compartment",
+      D: "capable of being remotely locked from either inside or outside the flight deck compartment",
+    },
+    correct: "B",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "a public address system is required to operate an aeroplane with a maximum approved passenger seating configuration of more than",
+    choices: {
+      A: "61",
+      B: "30",
+      C: "9",
+      D: "19",
+    },
+    correct: "D",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "a windshield wiper or equivalent means to maintain a clear portion of the windshield during precipitation is required at each pilot station to operate an aeroplane with a",
+    choices: {
+      A: "maximum approved passenger configuration of more than 6 seats",
+      B: "maximum certificated take-off mass of more than 15000 kg",
+      C: "maximum approved passenger configuration of more than 9 seats",
+      D: "maximum certificated take-off mass of more than 5700 kg",
+    },
+    correct: "D",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "an aeroplane whose maximum approved passenger seating configuration is 10 seats must be equipped with",
+    choices: {
+      A: "two hand fire-extinguishers on the flight deck and two hand fire- extinguishers in the passengercompartment",
+      B: "one hand fire-extinguisher on the flight deck and two hand fire- extinguishers in the passengercompartment",
+      C: "three hand fire-extinguishers in the passenger compartment",
+      D: "one hand fire-extinguisher on the flight deck and one hand fire- extinguisher in the passengercompartment",
+    },
+    correct: "D",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "an aeroplane whose maximum approved passenger seating configuration is 200 must be equipped with",
+    choices: {
+      A: "4 hand fire extinguishers in the passenger compartment",
+      B: "5 hand fire extinguishers in the passenger compartment",
+      C: "7 hand fire extinguishers in the passenger compartment",
+      D: "3 hand fire extinguishers in the passenger compartment",
+    },
+    correct: "D",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "an operator shall not operate across areas in which search and rescue would be especially difficult, unless it is equipped with: an operator shall not operate across areas in which search and rescue would be especially difficult, unless it is equipped with: 1. signalling equipment 2. at least one ELT 3. at least 2 ELTs 4. additional survival equipment",
+    choices: {
+      A: "1, 3, 4",
+      B: "1, 2, 4",
+      C: "1, 4",
+      D: "2, 4",
+    },
+    correct: "B",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "for aeroplanes with a maximum certificated take-off mass over 5700 kg, flight data recorders shall be capable of retaining the data recorded during at least the last",
+    choices: {
+      A: "30 hours of operation",
+      B: "25 hours of operation",
+      C: "25 flights",
+      D: "10 flights",
+    },
+    correct: "B",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "the minimum number of crash axes or crowbars on board an aeroplane, whose maximum approved passenger seating configuration is more than 200, is",
+    choices: {
+      A: "4",
+      B: "1",
+      C: "3",
+      D: "2",
+    },
+    correct: "D",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "the recent experience conditions of a commander assigned to a flight on an aeroplane by an operator must not be less than",
+    choices: {
+      A: "3 take-offs and 3 landings as pilot flying on the same type of aeroplane or approved simulator,of the aeroplane type to be used, in the preceding 90 days",
+      B: "6 take-offs and 6 landings as pilot flying on the same type of aeroplane or approved simulator,of the aeroplane type to be used",
+      C: "6 take-offs and 6 landings during the last 6 months OPERATIONAL PROCEDURES GENERAL - JAR-OPS Requirements",
+      D: "3 take-offs and 3 landings on this type of aeroplane during the last 6 months",
+    },
+    correct: "A",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "According with DOC 4444 (ICAO), a wake turbulence non-radar separation minima of 3 minutes shall be applied",
+    choices: {
+      A: "to an arriving LIGHT aircraft following a MEDIUM aircraft departure when operating on a runwaywith a displaced landing threshold, if the projected flight paths are expected to cross",
+      B: "to a departing MEDIUM aircraft following a HEAVY aircraft arrival when operating on a runwaywith a displaced landing threshold",
+      C: "to LIGHT aircraft taking-off behind a MEDIUM aircraft from an intermediate part of a parallelrunway separated by less than 760m",
+      D: "Between a LIGHT aircraft and a MEDIUM aircraft making a missed approach and the LIGHT aircraftutilising an opposite-direction runway for take-off",
+    },
+    correct: "C",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "Assuming 60 passengers on board a land aeroplane. The intended track will overfly water for a distance of 80 NM from the shore. the minimum number of passenger life jackets to be on board is",
+    choices: {
+      A: "0",
+      B: "66",
+      C: "60",
+      D: "None if equipped with life rafts",
+    },
+    correct: "C",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "Assuming a multi-engine land aeroplane with 60 persons on board. The cruising speed is 180 kt. The aeroplane is capable of continuing the flight with the critical power-unit becoming inoperative. The track will overfly water for a distance of 380 NM from shore. The emergency equipment on board must include",
+    choices: {
+      A: "1 lift raft of 30-seat capacity and 2 life rafts of 20-seat capacity",
+      B: "2 life rafts of 30-seat capacity",
+      C: "3 life rafts of 30-seat capacity",
+      D: "none, distance being less than 400 NM",
+    },
+    correct: "C",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "For a given aeroplane, the wake turbulence increases when the aeroplane has a",
+    choices: {
+      A: "low mass and high airspeed",
+      B: "high mass and high airspeed",
+      C: "low mass and low airspeed",
+      D: "high mass and low airspeed",
+    },
+    correct: "D",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "For two-engined aeroplanes not approved for ETOPS, the take-ioff alternate, if required, shall be located (in still air conditions) within",
+    choices: {
+      A: "two hours flight time at cruising speed with all engines operating",
+      B: "two hours flight time at one engine inoperative cruising speed",
+      C: "one hour flight time at cruising speed with all engines operating",
+      D: "one hour flight time at one engine inoperative cruising speed",
+    },
+    correct: "D",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "If no meteorological information is available for the destination, the operator must",
+    choices: {
+      A: "not take-off until obtaining destination meteorological forecast",
+      B: "take extra fuel to fly two hours at holding speed",
+      C: "take extra fuel to fly one hour at holding speed, 1500 ft above the alternate aerodrome",
+      D: "select two destination alternates",
+    },
+    correct: "D",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "In an aeroplane, each crew member shall be properly secured by all safety belts and harnesses provided 1. during taxiing 2. during take-off In an aeroplane, each crew member shall be properly secured by all safety belts and harnesses provided 1. during taxiing 2. during take-off 3. during landing 4. whenever deemed necessary by the commander in the interest of safety 5. during other phases of flight",
+    choices: {
+      A: "1, 2, 3, 4",
+      B: "1, 2, 3, 4, 5",
+      C: "2, 3, 4",
+      D: "2, 3, 4, 5",
+    },
+    correct: "C",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "In accordance with Aerodrome Operating Minima for a Category III A approach, the RVR shall not be less than",
+    choices: {
+      A: "200 m",
+      B: "250 m",
+      C: "230 m",
+      D: "300 m",
+    },
+    correct: "A",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question: "the operator shall ensure that",
+    choices: {
+      A: "for VFR flights conducted in class E airspace, flight visibility at and above 3050m (10000 ft)is at least 5 km (clear of cloud)",
+      B: "for VFR flights conducted in class B airspace, horizontal distance from clouds is at least 1000m",
+      C: "for VFR flights conducted in class F airspace, vertical distance from clouds is at least 250m",
+      D: "special VFR flights are not commenced when visibility is less than 3 km",
+    },
+    correct: "D",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "an aeroplane whose maximum approved passenger seating configuration is greater than 60 seats must be equipped (including flight deck) with at least",
+    choices: {
+      A: "4 HALON 1211 fire-extinguishers or equivalent",
+      B: "2 HALON 1211 fire-extinguishers or equivalent OPERATIONAL PROCEDURES GENERAL - JAR-OPS Requirements",
+      C: "3 HALON 1211 fire-extinguishers or equivalent",
+      D: "1 HALON 1211 fire-extinguishers or equivalent",
+    },
+    correct: "C",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "an aeroplane whose maximum approved passenger seating configuration is greater than 600 seats must be equipped with at least",
+    choices: {
+      A: "7 hand fire-extinguishers conveniently located in the passenger compartment",
+      B: "9 hand fire-extinguishers conveniently located in the passenger compartment",
+      C: "8 hand fire-extinguishers conveniently located in the passenger compartment",
+      D: "6 hand fire-extinguishers conveniently located in the passenger compartment",
+    },
+    correct: "C",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "an aeroplane whose maximum take-off mass exceeds 5,700 kg or whose maximum approved passenger seating configuration is greater than 9 seats and less than 200 seats must be equipped with a",
+    choices: {
+      A: "crash axe on the flight deck and a crow-bar in the passenger compartment",
+      B: "crash axe and a crow-bar in the passenger compartment",
+      C: "crash axe or a crow-bar on the flight deck",
+      D: "crow-bar on the flight deck and a crash axe in the passenger compartment",
+    },
+    correct: "C",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "an aeroplane with a maximum approved passenger seating configuration of more than 61 seats, must have in its passenger compartment(s), at least 3 hand fire-extinguishers including",
+    choices: {
+      A: "2 Halon fire-extinguishers or equivalent",
+      B: "1 Halon fire-extinguisher or equivalent",
+      C: "3 Halon fire-extinguishers or equivalent",
+      D: "no Halon fire-extinguisher",
+    },
+    correct: "A",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "for a pressurised aeroplane, certificated to fly at altitudes more than 25000 ft, all occupants of flight deck seats on flight deck duty shall be supplied with supplemental oxygen during a period in no case less than",
+    choices: {
+      A: "1 hour",
+      B: "30 minutes",
+      C: "2 hours OPERATIONAL PROCEDURES GENERAL - JAR-OPS Requirements",
+      D: "10 minutes",
+    },
+    correct: "C",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "for aeroplanes intended to be operated at pressure altitude of 39000 ft, the total number of oxygen dispensing units and outlets shall exceed",
+    choices: {
+      A: "the number of seats by at least 10%",
+      B: "the number of seats",
+      C: "the number of passengers",
+      D: "the number of passengers by at least 10%",
+    },
+    correct: "A",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "if the flight is to be carried out at FL 290, demonstration about oxygen equipment must be completed before",
+    choices: {
+      A: "the aircraft reaches FL 100",
+      B: "take-off",
+      C: "the aircraft reaches FL 140",
+      D: "the aircraft reaches FL 250",
+    },
+    correct: "B",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "in an aeroplane in which fuses are used, the number of spare fuses available for use in flight must be at least",
+    choices: {
+      A: "5% of the number of fuses of each rating or 1 of each rating, whichever is the greater",
+      B: "10% of the number of fuses of each rating or 3 of each rating, whichever is the greater",
+      C: "10% of the number of fuses of each rating or 1 of each rating, whichever is the greater",
+      D: "20% of the number of fuses of each rating or 2 of each rating, whichever is the greater",
+    },
+    correct: "B",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "on aeroplanes intended to be operated at pressure altitude above 25000 ft, the total number of oxygen dispensing units shall exceed the number of",
+    choices: {
+      A: "seats by 2%",
+      B: "passengers by 10%",
+      C: "seats by 10%",
+      D: "passengers by 2% OPERATIONAL PROCEDURES GENERAL - JAR-OPS Requirements",
+    },
+    correct: "C",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "regarding the first aid oxygen, the supply of undiluted oxygen carried on board a pressurised aeroplane with 8 passengers operated at pressure altitude 27000 ft, shall be sufficient for at least",
+    choices: {
+      A: "1 passenger for the remainder of the flight after cabin depressurisation when the cabin altitudeexceeds 8000 ft",
+      B: "2 passengers for the remainder of the flight after cabin depressurisation when the cabinaltitude exceeds 8000 ft",
+      C: "1 passenger for the remainder of the flight after cabin depressurisation when the cabin altitudeonly exceeds 14000 ft",
+      D: "2 passengers for the remainder of the flight after cabin depressurisation when the cabinaltitude only exceeds 14000 ft",
+    },
+    correct: "A",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "the cockpit voice recorder, when required, must start to record automatically",
+    choices: {
+      A: "prior to the aeroplane moving under its own power until the termination of flight when theparking brake is set",
+      B: "when the parking brake is released until the termination of flight when the parking brake is set",
+      C: "when full thrust is applied until the termination of the flight when the aeroplane is no longercapable of moving under its own power",
+      D: "prior to the aeroplane moving under its own power until the termination of the flight when theaeroplane is no longer capable of moving under its own power",
+    },
+    correct: "D",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "the commander of a turbojet engine aeroplane should have a final reserve fuel for",
+    choices: {
+      A: "45 minutes of flight at holding speed at 1500 ft above aerodrome elevation in standardconditions",
+      B: "30 minutes of flight at holding speed at 1500 ft above aerodrome elevation in standardconditions",
+      C: "30 minutes of flight at cruising speed at FL 140",
+      D: "45 minutes of flight at cruising speed at FL 140",
+    },
+    correct: "B",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question: "the purpose of the first aid oxygen is to",
+    choices: {
+      A: "supply all the passengers in case of depressurisation",
+      B: "provide the cabin attendants with respiratory protection",
+      C: "provide undiluted oxygen to passengers for physiological reasons following a cabindepressurisation",
+      D: "provide the flight crew with respiratory assistance after depressurisation",
+    },
+    correct: "C",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "refuelling performed while passengers are embarking or disembarking the aircraft",
+    choices: {
+      A: "is acceptable provided that all the aircraft doors must be completely opened",
+      B: "is acceptable provided that the ground area beneath the exits intended for emergency evacuationand slide deployment areas must be kept clear",
+      C: "is prohibited",
+      D: "is acceptable provided that all flight crew shall remain at their station",
+    },
+    correct: "B",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "In accordance with the fuel policy for isolated aerodromes, for aeroplanes with turbine engines, the amount of Additional Fuel should not be less than the fuel to fly after arriving overhead the destination aerodrome for",
+    choices: {
+      A: "2 hours at normal cruise consumption, including final reserve fuel",
+      B: "30 minutes at normal cruise consumption, including final reserve fuel",
+      C: "2 hours at holding consumption at 1500 ft (450m) above aerodrome elevation in standardconditions",
+      D: "30 minutes at holding consumption at 1500 ft (450 m) above aerodrome elevation in standardconditions",
+    },
+    correct: "A",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "a single deck aeroplane, equipped with an approved seating capacity of 61 seats and carrying passengers, must be equipped with at least",
+    choices: {
+      A: "1 megaphone",
+      B: "2 megaphones",
+      C: "2 megaphones if there are more than 31 passengers on board",
+      D: "3 megaphones",
+    },
+    correct: "A",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "a co-pilot does not serve at the flight controls during take-off and landing unless",
+    choices: {
+      A: "he has operated the controls as a pilot for three take-offs and landings in an aeroplane in thepreceding 60 days",
+      B: "he has operated the controls as a pilot for three take-offs and landings in an aeroplane of the same type/class or in a flight simulator of the aeroplane type to be used in the preceding 60days",
+      C: "he has operated the controls as a pilot for three take-offs and landings in an aeroplane in thepreceding 90 days",
+      D: "he has operated the controls as a pilot for three take-offs and landings in an aeroplane of the same type/class or in a flight simulator of the aeroplane type to be used in the preceding 90days",
+    },
+    correct: "D",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "When requested by an Authority to produce the aircraft documentation required to be carried on board, the commander",
+    choices: {
+      A: "can request a delay of 48 hours",
+      B: "shall comply within a reasonable period of time",
+      C: "can refuse to present them",
+      D: "shall only comply if authorised by the operator",
+    },
+    correct: "B",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "Without ETOPS Approval, an operator shall not operate a two-engined Class A aeroplane with a maximum approved passenger seating configuration of 20 or more over a route which contains a point further from an adequate aerodrome, at a distance flown",
+    choices: {
+      A: "in 60 minutes at the one-engine-inoperative cruise speed",
+      B: "in 30 minutes at the one-engine-inoperative cruise speed",
+      C: "in 90 minutes at the one-engine-inoperative cruise speed",
+      D: "in 120 minutes at the one-engine-inoperative cruise speed",
+    },
+    correct: "A",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "What is the minimum capacity of life rafts that must be provided for passengers in the event of the aeroplane ditching?",
+    choices: {
+      A: "Enough for 10%",
+      B: "Enough for 30%",
+      C: "To cover the loss of 2 life rafts",
+      D: "To cover the loss of a life raft of the greatest capacity OPERATIONAL PROCEDURES GENERAL - JAR-OPS Requirements",
+    },
+    correct: "D",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "An aeroplane has a max approved seating configuration of 61 to 200. How many hand held fire extinguishers are required to be carried?",
+    choices: {
+      A: "One on the flight deck and two in the passenger cabin",
+      B: "One on the flight deck and four in the passenger cabin",
+      C: "three in the passenger cabin only",
+      D: "One on the flight deck and three in the passenger cabin",
+    },
+    correct: "D",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "If you have an aeroplane with 201 seats, how many crowbars/fire axes have to be on the aeroplane?",
+    choices: {
+      A: "1",
+      B: "4",
+      C: "2",
+      D: "3",
+    },
+    correct: "C",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "For a light aircraft following a medium what is the minimum time for wake turbulence separation (assuming take-off from the same point)?",
+    choices: {
+      A: "3 min",
+      B: "2 min",
+      C: "1 min",
+      D: "5 min",
+    },
+    correct: "B",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "The radar separation between a medium aeroplane followed by a light aeroplane departing from or arriving on the same, or parallel runway less than 760 m apart is",
+    choices: {
+      A: "4 nm",
+      B: "3 nm",
+      C: "5 nm",
+      D: "2 nm",
+    },
+    correct: "C",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "Aeroplanes having a maximum approved seating capacity between 61 200 passengers will require the following number of megaphones on the passenger deck",
+    choices: {
+      A: "0",
+      B: "2",
+      C: "1",
+      D: "5",
+    },
+    correct: "C",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "An aeroplane with a seating capacity of 180 has a total of 47 passengers on board. According to JAR OPS the required amount of First Aid Oxygen is",
+    choices: {
+      A: "Enough for 3 passengers for the duration of flight following a depressurisation when the cabinaltitude is between 10,000 ft and 14,000 ft",
+      B: "Sufficient for one passenger when the cabin altitude exceeds 8,000 ft but does not exceed 15,000ft for the remainder of the flight following a depressurisation",
+      C: "Sufficient for one passenger for the duration of the flight above 8,000 ft cabin altitude",
+      D: "None required",
+    },
+    correct: "B",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question: "The number of emergency exits must be",
+    choices: {
+      A: "Dependent on aeroplane capacity",
+      B: "Enough to evacuate the passengers in 90 sec. with 50% of the emergency exits unavailable",
+      C: "chosen by the operator",
+      D: "Enough to evacuate the passengers in 120 sec with 50% of the emergency exits unavailable",
+    },
+    correct: "B",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "In a 4 engined jet transport aircraft, in order to gain the optimum performance, a cruise climb technique is sometimes applied. This normally involves flying the aircraft at",
+    choices: {
+      A: "levels above the optimum altitude",
+      B: "the service ceiling",
+      C: "levels below the optimum altitude",
+      D: "about the optimum altitude",
+    },
+    correct: "D",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "When a third pilot is carried on a public transport flight as cruise pilot the first officer must hold",
+    choices: {
+      A: "a CPL",
+      B: "a CPL with theoretical exams passed at ATPL level",
+      C: "an ATPL",
+      D: "an ATPL and be certificated as Captain on type",
+    },
+    correct: "C",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "How many hand held fire extinguishers must be located in the passenger cabin of an aircraft with a passenger seating configuration of 375?",
+    choices: {
+      A: "4",
+      B: "5",
+      C: "6",
+      D: "7",
+    },
+    correct: "B",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "An aircraft with a certificated MTOM of 232,000 kg and certificated to carry 350 passengers requires 1. one crash axe or crowbar on the flight deck 2. one crash axe or crowbar in the rear galley area 3. one crash axe or crowbar in the mid galley area Answers",
+    choices: {
+      A: "(ii) only",
+      B: "(i) only",
+      C: "(i) and (ii)",
+      D: "(i), (ii) and (iii)",
+    },
+    correct: "C",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question: "At take-off the maximum mass of the aeroplane shall be",
+    choices: {
+      A: "not more than the basic empty mass plus the payload",
+      B: "not more than the maximum landing mass",
+      C: "equal to or less than that at which the take-off run can be completed under ISA conditions andnil headwind",
+      D: "not more than that which would enable compliance with any noise abatement procedure",
+    },
+    correct: "D",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "Aeroplanes that fly at night are required to be lit. The starboard navigation light is required to be",
+    choices: {
+      A: "green and visible through 140o from dead ahead",
+      B: "green and visible through 110o from dead ahead",
+      C: "red and visible through 140o from dead ahead",
+      D: "red and visible through 110o from dead ahead",
+    },
+    correct: "B",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "The recent experience conditions of a commander assigned to a flight on an aircraft by an operator must not be less than",
+    choices: {
+      A: "6 take-offs and 6 landings as pilot flying on the same type of aircraft or approved simulator",
+      B: "3 take-offs and 3 landings as pilot flying on the same type of aircraft or approved simulator inthe preceding 90 days",
+      C: "3 take-offs and 3 landings on this type of aircraft during the last 6 months",
+      D: "6 take-offs and 6 landings during the last 6 months",
+    },
+    correct: "B",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "Information concerning evacuation procedures can be found in the",
+    choices: {
+      A: "journey logbook",
+      B: "flight manual",
+      C: "operation manual",
+      D: "operational flight plan",
+    },
+    correct: "C",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "During a flight, the chief steward informs the crew that a passenger is using a portable device suspected to disturb the aircraft electronic systems. The captain",
+    choices: {
+      A: "authorises its use during the whole flight phase",
+      B: "authorises its use except during take-off and landing phases",
+      C: "must not authorise any person to use such a device on board",
+      D: "may authorise the use of this device, as an exception",
+    },
+    correct: "C",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "An aircraft airworthiness certificate states a maximum of eight occupants (including pilot). The pilot has a passenger load of six adults and two children (5 and 6 years old). The boarding of all passengers is",
+    choices: {
+      A: "authorised, providing both children are sitting on the same seat, using the same seat belt withan adult sitting on the seat next to them, in order to release their seat belt if necessary",
+      B: "authorised, providing both children are sitting on the same seat and using the same seat belt.No other particular precautions are necessary",
+      C: "forbidden",
+      D: "authorised, providing both children are of a similar stature, sitting on the same seat and using the same seat belt with an adult sitting on the seat next to them in order to release their seatbelt",
+    },
+    correct: "C",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "Supplemental oxygen is used to",
+    choices: {
+      A: "provide people on board with oxygen during a cabin depressurisation",
+      B: "protect a crew who fights a fire",
+      C: "provide with oxygen passengers who might require it, following a cabin depressurisation",
+      D: "assist a passenger with breathing disorders",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "An operator must ensure that the lowest MDH for a non-precision approach procedure which is based upon the use of an ILS (glide slope out) is not lower than",
+    choices: {
+      A: "150 ft",
+      B: "200 ft",
+      C: "250 ft",
+      D: "300 ft",
+    },
+    correct: "C",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "The NO SMOKING sign must be illuminated",
+    choices: {
+      A: "when oxygen is being supplied in the cabin",
+      B: "during climb and descent",
+      C: "in each cabin section if oxygen is being carried",
+      D: "during take-off and landing",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "Each flight is subject to a preliminary file collecting a certain amount of information. The operator will see that this file is kept on ground. It contains more particularly: Each flight is subject to a preliminary file collecting a certain amount of information. The operator will see that this file is kept on ground. It contains more particularly: 1. The weather conditions for the day including the weather forecast at destination 2. One copy of the operational flight plan and, if required, the weight and balance sheet 3. Copies of the relevant parts of the aircrafts material report 4. The en-route NOTAM documentation when specifically issued by the operator 5. Notification for special loadings 6. For each flight, details of the days performances and limitations with completed charts The combination regrouping all the correct statements is",
+    choices: {
+      A: "2, 3, 4, 5",
+      B: "1, 2, 3, 4, 5, 6",
+      C: "1, 3, 5",
+      D: "2, 4",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "An operator must ensure that for the duration of each flight, be kept on the ground, if required",
+    choices: {
+      A: "a copy of the weight and balance sheet",
+      B: "a copy of the calculated take-off performances",
+      C: "the calculation of the airborne fuel quantity",
+      D: "the aircraft equipment report (log book)",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "What is a dry lease?",
+    choices: {
+      A: "Where the person leasing the aeroplane is responsible fuel etc",
+      B: "Where the aeroplane is operated under the AOC of the person to whom it is leased",
+      C: "Where the aeroplane is operated under the AOC of the person from who it is leased",
+      D: "Where the leased aeroplane comes complete with flight crew",
+    },
+    correct: "B",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "The captain is asked by the authority to present the documents of the airplane. He",
+    choices: {
+      A: "can request a delay of 48 hours",
+      B: "must do so, within a reasonable period of time",
+      C: "can refuse to present them",
+      D: "can only do so after having consulted the operator",
+    },
+    correct: "B",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "The file kept by an employer on its flight crews records: Which of the following combinations contains all of the correct answers? 1. the training 2. the test results 3. a log of flying hours 4. a summary of the training by reference period",
+    choices: {
+      A: "1, 2, 3, 4",
+      B: "1, 2, 3",
+      C: "2, 3",
+      D: "3, 4",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "What is the requirement for the issue of an AOC?",
+    choices: {
+      A: "Not already hold an AOC issued by another authority",
+      B: "Have a fleet of serviceable aeroplanes",
+      C: "Have registered offices in all countries of operations",
+      D: "Have facilities for all maintenance",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "During a night flight, an observer on the flight deck first sees an aircraft coming in from the front right. The light observed would be a",
+    choices: {
+      A: "Steady green light",
+      B: "Steady white light OPERATIONAL PROCEDURES GENERAL - JAR-OPS Requirements",
+      C: "Flashing green light",
+      D: "Steady red light",
+    },
+    correct: "D",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "Which of the following are the duties of a Flight Dispatch Officer? 1. Assist the pilot-in-command in flight preparation and provide the relevant information required 2. Assist the pilot-in-command in preparing the operational and ATS flight plans, sign when applicable and file the ATS flight plan with the appropriate ATS unit 3. Furnish the pilot-in-command while in flight, by appropriate means, with information, which may be necessary for the safe conduct of the flight 4. In the event of an emergency, initiate such procedures as may be outlined in the operations manual",
+    choices: {
+      A: "(i), (ii) and (iii) are correct",
+      B: "(ii), (iii) and (iv) are correct",
+      C: "1. , (iii) and (iv) are correct",
+      D: "All statements are correct",
+    },
+    correct: "D",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "The period of validity of an operator proficiency check is",
+    choices: {
+      A: "6 months",
+      B: "12 months",
+      C: "18 months",
+      D: "2 years",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "Damp lease is",
+    choices: {
+      A: "One operator leases out, or in, just the aeroplane no crew is involved",
+      B: "The aeroplane and a full crew",
+      C: "The lessor provides the aeroplane plus cockpit crew and the lessee provides the cabin crew",
+      D: "None of the above",
+    },
+    correct: "C",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "DH is used in a",
+    choices: {
+      A: "Non precision approach",
+      B: "Precision approach",
+      C: "Un-centred approach",
+      D: "Centred approach",
+    },
+    correct: "B",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "What must be ensured with respect to navigation equipment?",
+    choices: {
+      A: "The failure of one piece does not affect another",
+      B: "All navigation equipment must be serviceable at the start of flight",
+      C: "All equipment must conform to ICAO specifications",
+      D: "if one piece of equipment fails there must be a spare available",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "During a flight, the captain is informed that a passenger is using a portable electronic device, which is adversely affecting the aircraft's electrical avionics. The captain must",
+    choices: {
+      A: "Stop the passenger from using the device",
+      B: "Allow the device to be used at take-off and landing",
+      C: "Allow the device to be used from take-off to landing",
+      D: "Allow the device to be used for certain exceptions",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "Following an electrical failure, the emergency lighting unit must provide illumination for",
+    choices: {
+      A: "90 secs",
+      B: "5 mins",
+      C: "10 mins",
+      D: "30 mins",
+    },
+    correct: "C",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "When refuelling is being conducted with passengers embarking or disembarking",
+    choices: {
+      A: "Refuelling is strictly prohibited whilst passengers are embarking/disembarking OPERATIONAL PROCEDURES GENERAL - JAR-OPS Requirements",
+      B: "All flight crew must be on board",
+      C: "Communications shall be maintained by ground crew and qualified crew on board",
+      D: "The stairs shall be fully extended",
+    },
+    correct: "C",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "When are flight crew allowed to leave their stations?",
+    choices: {
+      A: "In the performance of their duties",
+      B: "At any time specified by the operations manual",
+      C: "When having lunch",
+      D: "Only when the captain allows it",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "The term decision height (DH) is used for",
+    choices: {
+      A: "an indirect approach",
+      B: "a conventional approach followed by a visual manoeuvre",
+      C: "a precision approach",
+      D: "a conventional approach",
+    },
+    correct: "C",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "During a night flight, an observer located in the cockpit, seeing an aircraft coming from the front left, will first see the",
+    choices: {
+      A: "white steady light",
+      B: "green flashing light",
+      C: "green steady light",
+      D: "red steady light",
+    },
+    correct: "C",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "An operator must ensure that, for the duration of each flight, be kept on the ground a copy of the",
+    choices: {
+      A: "operation flight plan",
+      B: "ATC (Traffic Control) flight plan",
+      C: "flight plan processing OPERATIONAL PROCEDURES GENERAL - JAR-OPS Requirements",
+      D: "flight route sheet",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "What is conversion angle?",
+    choices: {
+      A: "Ch long x sin lat.",
+      B: "Ch long x ½ cos lat.",
+      C: "Ch long x ½ sin lat.",
+      D: "Ch long x cos lat",
+    },
+    correct: "D",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "With reference to the retention of documents how long must command course records be kept by the operator",
+    choices: {
+      A: "3 months",
+      B: "15 months",
+      C: "24 months",
+      D: "3 years",
+    },
+    correct: "D",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "What is the co-pilot currency requirement?",
+    choices: {
+      A: "3 flights in the last 90 days",
+      B: "3 take-offs and landings in the last 60 days",
+      C: "At the controls for 3 flights in the last 60 days",
+      D: "At the controls for 3 take-offs and landings in the last 90 days",
+    },
+    correct: "D",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "A pilot is not able to operate as pilot-in-command unless",
+    choices: {
+      A: "He has completed 3 take-offs and landings in any aircraft or approved simulator within theprevious 60 days",
+      B: "He has completed 3 flights as pilot-in-command in an aeroplane or approved simulator of the typeto be used in the previous 90 days",
+      C: "He has completed 3 flights as pilot in an aeroplane or simulator of the same type to be usedwithin the previous 30 days OPERATIONAL PROCEDURES GENERAL - JAR-OPS Requirements",
+      D: "He has completed 3 take-offs and landings in an aeroplane or approved simulator of the same typeto be used within the previous 90 days",
+    },
+    correct: "D",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "Regarding the FDR and CVR, which of the following statements is true",
+    choices: {
+      A: "All commercial aircraft above 15.000 kg have to carry both a FDR and CVR",
+      B: "The CVR monitors all human voice exchanges on the flight deck throughout the flight keeping thelast 30 minutes as a hard copy",
+      C: "A FDR shall be capable of retaining recorded information for at least the last 24 hours ofoperation",
+      D: "A Type 1 recorder retains information recorded during the last 30 minutes of operation",
+    },
+    correct: "B",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "After an incident, the FDR recordings must be kept for",
+    choices: {
+      A: "30 days",
+      B: "60 days",
+      C: "90 days",
+      D: "120 days",
+    },
+    correct: "B",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "What allows a pilot to act as co-pilot for take-off and landing?",
+    choices: {
+      A: "Performed a flight in the previous 90 days",
+      B: "Operated as PIC or as co-pilot at the controls for a take-off and landing in the previous 90days",
+      C: "Performed at least 3 landings and take-offs in the previous 90 days",
+      D: "Performed at least 9 landings and take-offs in the previous 90 days",
+    },
+    correct: "B",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "Flight data recorders must keep the data and parameters recorded during at least the last",
+    choices: {
+      A: "48 hours of operation",
+      B: "25 hours of operation OPERATIONAL PROCEDURES GENERAL - JAR-OPS Requirements",
+      C: "flight",
+      D: "30 hours of operation",
+    },
+    correct: "B",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "at least one of the following hand fire extinguishers must be conveniently located on the flight deck",
+    choices: {
+      A: "a foam fire-extinguisher",
+      B: "a water fire-extinguisher",
+      C: "a powder fire-extinguisher",
+      D: "a halon fire-extinguisher or equivalent",
+    },
+    correct: "D",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "for a non-pressurised aircraft, 100% of passengers shall be supplied with supplemental oxygen during",
+    choices: {
+      A: "the entire flight time at pressure altitudes above 10000 ft",
+      B: "the entire flight time at pressure altitudes above 13000 ft",
+      C: "the entire flight time after 30 minutes at pressure altitudes greater than 10000 ft but notexceeding 13000 ft",
+      D: "the entire flight time at pressure altitudes above 13000 ft and for any period exceeding 30minutes at pressure altitudes above 10000 ft but not exceeding 13000 ft",
+    },
+    correct: "B",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "for a non pressurised aircraft, all required cabin crew members shall be supplied with supplemental oxygen during",
+    choices: {
+      A: "the entire flight time at pressure altitudes above 13000 ft and for any period exceeding 30minutes at pressure altitudes above 10000 ft but not exceeding 13000 ft",
+      B: "the entire flight time at pressure altitudes above 10000 ft",
+      C: "the entire flight time at pressure altitudes above 13000 ft",
+      D: "the entire flight time after 30 minutes at pressure altitudes greater than 10000 ft but notexceeding 13000 ft",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "for a non pressurised aircraft, the supplemental oxygen is",
+    choices: {
+      A: "therapeutical oxygen specially carried for certain passengers OPERATIONAL PROCEDURES GENERAL - JAR-OPS Requirements",
+      B: "available for supply to passengers for physiological reasons",
+      C: "used for protection against smoke and carbon dioxide",
+      D: "required to operate at pressure altitudes above 10000 ft",
+    },
+    correct: "D",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "when a flight data recorder is required, it must start automatically to record the data",
+    choices: {
+      A: "when lining up",
+      B: "when taking-off",
+      C: "when the landing gear is retracted",
+      D: "prior to the aircraft being capable of moving under its own power",
+    },
+    correct: "D",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "An operator shall ensure that for the duration of each flight or series of flights, relevant information is preserved on the ground. This includes",
+    choices: {
+      A: "a coy of the calculated take-off performance",
+      B: "mass and balance documentation, if required",
+      C: "the calculation of the airborne fuel quantity",
+      D: "meteorological information",
+    },
+    correct: "B",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "During an ILS procedure, if the reported RVR/visibility is less than the applicable minima, the approach shall not be continued beyond",
+    choices: {
+      A: "the glide slope intersection",
+      B: "the FAF, or 1500 ft above the aerodrome/heliport if there is no FAF",
+      C: "the middle marker, or 500 ft above the aerodrome/heliport if thereis no middle marker",
+      D: "the outer marker or equivalent, or 1000 ft above the aerodrome/heliport if there is no outermarker or equivalent",
+    },
+    correct: "D",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "Following an accident, the operator of an aircraft equipped with a flight recorder must keep the original recordings for a minimum period of",
+    choices: {
+      A: "60 days",
+      B: "30 days OPERATIONAL PROCEDURES GENERAL - JAR-OPS Requirements",
+      C: "90 days",
+      D: "45 days",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "For three and four-engined aeroplanes, the take-off alternate, if required, shall be located (in still air conditions) within",
+    choices: {
+      A: "2 hours flight time at one-engine-inoperative cruising speed",
+      B: "2 hours flight time at cruising speed with all engines operating",
+      C: "1 hour flight time at one-engine-inoperative cruising speed",
+      D: "1 hour flight time at cruising speed with all engines operating",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "where no outer marker or equivalent position exists, if the reported RVR/Visibility is less than the applicable minima, the approach shall not be continued beyond",
+    choices: {
+      A: "1000 ft above the aerodrome/heliport",
+      B: "the FAF",
+      C: "the middle marker",
+      D: "the glide slope intersection",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "10% of the passengers in a non-pressurised aircraft shall be supplied with supplemental oxygen for the entire flight time after 30 minutes at pressure altitudes greater than",
+    choices: {
+      A: "10,000 ft but not exceeding 15,000 ft",
+      B: "14,000 ft but not exceeding 15,000 ft",
+      C: "10,000 ft but not exceeding 13,000 ft",
+      D: "10,000 ft but not exceeding 14,000 ft",
+    },
+    correct: "C",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "100% of the passengers in a non-pressurised aircraft shall be supplied with supplemental oxygen for the entire flight time at pressure altitudes above",
+    choices: {
+      A: "14,000 ft",
+      B: "10,000 ft",
+      C: "13,000 ft",
+      D: "15,000 ft OPERATIONAL PROCEDURES GENERAL - JAR-OPS Requirements",
+    },
+    correct: "C",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "a commander shall ensure that the amount of usable fuel remaining in flight is not less than the fuel required to proceed to an aerodrome where a safe landing can be made with",
+    choices: {
+      A: "fuel to fly 20 minutes at best range speed",
+      B: "15 minutes of remaining fuel",
+      C: "fuel to hold 30 minutes at 1500 ft above the aerodrome",
+      D: "final reserve fuel remaining",
+    },
+    correct: "D",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "all occupants of flight deck seats on flight deck duty in a non-pressurised aircraft shall be supplied with supplemental oxygen for the entire flight time at pressure altitudes above",
+    choices: {
+      A: "15,000 ft",
+      B: "10,000 ft",
+      C: "13,000 ft",
+      D: "14,000 ft",
+    },
+    correct: "B",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "an operator shall ensure that a copy of the operational flight plan is stored in an acceptable form for at least",
+    choices: {
+      A: "12 months",
+      B: "3 months",
+      C: "15 months",
+      D: "24 months",
+    },
+    correct: "B",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "during a VOR procedure, if the reported RVR/visibility is less than the applicable minima, the approach shall not be continued beyond",
+    choices: {
+      A: "the middle marker, or 500 ft above the aerodrome/heliport if there is no middle marker",
+      B: "the FAF, or 1500 ft above the aerodrome/heliport if there is no FAF",
+      C: "1000 ft above the aerodrome/heliport on the final approach segment",
+      D: "the final path intersection",
+    },
+    correct: "C",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "for a non pressurised aircraft, all occupants of flight deck seats on flight deck duty shall be supplied with supplemental oxygen during",
+    choices: {
+      A: "the entire flight time at pressure altitudes above 13000 ft and for any period exceeding 30minutes at pressure altitudes above 10000 ft but not exceeding 13000 ft",
+      B: "the entire flight time at pressure altitudes above 13000 ft",
+      C: "the entire flight time at pressure altitudes above 10000 ft",
+      D: "the entire flight time after 30 minutes at pressure altitudes greater than 10000 ft but notexceeding 13000 ft",
+    },
+    correct: "C",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "on board a non-pressurised aircraft, 10% of the passengers shall be supplied with oxygen throughout the entire flight time, after 30 minutes at pressure altitude greater than",
+    choices: {
+      A: "10,000 ft but not exceeding 13,000 ft",
+      B: "10,000 ft but not exceeding 12,000 ft",
+      C: "11,000 ft but not exceeding 13,000 ft",
+      D: "11,000 ft but not exceeding 12,000 ft",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "on board a non-pressurised aircraft, the crew and all the passengers must be fed with oxygen throughout the flight period during which the pressure altitude is greater than",
+    choices: {
+      A: "13,000 ft",
+      B: "12,000 ft",
+      C: "11,000 ft",
+      D: "10,000 ft",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "the operator must ensure that the information contained in the aircraft technical log is stored for a minimum period of",
+    choices: {
+      A: "15 months",
+      B: "3 months",
+      C: "24 months",
+      D: "12 months",
+    },
+    correct: "C",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "the operator must ensure that the mass and balance documentation of a flight is stored for a minimum period of",
+    choices: {
+      A: "1 month",
+      B: "3 months",
+      C: "6 months",
+      D: "1 year",
+    },
+    correct: "B",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "when the flight data recorder is required, it must stop automatically to record the data",
+    choices: {
+      A: "when the main gear shock strut compresses when touching the runway",
+      B: "after the aircraft is unable to move by its own power",
+      C: "when the landing gear is extended and locked",
+      D: "when the aircraft clears the runway",
+    },
+    correct: "B",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "which of the following are included in the Aerodrome Operating Minima for a non-precision approach? 1. the required RVR 2. the ceiling 3. the minimum descent height (MDH) 4. the decision height (DH)",
+    choices: {
+      A: "1, 2, 4",
+      B: "1, 4",
+      C: "1, 2, 3",
+      D: "1, 3",
+    },
+    correct: "D",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "The minimum lateral separation in the NAT region is",
+    choices: {
+      A: "90 NM between aircraft flying above FL 285",
+      B: "60 NM between all aircraft operating below MNPS airspace",
+      C: "60 NM between aircraft meeting minimum navigation performance specifications",
+      D: "90 NM between all aircraft flying in the NAT region",
+    },
+    correct: "C",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "Who is responsible for providing an Operation Manual for the use and guidance of the operations personnel?",
+    choices: {
+      A: "The owner of the aircraft",
+      B: "The aircraft producer",
+      C: "The aircraft operator",
+      D: "The national authority",
+    },
+    correct: "C",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "Who must finally determine that the load and its distribution is such that the mass and balance limits of the aircraft are not exceeded and confirm their acceptance by countersigning the mass and balance documentation?",
+    choices: {
+      A: "The commander",
+      B: "The operator",
+      C: "The flight engineer",
+      D: "The airline's dispatcher",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "When are life jackets required?",
+    choices: {
+      A: "50 nm from land",
+      B: "100 nm from land",
+      C: "300 nm from land",
+      D: "400 nm from land",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "What is the requirement for the carriage of life rafts?",
+    choices: {
+      A: "30 mins or 120 nm whichever is less",
+      B: "50 nm from land",
+      C: "120 mins or 400 nm whichever is less",
+      D: "60 mins flying time at the one engine out cruise speed",
+    },
+    correct: "C",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "A copy of what info is to be left on the ground?",
+    choices: {
+      A: "Passenger manifests, notification of special passengers",
+      B: "Route specific maps and charts",
+      C: "NOTAMS, Tech log, Op flight plan, Mass and Balance, Spec load notification",
+      D: "AICs, AISs, and all company NOTAMs",
+    },
+    correct: "C",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "Which of the following is to be left on the ground?",
+    choices: {
+      A: "The aeroplane noise certificate",
+      B: "The operations manual",
+      C: "Parts of the operations manual relevant to the flight",
+      D: "Operational flight plan",
+    },
+    correct: "D",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "What are the rules on the carriage of PRMs?",
+    choices: {
+      A: "Cannot impede the performance of crew duty",
+      B: "Must be seated away from emergency exits",
+      C: "No more than 5% of passengers may be PRMs",
+      D: "They must provide their own food",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "A VFR aircraft used for flight in controlled airspace should have",
+    choices: {
+      A: "Bearing indicator, accurate barometric altimeter",
+      B: "Equipment necessary for VFR flight",
+      C: "One VOR, ADF, DME and ILS",
+      D: "2 radios and an SSR transponder",
+    },
+    correct: "B",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "How many fire extinguishers are required in the cabin for a maximum seating capacity of 31 pax?",
+    choices: {
+      A: "1",
+      B: "2 OPERATIONAL PROCEDURES GENERAL - JAR-OPS Requirements",
+      C: "3",
+      D: "4",
+    },
+    correct: "B",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "When does a pilot start to physically become affected due to lack of oxygen, above what level?",
+    choices: {
+      A: "8,000 ft",
+      B: "14,000 ft",
+      C: "24,000 ft",
+      D: "6,000 ft",
+    },
+    correct: "D",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "For the purpose of wake turbulence separation, what is the ICAO minimum non-radar separation time if a light aeroplane ( 700 kg or less) is following a medium aeroplane (less than 136000 kg but more than 7000 kg) on the approach to landing?",
+    choices: {
+      A: "3 minutes",
+      B: "2 minutes",
+      C: "4 minutes",
+      D: "5 minutes",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "Time for separation for wake turbulence for a light behind a medium",
+    choices: {
+      A: "3 min for landing",
+      B: "3 min for departure",
+      C: "2 min if departing from an intersection",
+      D: "3 min if approaching in the opposite direction",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "When is it compulsory to carry life jackets for each person on board? 1. Flight over water and at a distance of more than 50 nm from shore 2. Cruising speed unable to reach shore with one engine inoperative 3. flight over water more than 100 nm from shore 4. Where a hazard exists during take-off or landing or ditching",
+    choices: {
+      A: "1, 4 OPERATIONAL PROCEDURES GENERAL - JAR-OPS Requirements",
+      B: "2, 3",
+      C: "3, 4",
+      D: "1, 2, 3, 4",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "With reference to the retention of documents how long must journey logs be kept by the operator",
+    choices: {
+      A: "3 months",
+      B: "12 months",
+      C: "15 months",
+      D: "24 months",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "The period of validity of a line check is",
+    choices: {
+      A: "6 months",
+      B: "12 months",
+      C: "18 months",
+      D: "2 years",
+    },
+    correct: "B",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "Which of the following statements is true?",
+    choices: {
+      A: "OCH is referenced to aerodrome elevation",
+      B: "OCA is referenced to threshold elevation",
+      C: "OCH is referenced to threshold elevation",
+      D: "Both OCA and OCH are referenced to aerodrome elevation",
+    },
+    correct: "C",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "All flight crew members are to be at their duty stations",
+    choices: {
+      A: "during take-off and landing",
+      B: "in an emergency",
+      C: "in turbulence",
+      D: "unless absence is necessary to satisfy physiological needs",
+    },
+    correct: "D",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "Is refuelling permissible when passengers are on board, embarking or disembarking?",
+    choices: {
+      A: "It is permissible",
+      B: "It is permissible when relevant precautions are taken except when using AVGAS or wide-cut fuels",
+      C: "It is not permissible except when using wide cut fuels or AVGAS",
+      D: "It is permissible only as long as the passengers remain on board",
+    },
+    correct: "B",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "When must wake turbulence be considered?",
+    choices: {
+      A: "High rate roll manoeuvres over the runway",
+      B: "A heave category landing with full lift enhancing devices employed",
+      C: "A heavy landing in a strong crosswind",
+      D: "A high landing in a light crosswind",
+    },
+    correct: "B",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "What is the dispersal time for wake turbulence from a wide-bodied aircraft?",
+    choices: {
+      A: "30 secs",
+      B: "1 nm",
+      C: "3 mins",
+      D: "10 mins",
+    },
+    correct: "C",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "The wake turbulence category HEAVY applies to aircraft with a max certificated all up mass in pounds in excess of",
+    choices: {
+      A: "299,200",
+      B: "275,000 OPERATIONAL PROCEDURES GENERAL - JAR-OPS Requirements",
+      C: "136,000",
+      D: "125,000",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "When a potentially hazardous condition is encountered in flight",
+    choices: {
+      A: "the appropriate ground station must be notified as soon as practicable",
+      B: "other aircraft should be informed without delay",
+      C: "the operator must be notified within two hours of landing",
+      D: "the Authority must be notified within ten days",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "Which of the following combinations of statements describes what is recorded by a cockpit voice recorder? 4.Navigation aid identification heard through headphones 5.PA messages 1. Radio communications transmitted from the aircraft 2. Speech on the flight deck 3.Communications through the intercom",
+    choices: {
+      A: "All of the above",
+      B: "All except (iv)",
+      C: "All except (ii)",
+      D: "All except (iv) and (v)",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "An operator is required to maintain certain records of flight crew training. These include: 1.Type Rating Courses 2.Conversion Courses 3.Recurrent Training 4.Command Courses",
+    choices: {
+      A: "All of the above",
+      B: "All except (iii)",
+      C: "All except (iv)",
+      D: "All except (iii) and (iv)",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "An operator shall produce documents and records, when requested by the Authority, within",
+    choices: {
+      A: "ten days",
+      B: "24 hours",
+      C: "a reasonable time",
+      D: "14 days",
+    },
+    correct: "C",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "If the commander of an aeroplane violates any local rule, regulation or procedure he is to report the matter",
+    choices: {
+      A: "to the local Authority without delay",
+      B: "to the Authority of the State of the operator without delay",
+      C: "to the local Authority within ten days",
+      D: "to the Authority of the State of the operator within 14 days",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "An un-pressurised aircraft must carry sufficient oxygen for 10% of the passengers for the time in excess of 30 minutes spent at altitudes between",
+    choices: {
+      A: "10,000 ft and 13,000 ft",
+      B: "10,000 ft and 12,000 ft",
+      C: "8,000 ft and 10,000 ft",
+      D: "10,000 ft and the service ceiling",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "a helicopter with a passenger compartment seating capacity of 10 seats must be equipped with",
+    choices: {
+      A: "three hand fire-extinguishers in the passenger compartment",
+      B: "on hand fire-extinguisher in the cockpit and two hand fire-extinguishers in the passengercompartment",
+      C: "one hand fire-extinguisher in the cockpit and one hand fire-extinguisher in the passengercompartment",
+      D: "two hand fire-extinguishers in the cockpit and two hand fire-extinguishers in the passengercompartment",
+    },
+    correct: "C",
+    ref: "CPL H AND ATPL H",
+  },
+  {
+    question:
+      "EXCEPT for night VMC operations, the recent experience conditions of a commander assigned to a flight on a helicopter by an operator must not be less than",
+    choices: {
+      A: "6 take-offs and 6 landings during the last 6 months",
+      B: "6 take-offs, 6 circuits and 6 landings as pilot flying on the same type of helicopter or flightsimulator of the helicopter type to be used, in the preceding 90 days",
+      C: "3 take-offs, 3 circuits and 3 landings as pilot flying on the same type of helicopter or flightsimulator, of the helicopter type to be used, in the preceding 90 days",
+      D: "3 take-offs and 3 landings on this type of helicopter during the last 6 months",
+    },
+    correct: "C",
+    ref: "CPL H AND ATPL H",
+  },
+  {
+    question:
+      "for a VFR flight by day with reference to visual landmarks, the final reserve fuel should be sufficient to fly for",
+    choices: {
+      A: "30 minutes of flight at best range speed at 1500 ft above aerodrome elevation in standardconditions",
+      B: "20 minutes of flight at best range speed",
+      C: "30 minutes of flight at holding speed at 1500 ft above aerodrome elevation in standardconditions",
+      D: "30 minutes of flight at best range speed",
+    },
+    correct: "B",
+    ref: "CPL H AND ATPL H",
+  },
+  {
+    question:
+      "for Performance Class 2 operations onshore, the commander must operate to take-off minima with an RVR/VIS not lower than",
+    choices: {
+      A: "800 m",
+      B: "1500 m",
+      C: "600 m",
+      D: "500 m",
+    },
+    correct: "A",
+    ref: "CPL H AND ATPL H",
+  },
+  {
+    question:
+      "in order to be operated IFR or at night with potentially hazardous weather conditions along the route to be flown, a helicopter must be equipped with airborne weather radar equipment if fitted with a maximum approved passenger seating of",
+    choices: {
+      A: "15",
+      B: "19",
+      C: "6",
+      D: "9",
+    },
+    correct: "D",
+    ref: "CPL H AND ATPL H",
+  },
+  {
+    question:
+      "the minimum flight crew is 2 qualified pilots for: Note: MAPSC = Maximum Approved Passenger Seating Configuration",
+    choices: {
+      A: "All IFR operations",
+      B: "IFR operations using helicopters with a MAPSC of more than 6 or operations using helicopterswith a MAPSC of more than 9",
+      C: "IFR operations using helicopters with a MAPSC of more than 9 or operations using helicopterswith a MAPSC of more than 19",
+      D: "All IFR operations and VFR operations using helicopters with a MAPSC of more than 9",
+    },
+    correct: "C",
+    ref: "CPL H AND ATPL H",
+  },
+  {
+    question:
+      "when flying VFR navigating by means other than by reference to the visual landmarks, the final reserve fuel should be sufficient to fly for",
+    choices: {
+      A: "30 minutes of flight at holding speed at 1500 ft above aerodrome elevation in standardconditions",
+      B: "30 minutes of flight at best range speed at 1500 ft above aerodrome elevation in standardconditions",
+      C: "20 minutes of flight at best range speed",
+      D: "45 minutes of flight at holding speed at 1500 ft above aerodrome elevation in standardconditions",
+    },
+    correct: "A",
+    ref: "CPL H AND ATPL H",
+  },
+  {
+    question:
+      "a helicopter must be equipped with a megaphone when operated with a maximum approved passenger seating configuration of more than",
+    choices: {
+      A: "19",
+      B: "13",
+      C: "9",
+      D: "10",
+    },
+    correct: "A",
+    ref: "CPL H AND ATPL H",
+  },
+  {
+    question:
+      "EXCEPT for night VMC operations, an operator shall ensure that a pilot does not operate a helicopter unless he has carried out (except when flying under the supervision of a nominated commander), at least",
+    choices: {
+      A: "3 take-offs, 3 circuits and 3 landings as pilot flying in a helicopter (or a flight simulator)of the same type to be used, in the previous 3 calendar months",
+      B: "6 take-offs, 6 circuits and 6 landings in a helicopter (or a flight simulator) of the same typeto be used, in the previous 3 calendar months",
+      C: "3 take-offs, 3 circuits and 3 landings as pilot flying in a helicopter (or a flight simulator)of the same type to be used, in the preceding 90 days",
+      D: "6 take-offs, 6 circuits and 6 landings as commander in a helicopter (or a flight simulator) of OPERATIONAL PROCEDURES GENERAL - JAR-OPS Requirements",
+    },
+    correct: "C",
+    ref: "CPL H AND ATPL H",
+  },
+  {
+    question: "the operator shall ensure that",
+    choices: {
+      A: "for the conduct of VFR flights in class E airspace, flight visibility at and above 3050m (10000ft) is at least 5 km and clear of cloud",
+      B: "for the conduct of VFR flights in class C airspace, horizontal distance from clouds is at least1000m",
+      C: "for the conduct of VFR flights in class F airspace, vertical distance from clouds is at least250m",
+      D: "for the conduct of VFR flights in class B airspace, horizontal distance from clouds is at least1500m",
+    },
+    correct: "D",
+    ref: "CPL H AND ATPL H",
+  },
+  {
+    question:
+      "except if a different value is approved by the authority, the contingency fuel for a VFR helicopter flight in a non-hostile environment should be",
+    choices: {
+      A: "an amount of fuel sufficient for 15 minutes flying at long range speed",
+      B: "10% of the planned trip fuel",
+      C: "5% of the planned trip fuel",
+      D: "an amount of fuel sufficient for 15minutes flying at holding speed",
+    },
+    correct: "C",
+    ref: "CPL H AND ATPL H",
+  },
+  {
+    question:
+      "except if a different value is approved by the authority, the contingency fuel for an IFR helicopter flight should be",
+    choices: {
+      A: "an amount of fuel sufficient for 15 minutes flying at long range speed",
+      B: "5% of the planned trip fuel",
+      C: "10% of the planned trip fuel",
+      D: "an amount of fuel sufficient for 30 minutes flying at long range speed",
+    },
+    correct: "C",
+    ref: "CPL H AND ATPL H",
+  },
+  {
+    question:
+      "the amount of fuel to be carried by a helicopter for a IFR flight, when no alternate is required, should include a final reserve fuel quantity to fly",
+    choices: {
+      A: "20 minutes at holding speed at 1500 ft above the destination, in standard conditions",
+      B: "30 minutes at holding speed at 1500 ft above the destination, in standard conditions",
+      C: "30 minutes at best range speed OPERATIONAL PROCEDURES GENERAL - JAR-OPS Requirements",
+      D: "20 minutes at best range speed",
+    },
+    correct: "B",
+    ref: "CPL H AND ATPL H",
+  },
+  {
+    question:
+      "the amount of fuel to be carried by a helicopter on a VFR flight in a non-hostile environment should include contingency fuel of",
+    choices: {
+      A: "quantity to fly 30 minutes at best range speed",
+      B: "10% of the planned trip fuel",
+      C: "quantity to fly 20 minutes at best range speed",
+      D: "5% of the planned trip fuel",
+    },
+    correct: "D",
+    ref: "CPL H AND ATPL H",
+  },
+  {
+    question:
+      "the amount of fuel to be carried by a helicopter on a VFR flight navigating by day with reference to visual landmarks, should include a final reserve fuel of quantity to fly",
+    choices: {
+      A: "30 minutes at best range speed",
+      B: "20 minutes at best range speed",
+      C: "20 minutes at holding speed at 1500 ft above the destination heliport",
+      D: "30 minutes at holding speed at 1500 ft above the destination heliport",
+    },
+    correct: "B",
+    ref: "CPL H AND ATPL H",
+  },
+  {
+    question:
+      "the pre-flight fuel calculation, for a helicopter on an IFR flight should include contingency fuel quantity",
+    choices: {
+      A: "of 10% of the planned trip fuel",
+      B: "of 5% of the planned trip fuel",
+      C: "to fly 20 minutes at best range speed",
+      D: "to fly 30 minutes at best range speed",
+    },
+    correct: "A",
+    ref: "CPL H AND ATPL H",
+  },
+  {
+    question:
+      "when an operators fuel policy includes planning to an isolated heliport flying IFR, for which a destination alternate does not exist, the amount of fuel at departure",
+    choices: {
+      A: "is the same as for non-isolated heliports where an alternate heliport is accessible",
+      B: "should include additional fuel to fly 2 hours at holding speed, including final reserve fuel",
+      C: "should include additional fuel to fly 2 hours at best range speed, including final reserve fuel",
+      D: "should include additional fuel to fly 2 hours at holdng speed in addition to the final reservefuel OPERATIONAL PROCEDURES GENERAL - JAR-OPS Requirements",
+    },
+    correct: "B",
+    ref: "CPL H AND ATPL H",
+  },
+  {
+    question:
+      "an operator must ensure that the lowest MDH for a NDB approach is",
+    choices: {
+      A: "200 ft",
+      B: "300 ft",
+      C: "250 ft",
+      D: "350 ft",
+    },
+    correct: "B",
+    ref: "CPL H AND ATPL H",
+  },
+  {
+    question:
+      "Provided the appropriate ATS authority permits use of a flight visibility less than 5 km and the IAS is 140 kt or less, in accordance with minimum visibilities for VFR operations, helicopters may be permitted to operate down to a flight visibility of",
+    choices: {
+      A: "800 m",
+      B: "1500 m",
+      C: "2000 m",
+      D: "3000 m",
+    },
+    correct: "A",
+    ref: "CPL H AND ATPL H",
+  },
+  {
+    question:
+      "assuming the following circumstances: The minimum RVR/visibility required for take-off is: 1. for offshore Performance Class 1 operations 2. two pilot operations 3. an offshore helideck 4. an acceptable alternate heliport is available",
+    choices: {
+      A: "500 m",
+      B: "150 m",
+      C: "250 m",
+      D: "800 m",
+    },
+    correct: "C",
+    ref: "HELI ALL",
+  },
+  {
+    question:
+      "assuming the following circumstances: assuming the following circumstances: The minimum RVR/Visibility required for take-off is: 1. for onshore Performance Class 1 operations 2. a heliport equipped with runway edge lighting, centre line marking and RVR information 3. an acceptable alternate heliport is available",
+    choices: {
+      A: "500 m",
+      B: "200 m",
+      C: "150 m",
+      D: "800 m",
+    },
+    correct: "C",
+    ref: "HELI ALL",
+  },
+  {
+    question:
+      "assuming the following circumstances: The minimum RVR/Visibility required for take-off is: 1. for onshore Performance Class 2 operations 2. an acceptable alternate heliport is available",
+    choices: {
+      A: "800 m",
+      B: "200 m",
+      C: "500 m",
+      D: "150 m",
+    },
+    correct: "A",
+    ref: "HELI ALL",
+  },
+  {
+    question:
+      "a VFR flight, navigating by means other than by reference to visual landmarks, with no alternate heliport, can be undertaken only if the visual meteorological conditions (VMC) at the destination heliport are effective",
+    choices: {
+      A: "at the estimated time of arrival",
+      B: "during the period commencing 2 hours before and ending 2 hours after the expected time ofarrival",
+      C: "during the period commencing 2 hours before and ending 1 hour after the expected time of arrival",
+      D: "during the period commencing 1 hour before and ending 1 hour after the expected time of arrival",
+    },
+    correct: "A",
+    ref: "HELI ALL",
+  },
+  {
+    question:
+      "an IFR flight with no alternate heliport can be undertaken only if the visual meteorological conditions (VMC) at the destination heliport are effective",
+    choices: {
+      A: "at the estimated time of arrival",
+      B: "during the period commencing 2 hours before and ending 2 hours after the expected time ofarrival",
+      C: "during the period commencing 2 hours before and ending 1 hour after the expected time of arrival",
+      D: "during the period commencing 1 hour before and ending 1 hour after the expected time of arrival",
+    },
+    correct: "A",
+    ref: "HELI ALL",
+  },
+  {
+    question:
+      "In a helicopter, each crew member shall be properly secured by all safety belts and harnesses provided 1. during taxiing 2. during take-off 3. during landing 4. whenever deemed necessary by the commander in the interest of safety 5. during other phases of flight",
+    choices: {
+      A: "2, 3, 4",
+      B: "1, 2, 3, 4, 5",
+      C: "1, 2, 3, 4",
+      D: "2, 3, 4, 5",
+    },
+    correct: "C",
+    ref: "HELI ALL",
+  },
+  {
+    question:
+      "minimum required recent experience for a pilot engaged in a single-pilot operation under IFR or at night shall be",
+    choices: {
+      A: "5 IFR flights, including 3 take-off and 3 landings carried out during the preceding 30 days onthe type or class of aeroplane in the single-pilot role",
+      B: "3 IFR flights, including 3 instrument approaches, carried out during the preceding 90 days onthe type class of aeroplane in the single-pilot role",
+      C: "5 IFR flights, including 3 take-off and 3 landings carried out during the preceding 90 days onthe type or class of aeroplane in the single-pilot role",
+      D: "5 IFR flights, including 3 instrument approaches, carried out during the preceding 90 days on the type class of aeroplane in the single-pilot role",
+    },
+    correct: "D",
+    ref: "I.R.",
+  },
+  {
+    question:
+      "During a conventional approach, the Minimum Descent Height (MDH) is referred to the runway threshold altitude and not to the aerodrome altitude if the runway threshold is at more than",
+    choices: {
+      A: "4 m (14 ft) below the airdrome altitude",
+      B: "2 m (7 ft) above the airdrome altitude",
+      C: "2 m (7 ft) below the airdrome altitude",
+      D: "4 m (14 ft) above the airdrome altitude",
+    },
+    correct: "C",
+    ref: "I.R.",
+  },
+  {
+    question:
+      "A category C aircraft can carry out an indirect approach followed by a visual manoeuvre only if the horizontal visibility is higher than or equal to",
+    choices: {
+      A: "1,500 m",
+      B: "3,600 m",
+      C: "1,600 m",
+      D: "2,400 m",
+    },
+    correct: "D",
+    ref: "I.R.",
+  },
+  {
+    question:
+      "A Category III B precision approach (CAT III B) is an approach which may be carried out with a runway visual range of at least?",
+    choices: {
+      A: "250 m OPERATIONAL PROCEDURES GENERAL - JAR-OPS Requirements",
+      B: "150 m",
+      C: "75 m",
+      D: "200 m",
+    },
+    correct: "C",
+    ref: "I.R.",
+  },
+  {
+    question:
+      "VFR Operating minima, establishes that, the operator shall ensure about VFR flights, that",
+    choices: {
+      A: "for conducted VFR flights in airspace B, horizontal distance from clouds is 1,000m at least",
+      B: "special VFR flights are not commenced when visibility is less than 3 km",
+      C: "for conducted VFR flights in airspace F, vertical distance from clouds is 250m at least",
+      D: "for conducted VFR flights in airspace E, flight visibility at and above 3,050m (10,000 ft) is 5km at least (clear of cloud)",
+    },
+    correct: "B",
+    ref: "I.R.",
+  },
+  {
+    question:
+      "A category III A precision approach (CAT III A) is an approach which may be carried out with a runway visual range of at least",
+    choices: {
+      A: "50 m",
+      B: "100 m",
+      C: "250 m",
+      D: "200 m",
+    },
+    correct: "D",
+    ref: "I.R.",
+  },
+  {
+    question:
+      "The aircraft is a single engine, IFR, category A with a cruising speed of 150 knots. The aircraft is flown by a single pilot. The usable runway has edge lights, high intensity runway centre lights and RVR readings for threshold mid and end of runway. The approach minimums for runway 06 are: DH = 300 feet, horizontal visibility (HV) = 800 metres. The weather conditions are: horizontal visibility (HV) 900 metres and ceiling 200 feet, is take-off possible",
+    choices: {
+      A: "Yes, if there is an accessible airport within 75 NM",
+      B: "No, the ceiling being below the DH for the runways approach procedure",
+      C: "No, visibility being below 1,200 metres",
+      D: "Yes, visibility being higher than the horizontal visibility for the approach procedure",
+    },
+    correct: "A",
+    ref: "I.R.",
+  },
+  {
+    question:
+      "A category III C precision approach (CAT III C) is an approach with",
+    choices: {
+      A: "a runway visual range of at least 350 m",
+      B: "a runway visual range of at least 50 m",
+      C: "a runway visual range of at least 200 m",
+      D: "no runway visual range limits",
+    },
+    correct: "D",
+    ref: "I.R.",
+  },
+  {
+    question: "What is required for navigation in IMC?",
+    choices: {
+      A: "Radio equipment and equipment for guidance until the visual point",
+      B: "Anti-icing equipment",
+      C: "A serviceable weather radar",
+      D: "One VHF box and one HF box",
+    },
+    correct: "A",
+    ref: "I.R.",
+  },
+  {
+    question:
+      "According to Airfield Operating Minima, the lowest MDH using ILS (LLZ only), VOR, NDB, SRA no glide path?",
+    choices: {
+      A: "NDB MDH 300 ft",
+      B: "VOR MDH 250 ft",
+      C: "ILS (LLZ only) MDH 200 ft",
+      D: "VOR/DME MDH 300 ft",
+    },
+    correct: "A",
+    ref: "I.R.",
+  },
+  {
+    question:
+      "In accordance Aerodrome Operating Minima, the Category III A Operation, is a precision instrument approach and landing using ILS or MLS with a decision height lower than 100 feet an RVR (runway visual range) no less than",
+    choices: {
+      A: "250 m OPERATIONAL PROCEDURES GENERAL - JAR-OPS Requirements",
+      B: "200 m",
+      C: "230 m",
+      D: "300 m",
+    },
+    correct: "B",
+    ref: "I.R.",
+  },
+  {
+    question: "What are the circling minimum and MDH for a Cat B aeroplane?",
+    choices: {
+      A: "1,600 m 400 ft",
+      B: "1,500 m 500 ft",
+      C: "1,500 m 450 ft",
+      D: "1,500 m 600 ft",
+    },
+    correct: "B",
+    ref: "I.R.",
+  },
+  {
+    question: "A category II precision approach (CAT II) is an approach with",
+    choices: {
+      A: "a decision height of at least 100 ft",
+      B: "a decision height of at least 200 ft",
+      C: "a decision height of at least 50 ft",
+      D: "no decision height",
+    },
+    correct: "A",
+    ref: "I.R.",
+  },
+  {
+    question:
+      "In accordance with Aerodrome Operating Minima, the lowest minima to be used by an operator in a category B aeroplane for circling are",
+    choices: {
+      A: "MDH = 400 ft and visibility = 1.500 m",
+      B: "MDH = 500 ft and visibility = 1.600 m",
+      C: "MDH = 600 ft and visibility = 2.400 m",
+      D: "MDH = 700 ft and visibility = 2.600 m",
+    },
+    correct: "B",
+    ref: "I.R.",
+  },
+  {
+    question:
+      "In accordance with Aerodrome Operating Minima General, it is established, among other considerations, that an Operator must take full account of Aeroplane Categories. The criteria taken into consideration for classification of Aeroplanes by Categories is the indicated airspeed at threshold (Vat), which is equal to the stalling speed at the maximum landing mass (Vso) multiplied by 1,3. Corresponding Aeroplane Category when Vat is from 141 kts to 165 kts is",
+    choices: {
+      A: "E",
+      B: "D",
+      C: "B",
+      D: "C",
+    },
+    correct: "B",
+    ref: "I.R.",
+  },
+  {
+    question:
+      "What is the minimum horizontal visibility for a Cat D aircraft on a circling approach?",
+    choices: {
+      A: "1.500 m",
+      B: "1.600 m",
+      C: "2.400 m",
+      D: "3.600 m",
+    },
+    correct: "D",
+    ref: "I.R.",
+  },
+  {
+    question:
+      "What is the take-off RVR limit for a Cat A aeroplane, when high intensity centreline lights and edge lights are on and the crew is IFR qualified and approved?",
+    choices: {
+      A: "150m if threshold RVR is available",
+      B: "150m",
+      C: "200m",
+      D: "250m",
+    },
+    correct: "D",
+    ref: "I.R.",
+  },
+  {
+    question:
+      "The RVR for a Category III B operation with roll out guidance or control systems that fall passive the minimum RVR is",
+    choices: {
+      A: "50 m",
+      B: "75 m",
+      C: "125 m",
+      D: "200 m",
+    },
+    correct: "C",
+    ref: "I.R.",
+  },
+  {
+    question:
+      "The minimum MDH and meteorological visibility for a category C aircraft circling are respectively",
+    choices: {
+      A: "700 ft 3.600 m",
+      B: "600 ft 2.400 m",
+      C: "500 ft 1.600 m",
+      D: "400 ft 1.500 m",
+    },
+    correct: "B",
+    ref: "I.R.",
+  },
+  {
+    question: "What is the minimum RVR for a CAT III C approach?",
+    choices: {
+      A: "No minimum",
+      B: "50 m",
+      C: "75 m",
+      D: "100 m",
+    },
+    correct: "A",
+    ref: "I.R.",
+  },
+  {
+    question:
+      "A category A aircraft can carry out an indicated (circling) approach followed by a visual manoeuvre only if the horizontal visibility is higher than or equal to",
+    choices: {
+      A: "1.600 m",
+      B: "2.400 m",
+      C: "1.500 m",
+      D: "3.600 m",
+    },
+    correct: "C",
+    ref: "I.R.",
+  },
+  {
+    question:
+      "According to Aerodrome Operating Minima a Category II A approach has a Decision Height of less than 100 feet and a minimum RVR (Runway visual Range) of",
+    choices: {
+      A: "200 m",
+      B: "250 m",
+      C: "300 m",
+      D: "230 m",
+    },
+    correct: "A",
+    ref: "I.R.",
+  },
+  {
+    question: "What is the circling minima for a Cat A aeroplane?",
+    choices: {
+      A: "1.500 m OPERATIONAL PROCEDURES GENERAL - JAR-OPS Requirements",
+      B: "1.600 m",
+      C: "2.400 m",
+      D: "3.600 m",
+    },
+    correct: "A",
+    ref: "I.R.",
+  },
+  {
+    question:
+      "assuming the following circumstances: 1. for a Category A aeroplane 2. an aerodrome equipped with runway edge lighting and centre line lighting and multiple RVR information 3. an acceptable alternate aerodrome is available What is the minimum RVR value for take-off?",
+    choices: {
+      A: "200 m",
+      B: "150 m",
+      C: "250 m",
+      D: "300 m",
+    },
+    correct: "B",
+    ref: "I.R.",
+  },
+  {
+    question:
+      "a category III A precision approach (CAT III A) is an approach which may be carried out with a runway visual range of at least",
+    choices: {
+      A: "50 m",
+      B: "100 m",
+      C: "250 m",
+      D: "200 m",
+    },
+    correct: "D",
+    ref: "I.R.",
+  },
+  {
+    question:
+      "a category III B precision approach (CAT III B) is an approach which may be carried out with a runway visual range of at least",
+    choices: {
+      A: "250m",
+      B: "150m",
+      C: "75m",
+      D: "200m",
+    },
+    correct: "C",
+    ref: "I.R.",
+  },
+  {
+    question:
+      "for operations under IFR or at night the minimum flight crew is 2 pilots for",
+    choices: {
+      A: "all turbo-propeller aeroplanes with a maximum approved passenger seating configuration of more than 9 and for all turbo-jet aeroplanes",
+      B: "all turbo-propeller aeroplanes and for all turbo-jet aeroplanes",
+      C: "all turbo-propeller aeroplanes with a maximum approved passenger seating configuration of morethan 19 and for all turbo-jet aeroplanes",
+      D: "all turbo-propeller aeroplanes and for all turbo-jet aeroplanes with a maximum approvedpassenger seating configuration of more than 9",
+    },
+    correct: "A",
+    ref: "I.R.",
+  },
+  {
+    question:
+      "the lowest minima to be used by an operator for circling with a category A aeroplane is a meteorological visibility of",
+    choices: {
+      A: "2400 m",
+      B: "1500 m",
+      C: "1600 m",
+      D: "3600 m",
+    },
+    correct: "B",
+    ref: "I.R.",
+  },
+  {
+    question:
+      "the lowest minima to be used by an operator for circling with a category B aeroplane is a meteorological visibility of",
+    choices: {
+      A: "2400 m",
+      B: "1500 m",
+      C: "3600 m",
+      D: "1600",
+    },
+    correct: "D",
+    ref: "I.R.",
+  },
+  {
+    question:
+      "the lowest minima to be used by an operator for circling with a category C aeroplane is a meteorological visibility of",
+    choices: {
+      A: "1500 m",
+      B: "3600 m",
+      C: "1600 m",
+      D: "2400 m",
+    },
+    correct: "D",
+    ref: "I.R.",
+  },
+  {
+    question:
+      "the lowest minima to be used by an operator for circling with a category D aeroplane is a meteorological visibility of",
+    choices: {
+      A: "3600 m",
+      B: "2400 m",
+      C: "1600 m",
+      D: "1500 m",
+    },
+    correct: "A",
+    ref: "I.R.",
+  },
+  {
+    question:
+      "in establishing the aerodrome operating minima which will apply to any particular operation, an operator must take full account of: 1. equipment available for navigation 2. dimensions and characteristics of the runways 3. composition of the flight crew 4. obstacles in the vicinity of approach and missed approach areas 5. facilities for determining and communicating the weather conditions The combination regrouping all the correct statements is",
+    choices: {
+      A: "2, 3, 5",
+      B: "1, 2, 4, 5",
+      C: "2, 4, 5",
+      D: "1, 2, 3, 4, 5",
+    },
+    correct: "D",
+    ref: "I.R.",
+  },
+  {
+    question:
+      "on an IFR flight a commander shall not commence take-off unless the expected weather conditions at the destination and/or required alternate aerodrome(s) are at or above",
+    choices: {
+      A: "the planning minima, during a period from hour before to 1 hour after the estimated time of arrival at the aerodrome",
+      B: "the planning minima, at the estimated time of arrival",
+      C: "the aerodrome operating minima, at the estimated time of arrival, and for a reasonable periodbefore and after such a predicted time",
+      D: "the aerodrome operating minima, during a period from 1 hour before to 1 hour after the estimatedtime of arrival at the aerodrome",
+    },
+    correct: "A",
+    ref: "I.R.",
+  },
+  {
+    question:
+      "In accordance with Aerodrome Operating Minima, for a Category III B approach, the RVR shall not be less than",
+    choices: {
+      A: "50 m",
+      B: "150 m",
+      C: "100 m",
+      D: "75 m",
+    },
+    correct: "D",
+    ref: "I.R.",
+  },
+  {
+    question:
+      "Regarding all weather operations, if VAT is from 121 kt to 140 kt, the aeroplane is in",
+    choices: {
+      A: "Category E",
+      B: "Category D",
+      C: "Category C",
+      D: "Category B",
+    },
+    correct: "C",
+    ref: "I.R.",
+  },
+  {
+    question:
+      "Regarding all weather operations, if VAT is from 141 kt to 165 kt, the aeroplane is in",
+    choices: {
+      A: "Category E",
+      B: "Category B",
+      C: "Category C",
+      D: "Category",
+    },
+    correct: "D",
+    ref: "I.R.",
+  },
+  {
+    question:
+      "Regarding all weather operations, if VAT is from 91 kt to 120 kt, the aeroplane is in",
+    choices: {
+      A: "Category B",
+      B: "Category C",
+      C: "Category D",
+      D: "Category E",
+    },
+    correct: "A",
+    ref: "I.R.",
+  },
+  {
+    question:
+      "The aerodrome operating minima for a VOR/DME approach are: MDH = 360 ft Required RVR = 1500 metres Reported RVR is 1800 metres. The aerodrome operating minima for a VOR/DME approach are: MDH = 360 ft Required RVR = 1500 metres Reported RVR is 1800 metres. the pilot may continue the final approach",
+    choices: {
+      A: "regardless of the ceiling reported",
+      B: "if the ceiling reported is higher than 360 ft",
+      C: "if the ceiling reported is higher than 240 ft",
+      D: "if the ceiling reported is higher than 240 ft during the day and 360 ft at night",
+    },
+    correct: "A",
+    ref: "I.R.",
+  },
+  {
+    question:
+      "What is the minimum visibility fior a Cat A aircraft during a circling approach?",
+    choices: {
+      A: "1500 m",
+      B: "1600 m",
+      C: "2400 m",
+      D: "3600 m",
+    },
+    correct: "A",
+    ref: "I.R.",
+  },
+  {
+    question: "What are the threshold speeds for a Cat D aeroplane?",
+    choices: {
+      A: "121 140 kts",
+      B: "131 155 kts",
+      C: "141 165 kts",
+      D: "145 160 kts",
+    },
+    correct: "C",
+    ref: "I.R.",
+  },
+  {
+    question:
+      "A category 1 precision approach (CAT 1) is an approach which may be carried out with a runway visual range of at least",
+    choices: {
+      A: "550 m",
+      B: "350 m",
+      C: "800 m",
+      D: "500 m",
+    },
+    correct: "A",
+    ref: "I.R.",
+  },
+  {
+    question: "What is the Cat III A RVR minimum?",
+    choices: {
+      A: "50 m",
+      B: "100 m",
+      C: "200 m",
+      D: "250 m",
+    },
+    correct: "C",
+    ref: "I.R.",
+  },
+  {
+    question:
+      "Aircraft are categorised according to their threshold speeds, multiplied by a factor. What aircraft category corresponds to a range of speeds 141 kts 165 kts?",
+    choices: {
+      A: "B",
+      B: "E",
+      C: "D",
+      D: "C",
+    },
+    correct: "C",
+    ref: "I.R.",
+  },
+  {
+    question:
+      "An aeroplane is starting a non-precision approach with an MDH of 250¿ and minimum visibility of 750 metres. ATC gives threshold, mid-runway and final third RVRs. When may the approach be started?",
+    choices: {
+      A: "When threshold and mid-runway RVRs are greater than 750m",
+      B: "when all 3 RVRs are greater than 750m",
+      C: "When the met viz is greater than 750m. RVR is for precision approaches only",
+      D: "When threshold RVR is greater than 750m",
+    },
+    correct: "D",
+    ref: "I.R.",
+  },
+  {
+    question:
+      "If you are flying IFR to a destination with no alternative, when must weather be good for you to continue?",
+    choices: {
+      A: "3 hours before to 3 hours after ETA OPERATIONAL PROCEDURES GENERAL - Navigation requirements for Long Range Flights",
+      B: "3 hours before to 1 hour after ETA",
+      C: "2 hours before to 2 hours after ETA",
+      D: "1 hour before to 1 hour after ETA",
+    },
+    correct: "D",
+    ref: "I.R.",
+  },
+  {
+    question:
+      "The RVR for a Category III B operation with roll out guidance the minimum RVR is",
+    choices: {
+      A: "50 m",
+      B: "75 m",
+      C: "125 m",
+      D: "200 m",
+    },
+    correct: "B",
+    ref: "I.R.",
+  },
+  {
+    question:
+      "Minimum Navigation Performance Specification (MNPS) airspace of the North Atlantic is defined within",
+    choices: {
+      A: "flight levels 270 and 400 from the equator to the pole",
+      B: "flight levels 285 and 420 from the 27o North to the pole",
+      C: "flight levels 280 and 475 from 27o North to the pole",
+      D: "sea level and FL 660 from 27o North to the pole",
+    },
+    correct: "B",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "During a transoceanic and polar flight, the transport precession is the rotation in degrees of the gyro North with respect to the",
+    choices: {
+      A: "compass North",
+      B: "grid North",
+      C: "magnetic North",
+      D: "true North",
+    },
+    correct: "D",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "When the weather conditions require an alternate aerodrome to be available on take-off, the latter shall be located, for a twin-engined aircraft, at an equivalent distance not exceeding",
+    choices: {
+      A: "2 hours of flight at cruising speed with two engines",
+      B: "1 hour of flight at cruising speed with two engines",
+      C: "2 hours of flight at cruising speed with single engine OPERATIONAL PROCEDURES GENERAL - Navigation requirements for Long Range Flights",
+      D: "1 hour of flight at cruising speed with a single engine",
+    },
+    correct: "D",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "On a polar stereographic chart where the earth convergence between 2 points located on the parallel 60oN is 20o, the great circle maximum cross-track difference with the straight line joining the 2 points is",
+    choices: {
+      A: "9.2 NM",
+      B: "4.0 NM",
+      C: "30 NM",
+      D: "4.0 NM",
+    },
+    correct: "C",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "In the absence of wind and without the astronomic precession effect, an aircraft would, at a constant gyro heading, following a",
+    choices: {
+      A: "great circle line",
+      B: "rhumb line",
+      C: "spherical flight segment",
+      D: "straight map line",
+    },
+    correct: "A",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "A polar stereographic chart has a grid printed over it which is parallel to the meridian 054oW, with Grid North in the direction of the North geographic pole. An aircraft is following a true course of 330o. At position 80oN 140oE, its grid heading (GH) with this system will be",
+    choices: {
+      A: "316o",
+      B: "276o",
+      C: "136o",
+      D: "164o",
+    },
+    correct: "C",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "When leaving the MNPS oceanic control area for a domestic controlled area, the pilot has to",
+    choices: {
+      A: "maintain the Mach number previously assigned up to the last position shown in the oceanicclearance",
+      B: "take the Mach number specified in this initial flight plan",
+      C: "take any Mach number OPERATIONAL PROCEDURES GENERAL - Navigation requirements for Long Range Flights",
+      D: "take the Mach number provided for this type of flight by his airline",
+    },
+    correct: "A",
+    ref: "ATPL A",
+  },
+  {
+    question: "MNPS is the abbreviation for",
+    choices: {
+      A: "Minimum Navigation Positioning System",
+      B: "Maximum North-Atlantic Precision System",
+      C: "Military Network Performance Structure",
+      D: "Minimum Navigation Performance Specification",
+    },
+    correct: "D",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "An aircraft leaves point P (60oN 030oW) on a true heading equal to 090o while the gyro compass, which is assumed to be operating perfectly and without an hourly rate corrector unit, indicates 000o. The aircraft arrives at point Q (62oN 010oW) on a true heading equal to 095o. On the journey from P to Q the gyro compass remains in free gyro mode. If the flight lasted 1 hour 30 minutes, the gyro heading at Q will be: Answers",
+    choices: {
+      A: "328o",
+      B: "345o",
+      C: "003o",
+      D: "334o",
+    },
+    correct: "A",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "The frequency designated for VHF air to air communications when out of range of VHF ground stations in NAT region is",
+    choices: {
+      A: "121.5 MHz",
+      B: "123.45 MHz",
+      C: "243 MHz",
+      D: "118.5 MHz",
+    },
+    correct: "B",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "During a flight to Europe, planning in MNPS (Minimum Navigation Performance Specification) airspace, you expect to cross the 30oW meridian at 00H30 UTC, you will then normally be",
+    choices: {
+      A: "within the organised night-time flight track system",
+      B: "with the organised daytime flight track system",
+      C: "out of the organised flight track system OPERATIONAL PROCEDURES GENERAL - Navigation requirements for Long Range Flights",
+      D: "in a random space",
+    },
+    correct: "C",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "If both precision navigation systems of an aircraft are unserviceable during a flight in MNPS airspace, and if you cannot establish communication with the air traffic control, you",
+    choices: {
+      A: "descend below the MNPS space",
+      B: "take an intermediate flight level",
+      C: "return to departure airport",
+      D: "land at the nearest airport",
+    },
+    correct: "B",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "In a polar Antarctic regions, the pilot uses a South polar stereographic chart whose printed over grid is parallel with the zero meridian and Grid North in the direction of geographic North along this meridian. The aircraft position is 80oS 130oE, its true route is 110o, the grid route at this moment is",
+    choices: {
+      A: "240o",
+      B: "060o",
+      C: "110o",
+      D: "340o",
+    },
+    correct: "A",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "On an alternate field, the captain of turbojet engined aircraft must mandatorily have a quantity of fuel and lubricant sufficient for flying during",
+    choices: {
+      A: "30 minutes at cruising speed",
+      B: "45 minutes at holding flight speed and 1500 ft",
+      C: "30 minutes at holding flight speed and 1500 ft",
+      D: "45 minutes at cruising speed",
+    },
+    correct: "C",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "With the Control Display Unit (CDU) of an Inertial Navigation System (INS) you can read the following information: Desired track (DTK) = 100o - Track (TK) = 120o You can conclude that the",
+    choices: {
+      A: "track Error Angle (TKE) is left (L)",
+      B: "track Error Angle (TKE) is right (R)",
+      C: "aircraft is converging towards its ideal course",
+      D: "aircraft is diverging from its ideal course",
+    },
+    correct: "B",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "When the weather conditions require an alternate aerodrome to be available on take-off, the latter shall be located, for aircraft with three or more engines, at an equivalent distance not exceeding",
+    choices: {
+      A: "2 hours of flight at cruising speed with 1 engine inoperative",
+      B: "2 hours of flight at cruising speed with all engines operating",
+      C: "1 hour of flight at cruising speed with all engine inoperative",
+      D: "1 hour of flight at cruising speed with all engines operating",
+    },
+    correct: "A",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "During the flight of two aircraft in MNPS airspace with a leading aircraft flying at higher speed, the longitudinal spacing must be at least",
+    choices: {
+      A: "20 minutes",
+      B: "10 minutes",
+      C: "15 minutes",
+      D: "5 minutes",
+    },
+    correct: "D",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "Posit: g, the longitude difference Lm, the average latitude Lo, the latitude of the tangent. The transport precession is equal to",
+    choices: {
+      A: "g/2*sin Lm",
+      B: "15o/h*sin Lm",
+      C: "g*(sin Lm-sin Lo)",
+      D: "g*sin Lm",
+    },
+    correct: "D",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "The minimum longitudinal spacing of two aircraft flying in MNPS airspace at the same Mach number is",
+    choices: {
+      A: "15 minutes",
+      B: "5 minutes",
+      C: "10 minutes",
+      D: "20 minutes",
+    },
+    correct: "C",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "Flights within NAT region shall be conducted in accordance with IFR when",
+    choices: {
+      A: "Operating more than 100 NM seaward from the shoreline within uncontrolled airspace",
+      B: "Flying above 3000 ft",
+      C: "Operating more than 100 NM seaward from the shoreline within controlled airspace",
+      D: "Operating at or above FL 60 or 2000 ft whichever is higher",
+    },
+    correct: "D",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "On landing on an isolated field, the captain of a turbojet engined aircraft must mandatorily have a minimum quantity of fuel and lubricant sufficient for flying during",
+    choices: {
+      A: "30 minutes at holding flight speed and 1500 ft",
+      B: "2 hours at holding flight speed and 1500 ft",
+      C: "2 hours with normal cruising consumption",
+      D: "30 minutes with normal cruising consumption",
+    },
+    correct: "C",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "On a polar stereographic chart whose grid is parallel with the Greenwich meridian in the direction of the true North pole, the true orientation of the great circle linking point 62oN 010oE to point 66oN 050oW is 305o. The grid route at the starting point of this great circle is",
+    choices: {
+      A: "301o",
+      B: "298o",
+      C: "295o",
+      D: "292o",
+    },
+    correct: "C",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "During a flight to Europe, scheduled in MNPS (Minimum Navigation Performance Specification) airspace, you expect to cross the 30oW meridian at 2330 UTC; you will normally be",
+    choices: {
+      A: "in a day flight route system",
+      B: "in random airspace",
+      C: "in a night flight route system",
+      D: "out of the organised route system",
+    },
+    correct: "B",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "A pilot whose aircraft does not have MNPS certification has to fly via the SHANNON-GANDER great circle. The flight must be planned to take place",
+    choices: {
+      A: "at flight level FL 280 or less",
+      B: "outside scheduled flight times",
+      C: "at a Mach number of 0.70 or less",
+      D: "at a constant airspeed of 480 kt",
+    },
+    correct: "A",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "The minimum navigation equipment required for an aircraft flying without restriction in MNPS airspace can be at the very least",
+    choices: {
+      A: "Two inertial navigation units and a DECCA OPERATIONAL PROCEDURES GENERAL - Navigation requirements for Long Range Flights",
+      B: "Two inertial navigation units",
+      C: "Three inertial navigation units",
+      D: "One inertial navigation unit",
+    },
+    correct: "B",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "For a long-range four-jet aircraft in cruising flight, the optimum altitude and the lock-on altitude increases. The most cost-effective flight plan will consist of choosing cruising levels which increase during the flight in order to fly",
+    choices: {
+      A: "between the lock-on altitude and the optimum altitude",
+      B: "about the lock-on altitude",
+      C: "about the optimum altitude",
+      D: "just below the optimum altitude",
+    },
+    correct: "C",
+    ref: "ATPL A",
+  },
+  {
+    question: "Astronomic precession",
+    choices: {
+      A: "causes the gyro axis to spin to the left in the southern hemisphere",
+      B: "causes the gyro axis to spin to the right in the Southern hemisphere",
+      C: "is zero at the North pole",
+      D: "is zero at the South pole",
+    },
+    correct: "A",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "An aircraft flying at flight level 370 (FL 370) on MNPS Airspace is unable to continue flight in accordance with its air traffic control clearance (degradation of navigational performance requirements, mechanics troubles etc) but is able to maintain its assigned level (FL 370), and due to a total lost of communications capability, could not obtain a revised clearance from ATC. The aircraft should leave its assigned route or track by turning 90o (90 degrees) to the right or left whenever this is possible, and the subsequent action will be turn to acquire and maintain in either direction a track laterally separated by 30 NM from its assigned route and",
+    choices: {
+      A: "climb or descend 1000 ft or descent 500 ft",
+      B: "climb or descend 1000 ft",
+      C: "climb or descend 500 ft",
+      D: "climb 500 ft or descend 1000 ft",
+    },
+    correct: "C",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "During a flight to Europe, planned in MNPS (Minimum Navigation Performance Specification) airspace, you expect to cross the 30oW meridian at 11H00 UTC; you will then normally be",
+    choices: {
+      A: "in a random space",
+      B: "within the organised daytime flight track system",
+      C: "within the organised night-time flight track system",
+      D: "out of the organised flight track system",
+    },
+    correct: "D",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "An aircraft operating within MNPS Airspace is unable to continue flight in accordance with its air traffic control clearance (due to degradation of navigational performance requirements), but is able to maintain its assigned level and due to a total loss of communication capability could not obtain a revised clearance from ATC. The aircraft should leave its assigned route or track by turning 90o (90 degrees) to the right or left whenever this is possible, and the subsequent action will be turn to acquire and maintain in either direction a track laterally separated by 30 NM from its assigned route and climb 1000 ft or descent 500 ft, if",
+    choices: {
+      A: "at FL 410",
+      B: "above FL 410",
+      C: "below FL 410",
+      D: "at FL 430",
+    },
+    correct: "A",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "During a transoceanic and polar flight, the chart precession is a rotation in degrees, for a moving aircraft, of the gyro North with respect to the",
+    choices: {
+      A: "grid North for any chart",
+      B: "grid North for a given chart",
+      C: "true North for a given chart",
+      D: "true North for any chart",
+    },
+    correct: "B",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "An aircraft flying above flight level 410 on MNPS Airspace is unable to continue flight in accordance with its air traffic control clearance (degradation of navigational performance requirements, mechanics troubles, etc), but is able to maintain its assigned level, an due to a total loss of communications capability, could not obtain a revised clearance from ATC. The aircraft should leave its assigned route or track by turning 90o (90 degrees) to the right or left whenever this is possible, and the subsequent action will be turn to acquire and maintain in either direction track laterally separated by 30 NM from its assigned route and",
+    choices: {
+      A: "climb 500 ft or descend 1000 ft",
+      B: "climb or descend 500 ft OPERATIONAL PROCEDURES GENERAL - Navigation requirements for Long Range Flights",
+      C: "climb 1000 ft or descend 500 ft",
+      D: "climb or descend 1000 ft",
+    },
+    correct: "D",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "Which errors in estimates minutes shall be reported by aircraft over-flying the North Atlantic?",
+    choices: {
+      A: "5 or more",
+      B: "3 or more",
+      C: "10 or more",
+      D: "2 or more",
+    },
+    correct: "B",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "A pilot is using a polar stereographic chart whose grid is parallel to the zero meridian, with Grid North in the direction of the North geographic pole. In polar regions, the pilot stops navigation in free-gyro mode after leaving the 6 microteslas zone, and the grid heading controlled by information from the inertial navigation system (INS) is 045o. After switching to magnetic mode, the compass heading is 220o. The INS position at this moment is 76oN 180oW. The magnetic variation on the chart is 10oE. The compass shift on this heading at this point in time is;",
+    choices: {
+      A: "-15o",
+      B: "+5o",
+      C: "-5o",
+      D: "+15o",
+    },
+    correct: "C",
+    ref: "ATPL A",
+  },
+  {
+    question: "The abbreviation MNPS means",
+    choices: {
+      A: "Main Navigation Performance Specification",
+      B: "Minimum Navigation Performance Specification",
+      C: "Maximum Navigation Performance Specification",
+      D: "Magnetic Navigation Performance Specification",
+    },
+    correct: "B",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "Arriving at the point of entry into MNPS (Minimum Navigation Performance Specification) airspace over the North Atlantic and not having yet received the oceanic clearance, the crew",
+    choices: {
+      A: "keeps flying in accordance with the air-filed flight plan",
+      B: "returns to base immediately",
+      C: "carries out a holding pattern",
+      D: "keeps flying deviating its course by 30 nautical miles from that of the air- filed flight plan",
+    },
+    correct: "A",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "An aircraft operating within MNPS Airspace is unable to continue flight in accordance with its air traffic control clearance (due to degradation of navigational performance requirements), but is able to maintain its assigned level, and due to a total loss of communications capability, could not obtain a revised clearance from ATC. The aircraft should leave its assigned route or track by turning 90o (90 degrees) to the right or left whenever this is possible, and the subsequent action will be turn to acquire and maintain in either direction a track laterally separated by 30 NM from its assigned route and climb or descend 500 ft, if",
+    choices: {
+      A: "below FL 410",
+      B: "at FL 410",
+      C: "above FL 410",
+      D: "at FL 430",
+    },
+    correct: "A",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "In the event of a contingency which required an en-route diversion to an alternate aerodrome across the direction of the prevailing NAT traffic flow and if prior ATC clearance cannot be obtained an aircraft not able to maintain its assigned flight level should",
+    choices: {
+      A: "Start its descent while turning to acquire a track separated by 90 NM from its assigned route ortrack",
+      B: "Start its descent while turning to acquire a track separated by 60 NM from its assigned route ortrack",
+      C: "Start its descent while turning to acquire a track separated by 30 NM from its assigned route ortrack",
+      D: "Descend below FL 275",
+    },
+    correct: "C",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "You plan to fly from point A (60oN 010oE) to point B (60oN 020oE). The gyro North of the gyro compass, assumed to be operating perfectly, with no rate correction device, is aligned with the true North of point A. The constant gyro heading to be followed when starting from A given that the flight time scheduled is 1h30 min with a zero wind, is equal to: Answers",
+    choices: {
+      A: "066o",
+      B: "080o OPERATIONAL PROCEDURES GENERAL - Navigation requirements for Long Range Flights",
+      C: "076o",
+      D: "085o",
+    },
+    correct: "C",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "an IFR flight with no alternate airfield can be undertaken only if the minimum weather conditions stipulated in the regulations are effective for at least",
+    choices: {
+      A: "3 hours before to at least 3 hours after the expected time of arrival",
+      B: "2 hours before to at least 2 hours after the expected time of arrival",
+      C: "3 hours before to at least 1 hour after the expected time of arrival",
+      D: "1 hour before to at least 1 hour after the expected time of arrival",
+    },
+    correct: "D",
+    ref: "ATPL A",
+  },
+  {
+    question: "The North Atlantic airspace is regulated accordance to",
+    choices: {
+      A: "the ICAO document 7030 (additional regional procedures)",
+      B: "rules issued by the bordering States (document 6530)",
+      C: "rules common to the bordering States, grouped in document 7050 (North Atlantic Ocean Airspace)",
+      D: "Canadian rules, because this country has the greatest surface area of territorial waters in thisairspace",
+    },
+    correct: "A",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "A check on the operation of the SELCAL equipment during a transatlantic flight using the OTS (Organised Track System) must be done",
+    choices: {
+      A: "At or prior entering the NAT region",
+      B: "Prior entering the NAT region",
+      C: "As soon as possible after entering the NAT region",
+      D: "When crossing the oceanic airspace boundary",
+    },
+    correct: "A",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "An air traffic unit may request the aircraft to report position when flying east-west south of 70oN between 5oW and 65oW, every",
+    choices: {
+      A: "5o of longitude",
+      B: "10o of longitude OPERATIONAL PROCEDURES GENERAL - Navigation requirements for Long Range Flights",
+      C: "20o of longitude",
+      D: "15o of longitude",
+    },
+    correct: "B",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "The ascent or descent through MNPS (Minimum Navigation Performance Specification) airspace of a non- MNPS certified aircraft is",
+    choices: {
+      A: "authorised when the aircraft has two precision navigation systems",
+      B: "forbidden in all cases",
+      C: "authorised under radar control if the aircraft is in VHF contact with the MNPS controller",
+      D: "authorised only if the aircraft is in radio contact with the aircraft present in this space",
+    },
+    correct: "D",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "When a course is plotted at minimum time route, one passes from the air isochrone to the corresponding ground isochrone by applying to point K (original spot) a vector KK which is equal to",
+    choices: {
+      A: "none",
+      B: "wind at K",
+      C: "mean wind from the preceding ground isochrone",
+      D: "mean wind up to the next ground isochrone",
+    },
+    correct: "C",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "The minimum lateral spacing to be maintained between aircraft flying in MNPS airspace is",
+    choices: {
+      A: "60 NM",
+      B: "30 NM",
+      C: "90 NM",
+      D: "120 NM",
+    },
+    correct: "A",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "In the MNPS (Minimum Navigation Performance Specification area, a pilot should first of all take the following action in the event of a failure of the last inertial navigation system",
+    choices: {
+      A: "notify Control and wait for a reply within a reasonable time",
+      B: "request authorisation from Control to track another aircraft",
+      C: "set a different heading approximately 45o from the previous one",
+      D: "immediately climb or descend 1000 ft OPERATIONAL PROCEDURES GENERAL - Navigation requirements for Long Range Flights",
+    },
+    correct: "A",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "Posit: g the longitude difference; Lm the average latitude; Lo the latitude of the tangent. The correct formula expressing the travel precession applied during a transoceanic and polar navigation, is equal to",
+    choices: {
+      A: "9*sin Lm",
+      B: "15o/h*sin Lm",
+      C: "g*(sin Lm-sin Lo)",
+      D: "g/2*sin Lm",
+    },
+    correct: "B",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "a jet-powered aircraft, flying above the optimum altitude will have",
+    choices: {
+      A: "increased manoeuvring limits",
+      B: "reduced range",
+      C: "increased flight envelope",
+      D: "increased Mach number stability",
+    },
+    correct: "B",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "In the event of an en-route HF communication failure in an MNPS (Minimum Navigation Performance Specification) airspace, the appropriate VHF frequency for air-air communications is",
+    choices: {
+      A: "118,800 MHz",
+      B: "131,800 MHz",
+      C: "121,800 MHz",
+      D: "128,800 MHz",
+    },
+    correct: "B",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "If a pilot has connected the automatic pilot to the gyro compass (which is assumed to be operating correctly) and the latter is fitted with a rate correction device which is properly corrected by astronomical precession, the course followed by the aircraft (in still air conditions) is a",
+    choices: {
+      A: "rhumb line",
+      B: "great circle",
+      C: "curve of some type or other",
+      D: "spherical flight segment",
+    },
+    correct: "B",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "The MNPS (Minimum Navigation Performance Specification) airspace extends vertically between flight levels",
+    choices: {
+      A: "275 and 400",
+      B: "280 and 400",
+      C: "280 and 390",
+      D: "285 and 420",
+    },
+    correct: "D",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "Which separation will be provided if Reduced Vertical Separation Minimum (RVSM) is used when operating in MNPS airspace?",
+    choices: {
+      A: "90 NM lateral and 1000 ft vertical",
+      B: "60 NM lateral and 1000 ft vertical",
+      C: "60 NM lateral and 500 ft vertical",
+      D: "90 NM lateral and 500 ft vertical",
+    },
+    correct: "B",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "An air traffic unit may request the aircraft to report position when flying east-west north of 70oN between 10oW and 50oW, every",
+    choices: {
+      A: "10o of longitude",
+      B: "20o of longitude",
+      C: "15o of longitude",
+      D: "5o of longitude",
+    },
+    correct: "B",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "The validity period of a flight track system organised in MNPS (Minimum Navigation Performance Specification) airspace during an Eastbound flight normally is",
+    choices: {
+      A: "11H30 UTC to 19H00 UTC",
+      B: "10H30 UTC to 19H00 UTC",
+      C: "01H00 UTC to 08H00 UTC",
+      D: "00H00 UTC to 08H00 UTC",
+    },
+    correct: "C",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "You are the captain of a commercial airplane and you notice, after take-off, a flock of birds which may present a bird strike hazard, you must",
+    choices: {
+      A: "inform the other aircraft by radio OPERATIONAL PROCEDURES GENERAL - Navigation requirements for Long Range Flights",
+      B: "immediately inform the appropriate ground station",
+      C: "inform the appropriate ground station within a reasonable period of time",
+      D: "draft a bird strike hazard report upon arrival and within at most 48 hours",
+    },
+    correct: "B",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "The MNPS (Minimum Navigation Performance Specification) airspace extends from",
+    choices: {
+      A: "30o North to 90o North",
+      B: "27o North to 90o North",
+      C: "27o North to 70o North",
+      D: "30o North to 70o North",
+    },
+    correct: "B",
+    ref: "ATPL A",
+  },
+  {
+    question: "When in MNPS and the final LRNS fails, the pilot should",
+    choices: {
+      A: "Climb/descend 1000 ft",
+      B: "Contact ATC and await a reply within a reasonable period of time",
+      C: "Ask ATC for permission to follow another aeroplane",
+      D: "Turn left or right through 90o and parallel track by 30 nm",
+    },
+    correct: "B",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "At 18h40min UTC, a complete failure of the inertial systems of an aircraft flying on the LONDON-ANCHORAGE line occurs in the geographic North pole region. The wind is nil, the grid heading at this moment is 315o. The crew then uses the Sun to continue the flight. The bearing of the Sun on occurrence of the failure is: NOTE:The time equation is nil. The chart used is a polar stereographic chart whose grid is parallel with the zero meridian, the Grid North is in direction of the geographic North pole.",
+    choices: {
+      A: "035o",
+      B: "325o",
+      C: "180o",
+      D: "000o",
+    },
+    correct: "B",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "In MNPS, at FL 370, you need to change your clearance but have no communications with ATC. You turn left or right and get a 30 nm. Separation from your assigned track. Do you then",
+    choices: {
+      A: "Climb or descend 500 ft",
+      B: "Climb 1000 ft or descend 500 ft",
+      C: "Climb or descend 1000 ft",
+      D: "Maintain your flight plan level",
+    },
+    correct: "A",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "If the grid datum is 054oW, position 80oN 140oE and true heading of 330o, what is the grid heading?",
+    choices: {
+      A: "316o",
+      B: "276o",
+      C: "164o",
+      D: "136o",
+    },
+    correct: "D",
+    ref: "ATPL A",
+  },
+  {
+    question: "The North Atlantic system is based on",
+    choices: {
+      A: "Canadian territory since it has the largest territorial waters",
+      B: "ICAO 7030 Doc",
+      C: "States Common rules 7050 Doc",
+      D: "States Bordering Rules 6530 Doc",
+    },
+    correct: "B",
+    ref: "ATPL A",
+  },
+  {
+    question: "A flight crossing 030oW in MNPSA at 1100UTC will be",
+    choices: {
+      A: "in daytime OTS",
+      B: "in night time OTS",
+      C: "outside OTS",
+      D: "in random airspace",
+    },
+    correct: "C",
+    ref: "ATPL A",
+  },
+  {
+    question: "What are the vertical limits of MNPS Airspace?",
+    choices: {
+      A: "FL 290 to FL 410",
+      B: "FL 245 to FL 450 OPERATIONAL PROCEDURES GENERAL - Navigation requirements for Long Range Flights",
+      C: "FL 285 to FL 410",
+      D: "FL 285 to FL 420",
+    },
+    correct: "D",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "An airline operator shall make sure that if the aircraft planned for the flight is a performance class B aeroplane, it will be able, throughout its flight route or its alternate route scheduled from this initial route, to reach a climb rate of at least",
+    choices: {
+      A: "300 ft/min with all engines operating at maximum continuous power",
+      B: "300 ft/min with one engine inoperative and all the others operating at maximum continuouspower",
+      C: "500 ft/min with all engines operating at maximum cruise power",
+      D: "500 ft/min with one engine inoperative and all the others operating at maximum continuous power",
+    },
+    correct: "A",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "What is the minimum longitudinal separation between 2 aeroplanes flying at the same Mach number in MNPS Airspace?",
+    choices: {
+      A: "5 minutes",
+      B: "10 minutes",
+      C: "15 minutes",
+      D: "20 minutes",
+    },
+    correct: "B",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "The validity period of a flight track system, organised in MNPS (Minimum Navigation Performance Specification) airspace during a westbound flight normally is",
+    choices: {
+      A: "0000 UTC to 0800 UTC at 30 degrees West",
+      B: "1130 UTC to 1900 UTC at 30 degrees West",
+      C: "0100 UTC to 0800 UTC at 30 degrees West",
+      D: "1030 UTC to 1900 UTC at 30 degrees West",
+    },
+    correct: "B",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "What is the minimum required vertical separation in MNPS Airspace?",
+    choices: {
+      A: "500 ft",
+      B: "1000 ft OPERATIONAL PROCEDURES GENERAL - Navigation requirements for Long Range Flights",
+      C: "2000 ft",
+      D: "4000 ft",
+    },
+    correct: "B",
+    ref: "ATPL A",
+  },
+  {
+    question: "What is minimum lateral separation in MNPS airspace?",
+    choices: {
+      A: "60 nm below FL 285",
+      B: "60 nm above FL 285",
+      C: "90 nm above FL 285",
+      D: "90 nm in all NAT airspace",
+    },
+    correct: "B",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "In the Area where the MNPS is applicable, the vertical separation that can be applied between FL 290 and FL 410 inclusive is",
+    choices: {
+      A: "2000 ft",
+      B: "500 ft",
+      C: "1000 ft",
+      D: "1500 ft",
+    },
+    correct: "C",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "In MNPS Airspace between FL 285 and FL 410 inclusive, what is the vertical separation?",
+    choices: {
+      A: "500 ft",
+      B: "1000 ft",
+      C: "1500 ft",
+      D: "2000 ft",
+    },
+    correct: "B",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "At 60oN 030oW, the true heading is 090o and the Gyro is 000o. At 62oN 010oW, the True heading is 095o and it has taken 1.5 hours to travel the distance. What will the Gyro read assuming no Latitude Nut correction",
+    choices: {
+      A: "334o",
+      B: "328o",
+      C: "345o",
+      D: "003o OPERATIONAL PROCEDURES GENERAL - Navigation requirements for Long Range Flights",
+    },
+    correct: "B",
+    ref: "ATPL A",
+  },
+  {
+    question: "A minimum time track is a",
+    choices: {
+      A: "spherical capable flight segment",
+      B: "great circle track",
+      C: "rhumb line",
+      D: "track determined according to weather conditions",
+    },
+    correct: "D",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "If your ETA at a significant point on a NAT track changes by how much must you inform ATC?",
+    choices: {
+      A: "1 min or more",
+      B: "5 min or more",
+      C: "3 min or more",
+      D: "10 min or more",
+    },
+    correct: "C",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "If the whole flight is in MNPSA on the organised track system, what should be entered on the flight plan?",
+    choices: {
+      A: "PTS plus daily code",
+      B: "Position at every 10 deg latitude",
+      C: "NAT plus daily code",
+      D: "OTS plus daily code",
+    },
+    correct: "C",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "When flying gyro on a transoceanic or polar flight near the North Pole, what is the precession due to",
+    choices: {
+      A: "True North",
+      B: "Grid North",
+      C: "Magnetic north",
+      D: "Compass north",
+    },
+    correct: "A",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "an operator shall ensure that all relevant operational and technical information for an individual flight is preserved on ground for a predetermined period of time. Consequently, if practicable, a copy of the operational flight plan shall be retained, during at least",
+    choices: {
+      A: "3 months",
+      B: "12 months",
+      C: "15 months",
+      D: "24 months",
+    },
+    correct: "A",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "Which equation relates to transport wander in polar and trans-oceanic areas? (Where gm = ch long, Lm = mean lat, Lo = tangent of mean lat)",
+    choices: {
+      A: "gm x sin Lm",
+      B: "15 x sin Lm",
+      C: "gm x 2 (Lo - Lm)",
+      D: "15 x 2 (Lo - Lm)",
+    },
+    correct: "A",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "the route of a twin-engined aircraft with a maximum certificated take-off mass exceeding 8.618 kg or a maximum approved seating configuration of more than 19 passengers must be planned in such a way that on one engine an appropriate aerodrome can be reached within",
+    choices: {
+      A: "90 minutes at the cruise speed, one engine inoperative",
+      B: "30 minutes at the cruise speed, one engine inoperative",
+      C: "60 minutes at the cruise speed, one engine inoperative",
+      D: "120 minutes at the cruise speed, one engine inoperative",
+    },
+    correct: "C",
+    ref: "ATPL A",
+  },
+  {
+    question: "Astronomic precession is",
+    choices: {
+      A: "depending on the chart used",
+      B: "independent of the latitude",
+      C: "existing whether the aircraft is on the ground or flying",
+      D: "zero when the aircraft is on the ground",
+    },
+    correct: "C",
+    ref: "ATPL A",
+  },
+  {
+    question: "Contingency in MNPSA but cannot maintain assigned flight level",
+    choices: {
+      A: "Descend whilst turning off track to take up a separation of 90 nm",
+      B: "Descend whilst turning off track to take up a separation of 60 nm",
+      C: "Descend whilst turning off track to take up a separation of 30 nm",
+      D: "Descend below FL 275",
+    },
+    correct: "C",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "In the event of communication failure in an MNPS (Minimum Navigation Performance Specification) airspace, the pilot must",
+    choices: {
+      A: "return to his flight plan route if its different from the last oceanic clearance receivedand acknowledged by him",
+      B: "continue his flight compliance with the last oceanic clearance received and acknowledged by him",
+      C: "join one of the so-called special routes",
+      D: "change the flight level in accordance with the predetermined instructions",
+    },
+    correct: "D",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "On a polar stereographic chart with a grid based on the Greenwich meridian, a track is drawn from 62oN 010oE to 66oN 050oW. If the initial True track was 305o, what was the initial grid track?",
+    choices: {
+      A: "315o",
+      B: "305o",
+      C: "295o",
+      D: "285o",
+    },
+    correct: "C",
+    ref: "ATPL A",
+  },
+  {
+    question: "Astronomical (earth rate) precession is",
+    choices: {
+      A: "Independent of latitude",
+      B: "Dependent on chart being used",
+      C: "Zero on the ground",
+      D: "Valid whether the aircraft is on the ground or in the air",
+    },
+    correct: "D",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "On reaching the Shanwick OCA to fly in MNPSA, you have not yet received your clearance",
+    choices: {
+      A: "Maintain a track 30 nm laterally spaced from your flight plan track OPERATIONAL PROCEDURES GENERAL - Navigation requirements for Long Range Flights",
+      B: "Maintain your flight plan track but 500 ft above or below your planned flight level",
+      C: "Stay outside controlled airspace until you have received your clearance",
+      D: "Enter on your flight planned track and flight level and await a late clearance",
+    },
+    correct: "C",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "On a polar stereographic chart with grid aligned with the prime meridian; you are heading 045oT; your position is 76oN 180oW, what is your grid heading?",
+    choices: {
+      A: "045o",
+      B: "225o",
+      C: "315o",
+      D: "135o",
+    },
+    correct: "B",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "Ignoring astronomical effects, wind and drift, what route will a constant gyro heading follow?",
+    choices: {
+      A: "Great circle",
+      B: "Rhumb line",
+      C: "Spherical route",
+      D: "Loxodrome",
+    },
+    correct: "A",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "In MNPSA north of 70oN, how frequently can ATC ask for you to report your position?",
+    choices: {
+      A: "Every 10 degrees of latitude",
+      B: "Every 5 degrees of latitude",
+      C: "Every 20 degrees of longitude",
+      D: "Every 10 degrees of longitude",
+    },
+    correct: "C",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "On an NDB approach with an MDH of 360 and a required RVR of 1500m and a reported RVR of 2500m, when can you start an approach; ie which is most correct?",
+    choices: {
+      A: "When the cloud base is above the system minimum",
+      B: "With any cloud base",
+      C: "When the cloud base is above 360 OPERATIONAL PROCEDURES GENERAL - Navigation requirements for Long Range Flights",
+      D: "When the cloud base report is received",
+    },
+    correct: "C",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "The chart is a South polar stereographic projection of the Antarctic regions. A grid, printed over it, its aligned with meridian 180o, the grid North in the direction of the geographic North (non standard grid). The grid course followed by the aircraft is Rg-280o, the position is 80oS 100oE. The true course followed at this moment is: Answers",
+    choices: {
+      A: "000o",
+      B: "260o",
+      C: "080o",
+      D: "100o",
+    },
+    correct: "A",
+    ref: "ATPL A",
+  },
+  {
+    question: "In MNPS airspace, the speed reference is the",
+    choices: {
+      A: "indicated airspeed",
+      B: "Mach number",
+      C: "ground speed",
+      D: "true airspeed",
+    },
+    correct: "B",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "For an operation in MNPS airspace along notified special routes unless otherwise specified, an aircraft must be equipped with at least",
+    choices: {
+      A: "One Inertial Navigation System (INS)",
+      B: "Two Inertial Navigation System (INS)",
+      C: "Two independent long Range Navigation Systems (LRNS)",
+      D: "One Long Range Navigation System (LRNS)",
+    },
+    correct: "D",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "If a flight is planned to operate along the whole length of one of the organised tracks, the intended organised track should be defined in iteras of the FPL by",
+    choices: {
+      A: "using the abbreviation OTS followed by the code letter assigned to the track",
+      B: "inserting co-ordinates defining significant points with intervals of 10o of longitude",
+      C: "the abbreviation NAT followed by the code letter assigned to the track OPERATIONAL PROCEDURES GENERAL - Navigation requirements for Long Range Flights",
+      D: "inserting co-ordinates as detailed in the NAT track message",
+    },
+    correct: "C",
+    ref: "ATPL A",
+  },
+  {
+    question: "The minimum lateral separation in the NAT region is",
+    choices: {
+      A: "60 NM between aircraft flying above FL 285",
+      B: "60 NM between aircraft operating below MNPS airspace",
+      C: "90 NM between aircraft flying above FL 285",
+      D: "90 NM between all aircraft flying the NAT region",
+    },
+    correct: "A",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "At which levels may Reduced Vertical Separation Minimum (RVSM) be used within NAT region?",
+    choices: {
+      A: "Between FL 290 and FL 410",
+      B: "Between FL 275 and FL 400",
+      C: "Between FL 245 and FL 410",
+      D: "Below FL 290",
+    },
+    correct: "A",
+    ref: "ATPL A",
+  },
+  {
+    question: "Penetration into the North Atlantic ocean airspace is",
+    choices: {
+      A: "subject to an optional clearance depending on the type of flight (scheduled or not)",
+      B: "not subject to a clearance, since the flight is already controlled",
+      C: "subject to a clearance only if the flight route is changed",
+      D: "subject to a mandatory clearance",
+    },
+    correct: "D",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "While approaching a mountainous airfield, the captain of a transport aircraft notices a fast and high increase in the indicated airspeed without any change in the pre-selected engine and attitude parameters. The preceding crews had reported the occurrence of wind-shears in final phase you must",
+    choices: {
+      A: "take a level flight attitude to reduce speed, then come back to glide path from above",
+      B: "reduce rapidly the selected thrust in order to reach 1.2 Va and try a precision landing",
+      C: "maintain aircraft on the glide path, accept a positive speed deviation, monitor the speedevolution OPERATIONAL PROCEDURES GENERAL - Navigation requirements for Long Range Flights",
+      D: "reduce rapidly the selected thrust, maintain on the glide path",
+    },
+    correct: "C",
+    ref: "ATPL A",
+  },
+  {
+    question: "When flying above optimum altitude",
+    choices: {
+      A: "range reduces",
+      B: "mach number stability increases",
+      C: "flight envelope increases",
+      D: "range increases",
+    },
+    correct: "D",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "In the Southern Hemisphere (130oE, 80oS), grid is aligned with the Greenwich Meridian, aircraft is heading 110oT, what is the grid heading?",
+    choices: {
+      A: "240o",
+      B: "110o",
+      C: "340o",
+      D: "080o",
+    },
+    correct: "A",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "The chart being used is a polar stereographic chart and grid north is aligned with the Greenwich Meridian. The gyro is aligned with grid North, heading 120o, at 1400 UTC at latitude 600N. Take-off is delayed until 1630 UTC, gyro not corrected for rate pre",
+    choices: {
+      A: "+130",
+      B: "-32.50",
+      C: "-73.50",
+      D: "+32.50",
+    },
+    correct: "B",
+    ref: "ATPL A",
+  },
+  {
+    question: "The limits of MNPS Airspace are",
+    choices: {
+      A: "From sea level to FL 660",
+      B: "From FL 285 to FL 420, from 27oN to the North Pole",
+      C: "From FL 270 to FL 480, from 27oN to the North Pole",
+      D: "From the Equator to the North Pole OPERATIONAL PROCEDURES GENERAL - Navigation requirements for Long Range Flights",
+    },
+    correct: "B",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "An aeroplane flying east/west between 5oW and 65oW, south of 70oN has to report position every",
+    choices: {
+      A: "10o longitude",
+      B: "20o longitude",
+      C: "15o latitude",
+      D: "5o latitude",
+    },
+    correct: "A",
+    ref: "ATPL A",
+  },
+  {
+    question: "Flying to Europe in MNPS at 1000 UTC crossing 030oW",
+    choices: {
+      A: "In flight route day system",
+      B: "In flight route night system",
+      C: "In random airspace",
+      D: "Out of organised route track system",
+    },
+    correct: "D",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "For optimum performance for an aeroplane, a step cruise climb is performed. What is the best level to climb to?",
+    choices: {
+      A: "Between lock on and optimum levels",
+      B: "Around lock on level",
+      C: "Around optimum level",
+      D: "Below lock on level",
+    },
+    correct: "C",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "What is the true bearing of sun from an aeroplane at the North Pole using a grid track of 315o at 1840Z?",
+    choices: {
+      A: "035o",
+      B: "325o",
+      C: "180o",
+      D: "000o",
+    },
+    correct: "B",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "How far from an en route alternate airfield can a 2-engined aeroplane with more than 20 seats and a MTOM of 8.600 kg be flown?",
+    choices: {
+      A: "120 minutes flying time",
+      B: "90 minutes flying time",
+      C: "60 minutes flying time",
+      D: "60 minutes at the one engine out speed",
+    },
+    correct: "D",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "Estimate Errors in MNPSA must be reported to ATS if they differ by",
+    choices: {
+      A: "3 min or less",
+      B: "3 min",
+      C: "5 min",
+      D: "3 min or more",
+    },
+    correct: "D",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "You are at a latitude of 59o57¿ N with a heading of 120o showing on a gyro compass. You experience a delay of 2 hrs 30 mins; what is the effect on your compass?",
+    choices: {
+      A: "-18.5o",
+      B: "16.5o",
+      C: "-32.5o",
+      D: "32.5o",
+    },
+    correct: "C",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "Contingency at FL 410 necessitates diversion to an alternate against NAT traffic without ATC clearance but able to maintain altitude",
+    choices: {
+      A: "Turn left or right and climb 1.000 ft/descend 500 ft",
+      B: "Climb or descend 500 ft",
+      C: "Climb 500 ft",
+      D: "Descend 500 ft",
+    },
+    correct: "A",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "How far away can a take-off alternate be for a 2-engined aeroplane?",
+    choices: {
+      A: "60 mins at one engine cruise speed OPERATIONAL PROCEDURES GENERAL - Navigation requirements for Long Range Flights",
+      B: "60 mins at normal cruise speed",
+      C: "120 mins at one engine cruise speed",
+      D: "120 mins at normal cruise speed",
+    },
+    correct: "A",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "The take-off alternate has to be within which of the following distances from the aerodrome of departure",
+    choices: {
+      A: "For an aeroplane with two engines, a distance equivalent to a flight time of 30 minutes at theone engine inoperative engine cruise speed",
+      B: "For an aeroplane with three or more engines, a distance equivalent to a flight time of two hoursat the one engine inoperative engine cruise speed",
+      C: "For an aeroplane with two engines, a distance equivalent to a flight time of two hours at theone engine inoperative engine cruise speed",
+      D: "For an aeroplane with three or more engines, a distance equivalent to a flight time of fourhours at the one engine inoperative engine cruise speed",
+    },
+    correct: "B",
+    ref: "ATPL A",
+  },
+  {
+    question: "How do you calculate Conversion Angle?",
+    choices: {
+      A: "½ Ch long x sin lat.",
+      B: "Ch long x sin lat.",
+      C: "½ Ch long x cos lat.",
+      D: "Ch long x cos lat.",
+    },
+    correct: "A",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "When leaving MNPS airspace and you have lost communications, what Mach No. do you select?",
+    choices: {
+      A: "Your flight plan Mach No.",
+      B: "The Mach No. to make good the next EET",
+      C: "Your last cleared Mach No.",
+      D: "The TAS as submitted on your flight plan",
+    },
+    correct: "C",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "In determining Aerodrome Operating Minima, what of the following needs to be considered? 1. Crew composition In determining Aerodrome Operating Minima, what of the following needs to be considered? 1. Crew composition 2. Ability to communicate/receive meteorological information 3. Significant obstacles in the missed approach area 4. Dimensions and characteristics of the runway 5. Navigation equipment in the aeroplane",
+    choices: {
+      A: "1, 2, 4, 5",
+      B: "1, 2, 3",
+      C: "2, 3, 4, 5",
+      D: "All of the above",
+    },
+    correct: "D",
+    ref: "ATPL A",
+  },
+  {
+    question: "What Mach number do you maintain when leaving MNPS?",
+    choices: {
+      A: "Flight Plan Mach number",
+      B: "Mach number complying with local regulations",
+      C: "Last cleared Mach number from MNPS",
+      D: "You revert to flight plan TAS",
+    },
+    correct: "C",
+    ref: "ATPL A",
+  },
+  {
+    question: "An operator must select two destination alternates when either",
+    choices: {
+      A: "The appropriate weather reports or forecasts for the destination, or any combination thereof, indicate that during a period commencing 1 hour before and ending 1 hour after the estimatedtime of arrival, the weather conditions will be below the applicable planning minima",
+      B: "No meteorological information is available",
+      C: "Both A and B are correct",
+      D: "Neither A nor B are correct",
+    },
+    correct: "C",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "A flight under IFR should not be commenced unless the weather conditions at destination and a nominated alternate are on",
+    choices: {
+      A: "arrival equal to or above, within a reasonable period of time before and after the nominatedtime, the operating minima for aerodrome use OPERATIONAL PROCEDURES GENERAL - Navigation requirements for Long Range Flights",
+      B: "arrival equal to and above the operating minima for aerodrome use",
+      C: "departure equal to or above the operating minima for aerodrome use",
+      D: "or above the minima between departure and the ETA",
+    },
+    correct: "A",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "'An air traffic control unit may request an aircraft to report its position when flying east-west north of 70oN between 10oW and 50oW, every",
+    choices: {
+      A: "10o of longitude",
+      B: "15o of longitude",
+      C: "5o of longitude",
+      D: "20o of longitude",
+    },
+    correct: "D",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "A polar track is a route which part of the length crosses an area where the horizontal component of the earth's magnetic field is less than",
+    choices: {
+      A: "38 micro-teslas",
+      B: "6 micro-teslas",
+      C: "10 micro-teslas",
+      D: "17 micro-teslas",
+    },
+    correct: "B",
+    ref: "ATPL A",
+  },
+  {
+    question: "Separation in RVSM in MNPS is?",
+    choices: {
+      A: "60 nm and 500 ft",
+      B: "60 nm and 1000 ft",
+      C: "90 nm and 500 ft",
+      D: "90 nm and 1000 ft",
+    },
+    correct: "B",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "Routing from Shannon to Canada, when not MNPS equipped, how are you able to fly",
+    choices: {
+      A: "Outside the times of OTS",
+      B: "Laterally displaced from the OTS",
+      C: "At FL 280 or below OPERATIONAL PROCEDURES GENERAL - Navigation requirements for Long Range Flights",
+      D: "You cannot fly the route",
+    },
+    correct: "C",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "In MNPS, FL 370, you need to change your clearance but have no communications with ATO. You turn left or right and get 30 nm separation, do you",
+    choices: {
+      A: "Climb or descend 500 ft",
+      B: "Climb 1000 ft or descend 500 ft",
+      C: "Climb or descend 1000 ft",
+      D: "Climb 500 ft or descend 1000 ft",
+    },
+    correct: "A",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "On a polar stereographic chart, with a grid referenced on the Greenwich meridian and convergency of 10oW, true heading of 300o, what is grid heading?",
+    choices: {
+      A: "310o",
+      B: "300o",
+      C: "010o",
+      D: "290o",
+    },
+    correct: "D",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "A flight to Europe is expected to be at 030oW at 0030UTC. Where will you be?",
+    choices: {
+      A: "Inside the daytime organised track system",
+      B: "Random airspace",
+      C: "Outside the organised track system",
+      D: "Inside the night time organised track system",
+    },
+    correct: "C",
+    ref: "ATPL A",
+  },
+  {
+    question: "What is the lowest decision height for CAT II operations?",
+    choices: {
+      A: "50 ft",
+      B: "100 ft",
+      C: "200 ft",
+      D: "150 ft",
+    },
+    correct: "B",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "In the event of a contingency which required an en-route diversion to an alternate aerodrome across the direction of the prevailing NAT traffic flow and if prior ATC clearance cannot be obtained an aircraft able to maintain its assigned flight level should",
+    choices: {
+      A: "If at FL 410, climb or descend 500 ft, while turning towards the alternate aerodrome",
+      B: "If at FL 410, descend 1000 ft, while turning towards the alternate aerodrome",
+      C: "If at FL 410, climb 1000 ft or descend 500 ft, while turning towards the alternate aerodrome",
+      D: "If at FL 410, climb 500 ft, while turning towards the alternate aerodrome",
+    },
+    correct: "C",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "(Refer to figure 071-01) On the diagram where: Nt = True North Nm = Magnetic North Ng = Grid North If the magnetic variation is equal to 65oW and if the grid variation is equal to 4oE, the correct arrangement of the different north is",
+    choices: {
+      A: "4",
+      B: "1",
+      C: "2",
+      D: "3",
+    },
+    correct: "D",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "Air traffic services may require an aircraft to report position when flying east-west, north of 70oN between 10oW and 50oW, every",
+    choices: {
+      A: "10o of longitude",
+      B: "20o of longitude",
+      C: "15o of longitude",
+      D: "5o of longitude",
+    },
+    correct: "B",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "Air traffic services may require an aircraft to report position when flying east-west, south of 70oN between 10oW and 50oW, every",
+    choices: {
+      A: "10o of longitude",
+      B: "5o of longitude",
+      C: "20o of longitude",
+      D: "15o of longitude",
+    },
+    correct: "A",
+    ref: "ATPL A",
+  },
+  {
+    question: "Astronomic precession",
+    choices: {
+      A: "causes an apparent wander on the axis of the directional gyro to the right in the southernhemisphere",
+      B: "causes an apparent wander on the axis of the directional gyro to the left in the southernhemisphere",
+      C: "is zero at the North pole",
+      D: "is zero at the South pole",
+    },
+    correct: "B",
+    ref: "ATPL A",
+  },
+  {
+    question: "Astronomic precession",
+    choices: {
+      A: "causes the gyro axis to spin to the left in the Northern hemisphere",
+      B: "causes the gyro axis to spin to the right in the Northern hemisphere",
+      C: "is zero at the North pole",
+      D: "is zero at the South pole",
+    },
+    correct: "B",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "During a flight from Europe, scheduled in MNPS (Minimum Navigation Performance Specification) airspace, you expect to cross the 30oW meridian at 1330 UTC; you will normally be",
+    choices: {
+      A: "outside the validity period of the organised track system",
+      B: "in a polar track system",
+      C: "in a night-time organised track system",
+      D: "in a day-time organised track system",
+    },
+    correct: "D",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "During a flight to Europe, scheduled in MNPS (Minimum Navigation Performance Specification) airspace, you expect to cross the 30oW meridian at 0300 UTC; you will normally be",
+    choices: {
+      A: "in a day-time organised track system",
+      B: "outside the validity period of the organised track system",
+      C: "in a night-time organised track system",
+      D: "within the polar track system",
+    },
+    correct: "C",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "If all long range navigation systems of an aircraft become unserviceable during a flight in MNPS airspace, and if no instructions are received from the air traffic control, you must consider",
+    choices: {
+      A: "descend below the MNPS space",
+      B: "climbing or descending 500 feet",
+      C: "return to departure airport",
+      D: "land at the nearest airport",
+    },
+    correct: "B",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "In airspace where MNPS is applicable, the minimum vertical separation between FL 290 and FL 410 is",
+    choices: {
+      A: "500 ft",
+      B: "1000 ft",
+      C: "2000 ft",
+      D: "1500 ft",
+    },
+    correct: "B",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "In case of total loss of communications, if an aircraft operating in MNPS airspace is unable to continue its flight in accordance with its ATC clearance, it must offset from the assigned route by 30 nm and climb by 1000 ft or descend by 500 ft to a level",
+    choices: {
+      A: "below FL 410",
+      B: "above FL 410",
+      C: "at FL 410",
+      D: "at FL 430",
+    },
+    correct: "C",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "In NAT region, a revised estimate should be transmitted to the ATS when the estimated time for the next position has changed by",
+    choices: {
+      A: "10 minutes or more OPERATIONAL PROCEDURES GENERAL - Navigation requirements for Long Range Flights",
+      B: "5 minutes or more",
+      C: "3 minutes or more",
+      D: "2 minutes or more",
+    },
+    correct: "C",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "In the event of an en-route HF communication failure in an MNPS (Minimum Navigation Performance Specification) airspace, the appropriate VHF frequency for air to air communications is",
+    choices: {
+      A: "128.800 MHz",
+      B: "118.800 MHz",
+      C: "121.800 MHz",
+      D: "123.45 MHz",
+    },
+    correct: "D",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "Minimum Navigation Performance Specification (MNPS) airspace in the applicable areas of the North Atlantic is defined between the following flight levels",
+    choices: {
+      A: "FL 280 and FL 475",
+      B: "FL 270 and FL 400",
+      C: "sea level and FL 660",
+      D: "FL 85 and FL 420",
+    },
+    correct: "D",
+    ref: "ATPL A",
+  },
+  {
+    question: "Minimum time route is a route calculated for",
+    choices: {
+      A: "a period of 12 hours",
+      B: "a given flight from departure to destination",
+      C: "a period of 24 hours",
+      D: "aircraft flying in MNPS airspace",
+    },
+    correct: "B",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "The validity period of a day-time organised track system in MNPS (Minimum Navigation Performance Specification) airspace is normally at 30oW between",
+    choices: {
+      A: "01H00 UTC to 08H00 UTC",
+      B: "10H30 UTC to 19H00 UTC",
+      C: "11H30 UTC to 18H00 UTC OPERATIONAL PROCEDURES GENERAL - Navigation requirements for Long Range Flights",
+      D: "00H00 UTC to 08H00 UTC",
+    },
+    correct: "C",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "The validity period of a nigh-time organised track system in MNPS (Minimum Navigation Performance Specification) airspace is normally at 30oW, between",
+    choices: {
+      A: "01H00 UTC to 08H00 UTC",
+      B: "10H30 UTC to 19H00 UTC",
+      C: "11H30 UTC to 18H00 UTC",
+      D: "00H00 UTC to 08H00 UTC",
+    },
+    correct: "A",
+    ref: "ATPL A",
+  },
+  {
+    question: "Minimum lateral separation in NAT is",
+    choices: {
+      A: "90 nm between all aircraft in NAT",
+      B: "60 nm between aircraft operating below MNPSA",
+      C: "60 nm above FL 285",
+      D: "90 nm above FL 285",
+    },
+    correct: "C",
+    ref: "ATPL A",
+  },
+  {
+    question: "How is VOR information in N Canada airspace referenced?",
+    choices: {
+      A: "Magnetic north",
+      B: "Grid north",
+      C: "Gyro north",
+      D: "True north",
+    },
+    correct: "D",
+    ref: "ATPL A",
+  },
+  {
+    question: "How does one define the planned tracks north of 70oN?",
+    choices: {
+      A: "Latitude in degrees with meridians spaced at 10o",
+      B: "Latitude in degrees with meridians spaced at 20o",
+      C: "Longitude spaced at 5o intervals",
+      D: "Latitude spaced at 5o intervals",
+    },
+    correct: "B",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "In the event of contingencies against the flow of NAT system, you can't get prior approval from ATC. You",
+    choices: {
+      A: "if above FL 410 climb 1000 ft or descend 500 ft while turning to alternate",
+      B: "if below FL 410 climb or descend 1000 ft while turning to alternate",
+      C: "if above FL 410 climb or descend 1000 ft while turning to alternate",
+      D: "if below FL 410 climb 1000 ft or descend 500 ft while turning to alternate",
+    },
+    correct: "C",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "When flying a non-MNPS aircraft, climb through MNPS Airspace is allowed",
+    choices: {
+      A: "When under radar and in VHF communications with a controller",
+      B: "When in contact with other aircraft in the area",
+      C: "Always prohibited",
+      D: "When it has 2 LRNS",
+    },
+    correct: "A",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "If at FL 410 in MNPS and RVSM, you suffer an emergency requiring descent, do you",
+    choices: {
+      A: "Climb/descend 500 ft and offset by 60 nm",
+      B: "Climb 500 ft/descend 1000 ft and offset by 30 nm",
+      C: "Climb 1000 ft/descend 500 ft and offset by 30 nm",
+      D: "Climb/descend 1000 ft and offset by 60 nm",
+    },
+    correct: "C",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "Above FL 410 and needing to go against the NAT track system, you will turn through 90o and ensure 30 nm separation from your planned track. What will you then do?",
+    choices: {
+      A: "Climb 1000 ft or descend 500 ft",
+      B: "Climb or descend 1000 ft",
+      C: "Climb 500 ft or descend 1000 ft",
+      D: "Climb or descend 500 ft",
+    },
+    correct: "B",
+    ref: "ATPL A",
+  },
+  {
+    question: "Within NAT, IFR only is applicable in the area",
+    choices: {
+      A: "Above 3000 ft OPERATIONAL PROCEDURES GENERAL - Navigation requirements for Long Range Flights",
+      B: "Above FL 60 or 2000 ft whichever is the higher",
+      C: "Uncontrolled airspace 400 nm from shore",
+      D: "Controlled airspace 100 nm from shore",
+    },
+    correct: "B",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "On MNPS special routes without special clearance, the minimum navigation requirement is",
+    choices: {
+      A: "1 LRNS",
+      B: "2 LRNS",
+      C: "1 INS",
+      D: "2 INS",
+    },
+    correct: "A",
+    ref: "ATPL A",
+  },
+  {
+    question: "The validity time for an Eastbound OTS is",
+    choices: {
+      A: "1030 UTC to 1900 UTC",
+      B: "1130 UTC to 1900 UTC",
+      C: "0100 UTC to 0800 UTC",
+      D: "0000 UTC to 0800 UTC",
+    },
+    correct: "C",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "You are flight planned on a NAT OTS track for the whole length. The flight plan will define the route format as",
+    choices: {
+      A: "NAT plus the track code letter",
+      B: "NAT plus co-ordinates",
+      C: "NAT OTS plus entry and exit points",
+      D: "OTS plus the track code letter",
+    },
+    correct: "A",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "Desired track is 100o, actual track is 120o. Which statement is correct?",
+    choices: {
+      A: "Track error angle is right",
+      B: "Track error angle is left",
+      C: "Converging with desired track OPERATIONAL PROCEDURES GENERAL - Navigation requirements for Long Range Flights",
+      D: "Diverging from desired track",
+    },
+    correct: "A",
+    ref: "ATPL A",
+  },
+  {
+    question: "Earth rate or astronomic precession",
+    choices: {
+      A: "Causes the gyro axis to spin to the right in the Northern Hemisphere",
+      B: "is zero at the South Pole",
+      C: "is zero at the North Pole",
+      D: "Causes the gyro axis to spin to the left in the Northern Hemisphere",
+    },
+    correct: "A",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "You are at 60oS 100oE, using a polar stereographic chart with the grid based on the 180o meridian. Grid north is in the direction of geographic north. If you are heading 258oG, what is your true heading?",
+    choices: {
+      A: "158o",
+      B: "178o",
+      C: "338o",
+      D: "358o",
+    },
+    correct: "D",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "On a polar stereographic chart, the grid is aligned on the 180o meridian. At 80oS 100oE, with a grid heading of 280o, what is the true heading?",
+    choices: {
+      A: "000o",
+      B: "080o",
+      C: "180o",
+      D: "260o",
+    },
+    correct: "A",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "An aeroplane is at 60oN 010oE and is to fly to 60oN 020oE. The flight time is 1.5 hours in still air. The gyro is set with the reference to true north and not corrected in flight for precession. What is the required initial heading if a constant gyro heading is to be maintained?",
+    choices: {
+      A: "080o",
+      B: "076o",
+      C: "066o",
+      D: "086o OPERATIONAL PROCEDURES GENERAL - Navigation requirements for Long Range Flights",
+    },
+    correct: "B",
+    ref: "ATPL A",
+  },
+  {
+    question: "Flying in MNPS, what are the vertical and Latitude limits",
+    choices: {
+      A: "FL 285 - FL 420, North Pole - 27N",
+      B: "B ¿ FL 200 - FL 470, North Pole - 27N",
+      C: "FL 296 - FL 400, Equator - 27N",
+      D: "D - FL 295 - FL 410",
+    },
+    correct: "A",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "The autopilot is coupled to a gyro-magnetic compass corrected for variation so that true headings may be flown. What path would you follow over the ground?",
+    choices: {
+      A: "a rhumb line",
+      B: "a great circle",
+      C: "a curve of pursuit",
+      D: "none of the above",
+    },
+    correct: "A",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "The validity of NAT minimum time tracks for longitude 030oW is: 1.1130 to 1800 UTC 2.0100 to 0800 UTC 3.0800 to 1400 UTC 4.1800 to 0100 UTC",
+    choices: {
+      A: "(i) and (ii)",
+      B: "(ii) and (iii)",
+      C: "(i) and (iv)",
+      D: "(iii) and (iv)",
+    },
+    correct: "A",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "At 60oN 030oW, the true heading is 090o, gyro bearing is 000o. At 62oN 010oW, the true heading is 095o and it has taken 1.5 hrs to travel that distance. Assuming the latitude nut is functioning correctly what will the gyro read?",
+    choices: {
+      A: "003o",
+      B: "348o",
+      C: "328o OPERATIONAL PROCEDURES GENERAL - Navigation requirements for Long Range Flights",
+      D: "354o",
+    },
+    correct: "C",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "You are flying in the MNPSA and in the event of an in-flight incident combined with a communications failure are required to climb or descend by 500 ft. You are",
+    choices: {
+      A: "At FL 410",
+      B: "Above FL 410",
+      C: "Below FL 410",
+      D: "None of the above",
+    },
+    correct: "C",
+    ref: "ATPL A",
+  },
+  {
+    question: "Earth rate or astronomical rate",
+    choices: {
+      A: "Makes the gyro spin axis turn left in the northern hemisphere",
+      B: "Makes the gyro spin axis turn right in the northern hemisphere",
+      C: "is zero at the North Pole",
+      D: "is zero at the South Pole",
+    },
+    correct: "B",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "What is the relative bearing of sun from an aeroplane at the North pole using a grid track of 315o at 1840Z if the grid is aligned with the prime meridian?",
+    choices: {
+      A: "035o",
+      B: "325o",
+      C: "180o",
+      D: "000o",
+    },
+    correct: "B",
+    ref: "ATPL A",
+  },
+  {
+    question: "Minimum time tracks in the NAT MNPS airspace are issued",
+    choices: {
+      A: "daily",
+      B: "twice daily",
+      C: "weekly",
+      D: "hourly OPERATIONAL PROCEDURES SPECIAL OPERATIONAL PROCEDURES AND - Minimum Equipment List (MEL)",
+    },
+    correct: "B",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "The minimum horizontal and vertical separation between aircraft in MNPS airspace is",
+    choices: {
+      A: "40 nm and 1000ft",
+      B: "60 nm and 1000ft",
+      C: "60 nm and 2000 ft",
+      D: "90 nm and 1000 ft",
+    },
+    correct: "D",
+    ref: "ATPL A",
+  },
+  {
+    question:
+      "The minimum equipment list of a public transport airplane is to be found in the",
+    choices: {
+      A: "flight record",
+      B: "CARS",
+      C: "flight manual",
+      D: "operation manual",
+    },
+    correct: "D",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "A piece of equipment on your public transport airplane fails while you are still parked. The reference document you use to decide on the procedure to follow is",
+    choices: {
+      A: "the minimum equipment list",
+      B: "the operation manuals chapter Abnormal and Emergency procedures",
+      C: "the JAR OPS",
+      D: "the flight manual",
+    },
+    correct: "A",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "A list to be carried in the aeroplane detailing minimum equipment required must be approved by",
+    choices: {
+      A: "Country of operations",
+      B: "Country of operator",
+      C: "Country of manufacturer",
+      D: "No such book is required to be approved by an authority",
+    },
+    correct: "B",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "The Master Minimum Equipment List (MMEL) defines the equipment on which certain in-flight failures can be allowed and the conditions under which this allowance can be accepted. This MMEL is drawn up by",
+    choices: {
+      A: "the operator from a main list drawn up by the manufacturer",
+      B: "the operator and is specified in the operation manual",
+      C: "the operator and approved by the certification authority",
+      D: "the manufacturer and approved by the certification authority",
+    },
+    correct: "D",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "The master minimum equipment list (MMEL) is established by",
+    choices: {
+      A: "the operator of the aircraft, and accepted by the manufacturer",
+      B: "the operator of the aircraft, and accepted by the authority",
+      C: "the manufacturer of the aircraft, and accepted by the authority",
+      D: "the manufacturer of the aircraft, but need not to be accepted by the authority",
+    },
+    correct: "C",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "The Minimum Equipment List (MEL) defines the equipment on which certain in-flight failures can be allowed and the conditions under which this allowance can be accepted. The Mel is drawn up by",
+    choices: {
+      A: "the manufacturer and may be less restrictive than the Master Minimum Equipment List (MMEL)",
+      B: "the operator and may be more restrictive than the Master Minimum Equipment List (MMEL)",
+      C: "the operator and may be less restrictive than the Master Minimum Equipment List (MMEL)",
+      D: "the manufacturer and may be more restrictive than the Master Minimum Equipment List",
+    },
+    correct: "B",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "The Minimum Equipment List (MEL) is established by",
+    choices: {
+      A: "the aeronautical authority the airline operator depends on",
+      B: "the manufacturer",
+      C: "the airline operator",
+      D: "the Civil Aviation Authority of the European states",
+    },
+    correct: "C",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "Following an indication of an unserviceability whilst taxiing to the holding point, what do you consult first?",
+    choices: {
+      A: "Flight manual OPERATIONAL PROCEDURES SPECIAL OPERATIONAL PROCEDURES AND - Minimum Equipment List (MEL)",
+      B: "Operator",
+      C: "State of registration",
+      D: "MEL",
+    },
+    correct: "D",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "Who issues and updates the MEL?",
+    choices: {
+      A: "The authority",
+      B: "The designer",
+      C: "The manufacturer",
+      D: "The operator",
+    },
+    correct: "D",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "The MEL (Minimum Equipment List) is drawn up by",
+    choices: {
+      A: "the aircraft manufacturers list",
+      B: "the aircraft state of registry",
+      C: "the operator",
+      D: "the manufacturer",
+    },
+    correct: "C",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "An operator is permitted to use an aircraft with certain items of equipment out of service if this is provided for in",
+    choices: {
+      A: "the approval conditions for return to service following maintenance",
+      B: "the Maintenance Schedule, in the Approval Specifications Section",
+      C: "the Minimum Equipment List (MEL) or Master Minimum Equipment List (MMEL)",
+      D: "JAR-OPS Subpart M",
+    },
+    correct: "C",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "The field of application of the Minimum Equipment List (MEL) is defined by a phase of flight operation. The commander must use the limitations provided by the MEL",
+    choices: {
+      A: "At any time during the flight",
+      B: "Prior to the aircraft take-off",
+      C: "At the parking area prior to the aircraft taxiing OPERATIONAL PROCEDURES SPECIAL OPERATIONAL PROCEDURES AND - Minimum Equipment List (MEL)",
+      D: "Until the aircraft has come to a complete stop at the end of the flight",
+    },
+    correct: "C",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "The Master Minimum Equipment List (MMEL) defines the equipment which can be inoperative when undertaking a flight and the conditions under which this allowance can be accepted. This MMEL is drawn up by",
+    choices: {
+      A: "the operator from a main list drawn up by the manufacturer",
+      B: "the operations manual",
+      C: "the operator and approved by the certification authority",
+      D: "the manufacturer and approved by the certification authority",
+    },
+    correct: "D",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "The Minimum Equipment List (MEL) is established by",
+    choices: {
+      A: "the Civil Aviation Authority",
+      B: "the manufacturer and approved by the authority",
+      C: "the aeronautical authority the airline operator depends on",
+      D: "the airline operator and approved by the authority",
+    },
+    correct: "D",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "The MMEL is?",
+    choices: {
+      A: "Compiled by the manufacturer and approved by the operator",
+      B: "Compiled by the manufacturer and approved by the state of design or state of the manufacturer",
+      C: "Compiled by the operator and approved by the state of design",
+      D: "Compiled by the manufacturer and not approved by the operator",
+    },
+    correct: "B",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "When taking off, in winter conditions, the wing contamination by ice or frost will cause the following effects:An increase in the take-off distanceA decrease of the take-off runAn increase in the stalling speedA decrease of the stalling speedA decrease of the climb gradientThe combination regrouping all the correct statements is: Answers",
+    choices: {
+      A: "1, 3, 5",
+      B: "2, 4, 5",
+      C: "1, 2, 3 OPERATIONAL PROCEDURES SPECIAL OPERATIONAL PROCEDURES AND - Minimum Equipment List (MEL)",
+      D: "2, 3, 5",
+    },
+    correct: "A",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "An aircraft having undergone an anti-icing procedure must be anti-icing fluid free at the latest when",
+    choices: {
+      A: "leaving the icing zone",
+      B: "releasing the brakes in order to take-off",
+      C: "it is implementing its own anti-icing devices",
+      D: "it is rotating (before taking-off)",
+    },
+    correct: "D",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "The application of a type II de-icing fluid on an aircraft on ground will provide a",
+    choices: {
+      A: "certain time of protection depending on its concentration",
+      B: "24 hours protection time",
+      C: "certain time of protection independent of the outside temperature",
+      D: "3 hours protection time",
+    },
+    correct: "A",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "When an aircraft, having already undergone an anti-icing procedure, must be protected again?",
+    choices: {
+      A: "You must wait until the protection time of the anti-icing fluid is over before applying the newlayer of anti-icing fluid",
+      B: "You can apply directly the new layer of anti-icing fluid without previous de-icing",
+      C: "You must operate the aircraft de-icing/anti-icing devices before applying the new layer of anti-icing fluid",
+      D: "First, you must de-ice again the surface of the airplane, then applhy the new layer of anti-icing fluid",
+    },
+    correct: "D",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question: "During an aircraft de-icing/anti-icing procedure",
+    choices: {
+      A: "the anti-icing and de-icing fluids are applied cold",
+      B: "the anti-icing and de-icing fluids are applied hot OPERATIONAL PROCEDURES SPECIAL OPERATIONAL PROCEDURES AND - Minimum Equipment List (MEL)",
+      C: "the anti-icing fluid is applied without heating and the de-icing fluid is applied hot",
+      D: "the de-icing fluid is applied without heating and the anti-icing fluid is applied hot",
+    },
+    correct: "C",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "An aircraft having undergon an anti-icing procedure and having exceeded the protection time of the anti- icing fluid",
+    choices: {
+      A: "must only undergo a new anti-icing procedure for take-off",
+      B: "must undergo a de-icing procedure before a new application of anti-icing fluid for take-off",
+      C: "need not to undergo a new anti-icing procedure for take-off",
+      D: "must only undergone a de-icing procedure for take-off",
+    },
+    correct: "B",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "The EPR probes of an aircraft are covered in ice. The indicated EPR",
+    choices: {
+      A: "will be lower than the real EPR",
+      B: "will be higher than the real EPR",
+      C: "will be zero",
+      D: "will be correct",
+    },
+    correct: "B",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "The accumulation of snow or ice on an aircraft in flight induces an increase in the",
+    choices: {
+      A: "tuck under",
+      B: "value of the stall angle of attack",
+      C: "stalling speed",
+      D: "roll rate",
+    },
+    correct: "C",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "The greatest possibility of ice buildup, while flying under icing conditions, occurs on",
+    choices: {
+      A: "The aircraft front areas",
+      B: "The upper and lower wing surfaces",
+      C: "The upper and lower rudder surfaces",
+      D: "Only the pilot and static probes OPERATIONAL PROCEDURES SPECIAL OPERATIONAL PROCEDURES AND - Minimum Equipment List (MEL)",
+    },
+    correct: "A",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "During the winter an aircraft is parked overnight prior to an early morning departure. The crew notice a slight glistening ice deposit on top of the wings or blades which appears translucent. Under these conditions",
+    choices: {
+      A: "the take off performance of the aircraft will not be affected",
+      B: "there is no risk of ice accretion",
+      C: "the aircraft should be sprayed with de-icing fluid of the correct type",
+      D: "a longer starting procedure will be necessary to warm up the aircraft",
+    },
+    correct: "C",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "The accumulation of frost, snow or ice on an aeroplane in flight induces, amongst other serious consequences, an increase in the",
+    choices: {
+      A: "tuck under",
+      B: "value of the stall angle of attack",
+      C: "stalling speed",
+      D: "roll rate",
+    },
+    correct: "C",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "The application of a type II anti-icing fluid on an aircraft on the ground will provide a",
+    choices: {
+      A: "limited holdover time",
+      B: "protection time up to 24 hours",
+      C: "limited time of protection independent of the outside temperature",
+      D: "protection against icing for the duration of the flight",
+    },
+    correct: "A",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "When planning a flight in icing conditions, what are the requirements?",
+    choices: {
+      A: "Aircraft to be equipped with approved anti-icing equipment",
+      B: "Apply anti-icing fluid",
+      C: "A Met officer will decide if the flight can take place",
+      D: "Take off anyway and hope for the best",
+    },
+    correct: "A",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "The terminal VOR transmits the following weather data. When do you expect carburettor icing?",
+    choices: {
+      A: "Outside Air Temperature (OAT): + 15oC Dew Point (DEWP): -5oC",
+      B: "Outside Air Temperature (OAT): + 10oC Dew Point (DEWP): +7oC",
+      C: "Outside Air Temperature (OAT): + 25oC Dew Point (DEWP): +5oC",
+      D: "Outside Air Temperature (OAT): - 10oC Dew Point (DEWP): -15oC",
+    },
+    correct: "B",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "For stable clouds:The most favourable temperatures for icing are between 0oC and -10oCThe most favourable temperatures for icing are between 0oC and -15oCIcing becomes rare at t<-18oCIcing becomes rate at t<- 30oCThe diameter of water droplets is between 0.002 and 0.03 mmThe diameter of water droplets is between 0.004 and 0.2 mmWhich of the following combinations contains all the correct statements? Answers",
+    choices: {
+      A: "1, 3, 5",
+      B: "2, 4, 6",
+      C: "2, 3, 5",
+      D: "1, 4, 6",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "If the EPR probe becomes covered with ice, EPR indications will be",
+    choices: {
+      A: "Dependent on the temperature",
+      B: "Less than the actual",
+      C: "Equal to the actual",
+      D: "Greater than the actual",
+    },
+    correct: "D",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "During a de-icing/anti-icing procedure carried out in two stages, the waiting time starts",
+    choices: {
+      A: "at the beginning of the second stage (anti-icing stage)",
+      B: "at the beginning of the first stage (de-icing stage)",
+      C: "at the end of the second stage (anti-icing stage)",
+      D: "at the end of the first stage (de-icing stage)",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "The protection time of an anti-icing fluid depends on:The type and intensity of the showersThe ambient temperatureThe relative humidityThe direction and speed of the windThe temperature of the airplane skinThe type of fluid, its concentration and temperatureThe combination regrouping all the correct statements is",
+    choices: {
+      A: "2, 3, 4, 5",
+      B: "1, 2, 3, 4, 5, 6",
+      C: "1, 2, 4, 6",
+      D: "1, 3, 5, 6",
+    },
+    correct: "B",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "Without wind, the tip vortices created by an airplane at take-off",
+    choices: {
+      A: "separate on each side of the runway",
+      B: "stagnate on the runway",
+      C: "separate to the right side",
+      D: "separate to the left side",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "Which of the following requirements should be met when planning a flight with icing conditions",
+    choices: {
+      A: "The aircraft shall be equipped with approved ice-protection systems",
+      B: "The flight should be planned so that a change of cruising level can be initiated rapidly",
+      C: "The aircraft shall before flight be sprayed with anti-iing fluid",
+      D: "A meteorologist shall decide whether the flight may be performed without ice-protection systems",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "Ice accretion depends on many factors including ambient temperature and type of precipitation. Which of the following woule give the longest holdover time?",
+    choices: {
+      A: "Steady snow",
+      B: "Freezing fog",
+      C: "Rain on a cold soaked wing",
+      D: "Frost",
+    },
+    correct: "D",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "What happens to the EPR if the probe is blocked by ice?",
+    choices: {
+      A: "Over reads",
+      B: "Under reads",
+      C: "Depends on temperature",
+      D: "Nothing",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "In icing conditions and after the application of an anti-icing fluid on your airplane, you are waiting to take-off by:avoiding positioning yourself in the engine jet wash of the preceding aircraftavoiding positioning yourself in the turbo-props wash of the preceding aircraftpositioning yourself in the engine jet wash of the preceding aircraftpositioning yourself in the turbo-props wash of the preceding aircraftThe combination regrouping all the correct statements is",
+    choices: {
+      A: "1, 2",
+      B: "3, 4",
+      C: "2, 3",
+      D: "1, 4",
+    },
+    correct: "D",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "In icing conditions, the pilot in command must",
+    choices: {
+      A: "ensure sufficient anti-ice is still present on surfaces",
+      B: "ensure surfaces are free from build-up of ice within constraints allowed by the operationsmanual",
+      C: "ensure no ice more than 5mm in depth is on surfaces",
+      D: "ensure holdover time has not exceeded the time since de-icikng started",
+    },
+    correct: "D",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "The holdover time following an anti-icing procedure being carried out will vary considerably depending on the ambient temperature and the weather conditions. For a given ambient temperature, the longest protection will be in weater conditions of",
+    choices: {
+      A: "frost",
+      B: "freezing fog",
+      C: "rain on a cold soaked wing",
+      D: "steady snow",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "If after anti-icing has been completed a pre-departure inspection reveals evidence of freezing, the correct action is to",
+    choices: {
+      A: "switch on all the aeroplane anti-icing and de-icing systems and leave on until clear of icingconditions when airborne",
+      B: "compelte departure provided that the recommended anti-icing holdover (protection) time for theprevailing conditions and type of fluid used has not been exceeded",
+      C: "carry out a further de-icing process",
+      D: "complete departure as soon as possible to reduce the possibility",
+    },
+    correct: "C",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "For a given ambient temperature and type of de-icing fluid used, in which one of the following types of weather condition will the holdover (protection) time be shortest?",
+    choices: {
+      A: "Steady snow",
+      B: "Freezing fog",
+      C: "Frost",
+      D: "Freezing rain",
+    },
+    correct: "D",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "What effect does snow and ice contamination have on aircraft performance?Increase take-off runDecrease take- off runIncrease stall speedDecrease stall speedReduce climb gradient",
+    choices: {
+      A: "2, 4, 5",
+      B: "1, 3, 5",
+      C: "2, 3, 4",
+      D: "1, 2, 3",
+    },
+    correct: "B",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "In high ambient temperatures (30oC) and at relative humidities as low as 40%, in air free from cloud, fog and precipitation, serious carburettor icing",
+    choices: {
+      A: "Can occur but only at low power settings",
+      B: "Cannot occur",
+      C: "Can occur at anyu power settings",
+      D: "Can occur, but only at full power and cruise settings",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "Holdover tie can be considerably reduced by",
+    choices: {
+      A: "air temperature being slightly below 0 deg C",
+      B: "airframe temperature being slightly below 0 deg C",
+      C: "strong winds and effect of jet blast from other aeroplanes",
+      D: "effect of headwind",
+    },
+    correct: "C",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "How long is holdover time for Type II anti-icing fluids?",
+    choices: {
+      A: "24 hours",
+      B: "3 hours",
+      C: "A certain time dependent on concentration",
+      D: "A certain time independent of skin temperature",
+    },
+    correct: "C",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "What is the worst case for hold over time following de-ice/anti-ice?",
+    choices: {
+      A: "Freezing rain",
+      B: "Freezing fog",
+      C: "Frost",
+      D: "Snow",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "When anti-icing has been applied, when must you make sure it is still active?",
+    choices: {
+      A: "When clear of icing conditions",
+      B: "On rotation",
+      C: "At brake release for take-off",
+      D: "Until one can use ones own anti-icing equipment",
+    },
+    correct: "C",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "After anti-icing has been completed, a pre-departure inspection reveals presence of frost, ice or snow. The correct action is to",
+    choices: {
+      A: "switch on all the aircraft anti-icing and de-icing systems and leave on until clear of icing OPERATIONAL PROCEDURES SPECIAL OPERATIONAL PROCEDURES AND - Minimum Equipment List (MEL)",
+      B: "complete departure as soon as possible to reduce the possibility of further contamination",
+      C: "carry out a new de-icing/anti-icing procedure",
+      D: "complete departure provided that the recommended anti-icing holdover (protection) time for theprevailing conditions and type of fluid used has not been exceeded",
+    },
+    correct: "C",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "In icing conditions, if you have exceeded the holdover time, the correct procedure is to",
+    choices: {
+      A: "de-ice again the aircraft, then apply anti-icing fluid",
+      B: "apply directly anti-icing fluid without conducting previous de-icing procedures",
+      C: "operate the aircraft de-icing/anti-icing systems",
+      D: "de-ice the aircraft",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "The anti-icing fluid protecting film can wear off and reduce the holdover time considerably",
+    choices: {
+      A: "during strong winds or as a result of other aircraft engines jet blast",
+      B: "when the outside temperature is close to 0oC",
+      C: "when the temperature of the aeroplane skin is close to 0oC",
+      D: "when the aeroplane is parked facing into wind",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "The commaner shall not commence take-off in icing conditions",
+    choices: {
+      A: "unless the external surfaces are free from any ice contamination greater than 5 mm",
+      B: "unless the external surfaces are clear of any contamination, except as permitted by AircraftFlight Manual",
+      C: "unless the external surfaces are still covered with anti-icing fluid and the aircraft is not tobe operated in forecasted icing conditions greater than moderate icing",
+      D: "even if the ice contamination does not lead to an excedence of mass and balance limits",
+    },
+    correct: "B",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "The greatest possible risk if ice build-up occurs when flying in icing conditions",
+    choices: {
+      A: "On the aircraft front surfaces OPERATIONAL PROCEDURES SPECIAL OPERATIONAL PROCEDURES AND - Minimum Equipment List (MEL)",
+      B: "Only on pitot or static probes",
+      C: "On the rudder upper and lower surfaces",
+      D: "On the wind upper and lower surfaces",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "After de-icing/anti-icing still in freezing conditions, how should you position the aircraft?",
+    choices: {
+      A: "In prop and jet wash",
+      B: "In jet wash but not prop wash",
+      C: "In prop wash but not jet wash",
+      D: "In neither",
+    },
+    correct: "D",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "If taking off in icing conditions, pilot-in-command must make sure",
+    choices: {
+      A: "Icing does not affect performance within the constraints of the operations manual",
+      B: "Icing does not affect the mass and balance of the aeroplane",
+      C: "Icing on the airframe is not greater than 5 mm",
+      D: "Anti-ice is still present on the airframe",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "When does the anti-icing holdover time begin on a 2 step procedure?",
+    choices: {
+      A: "From the start of the anti-icing procedure",
+      B: "From the end of the anti-icing procedure",
+      C: "When all icing deposits have been removed from the airframe",
+      D: "From the start of the de-icing procedure",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "After the anti-icing time has expired, do you",
+    choices: {
+      A: "De-ice then anti-ice?",
+      B: "Just de-ice?",
+      C: "Do nothing? OPERATIONAL PROCEDURES SPECIAL OPERATIONAL PROCEDURES AND - Minimum Equipment List (MEL)",
+      D: "Just anti-ice?",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "For a de-icing and anti-icing procedure, how are the fluids applied",
+    choices: {
+      A: "Both hot",
+      B: "Anti-icing hot, de-icing cold",
+      C: "De-icing hot, anti-icing cold",
+      D: "Both cold",
+    },
+    correct: "C",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "The observations and studies conducted on the behaviour of birds on the ground, ahead of an aircraft taking off and having reached an average speed of 135 kt, show that birds fly away",
+    choices: {
+      A: "about two seconds beforehand",
+      B: "about ten seconds beforehand",
+      C: "as soon as they hear the engines noise",
+      D: "from the beginning of the take-off roll",
+    },
+    correct: "A",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "During take-off an aircraft hits a bird. Due to control vibrations a landing must be made immediately. Following this icident the pilot",
+    choices: {
+      A: "must file an AIR PROX report: the Control Tower having given no warning",
+      B: "must file a Bird Strike report",
+      C: "must file a airworthiness report",
+      D: "is not obliged to report this incident",
+    },
+    correct: "B",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "Which one of the following sets of conditions is most likely to attract birds to an aerodrome?",
+    choices: {
+      A: "The extraction of minerals such as sand and gravel",
+      B: "Mowing and maintaining the grass long",
+      C: "A modern sewage tip in close proximity",
+      D: "A refuse tip in close proximity",
+    },
+    correct: "D",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "Which one of the following sets of conditions is the least likely to attract flocks of birds?",
+    choices: {
+      A: "Edible rubbish",
+      B: "Long grass",
+      C: "An area liable to flooding",
+      D: "Short gang-mown grass",
+    },
+    correct: "B",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "As regards the detection of bird strikehazard, the pilot means of information and prevention are: 1.ATIS The combination regrouping all the correct statements is: 1. NOTAMs 2. BIRDTAMs 3. Weather radar 4. The report by another crew",
+    choices: {
+      A: "1, 2, 5",
+      B: "1, 2, 3, 4, 5",
+      C: "1, 3, 4",
+      D: "2, 5",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "90% of bird strikes occur",
+    choices: {
+      A: "under 500 m",
+      B: "above 1000 m",
+      C: "between 500 and 1000 m",
+      D: "between 500 and 1500 m",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "An analysis of the bird strikes shows that the highest risk is encountered in a layer from",
+    choices: {
+      A: "from 0 to 150 m",
+      B: "from 500 to 1200 m",
+      C: "from 100 to 800 m",
+      D: "from 200 to 500 m",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "What would be most likely to attract birds near an airfield?",
+    choices: {
+      A: "Mowed grass kept long",
+      B: "Modern sewerage plant",
+      C: "Mineral extraction",
+      D: "A refuse tip",
+    },
+    correct: "D",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "Which habitat is the least favourable for birds?",
+    choices: {
+      A: "Long grass",
+      B: "Rubbish tips",
+      C: "Short grass cut by gang mowers",
+      D: "Areas that flood",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "What is the most effective method for scarding birds?",
+    choices: {
+      A: "Shell crackers",
+      B: "Landrover with loudspeaker",
+      C: "Scarecrow",
+      D: "Making movement",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "The most efficient bird scaring technique generally available is",
+    choices: {
+      A: "the use of model predators, scarecrows, etc",
+      B: "broadcasting of recorded distress calls",
+      C: "firing shellcrackers",
+      D: "various visual methods",
+    },
+    correct: "B",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "After take-off the pilot of a commercial aeroplane notices a flock of birds which could pose a bird-strike risk. Does the pilot",
+    choices: {
+      A: "contact the ground station immediately OPERATIONAL PROCEDURES SPECIAL OPERATIONAL PROCEDURES AND - Minimum Equipment List (MEL)",
+      B: "inform other aircraft by radio",
+      C: "inform the appropriate persons in a reasonable time",
+      D: "ignore the problem and hope someone else will make a report",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "90% of bird strikes happen at",
+    choices: {
+      A: "500 - 1500m",
+      B: "500 - 1000m",
+      C: "Over 1000 ft",
+      D: "Under 500 ft",
+    },
+    correct: "D",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "The highest risk of bird strikes occurs",
+    choices: {
+      A: "above 1000m",
+      B: "under 500m",
+      C: "between 500 and 1000m",
+      D: "between 500 and 1500m",
+    },
+    correct: "B",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "Which one of the following sets of conditions is most likely to attract birds to an aerodrome?",
+    choices: {
+      A: "maintaining the grass on the airfield",
+      B: "a opened refuse tip in close vicinity",
+      C: "modern and close sewage treatment centre in close proximity",
+      D: "the extraction of mine4rals such as sand and gravel",
+    },
+    correct: "B",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "What is the best way of clearing birds from an airfield using modern methods?",
+    choices: {
+      A: "Model predators",
+      B: "Shell crackers",
+      C: "Flashing lights OPERATIONAL PROCEDURES SPECIAL OPERATIONAL PROCEDURES AND - Noise Abatement",
+      D: "Recorded distress calls",
+    },
+    correct: "D",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "An aircraft has a bird-strike at take-off and is forced to land immediately due to vibrations from the engine. Does the pilot",
+    choices: {
+      A: "Report an AIRPROX because ATC did not inform him of birds",
+      B: "File a bird strike report",
+      C: "Inform the RSPB",
+      D: "Check with the engineers if any damage has occurred",
+    },
+    correct: "B",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "What is the best way for crews to be warned of bird activity? 1.ATIS 1. BIRDTAMs 2. Weather radar 3. Other crews 4. NOTAMs",
+    choices: {
+      A: "All of the above",
+      B: "1, 2, 5",
+      C: "3, 4, 5",
+      D: "1, 4, 5",
+    },
+    correct: "D",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "Studies of bird behaviour on the ground have shown that, with an aircraft at approximately 135 kt is taking off, the birds will fly away",
+    choices: {
+      A: "2 seconds before hand",
+      B: "10 seconds before hand",
+      C: "When they hear the noise of the engines",
+      D: "At the start of the take-off run",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "According with the noise abatement take-off and climb procedure B, as established in DOC 8168 Ops Volume 1, part V, aircraft must climb at V2 + 10 to 20 kt, until reaching",
+    choices: {
+      A: "3000 ft",
+      B: "500 ft OPERATIONAL PROCEDURES SPECIAL OPERATIONAL PROCEDURES AND - Noise Abatement",
+      C: "1500 ft",
+      D: "1000 ft",
+    },
+    correct: "D",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "Acording to the recommended noise abatement procedures contained in the ICAO, DOC 8168 Volume 1 part V, data available indicates that the procedure which results in noise relief during the part of the procedure close to the airport",
+    choices: {
+      A: "is procedure A",
+      B: "is procedure B",
+      C: "is either procedure A or B, because there is no difference in noise distribution",
+      D: "depends on the wind component",
+    },
+    correct: "B",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "In accordance with (ICAO) DOC 8168 OPS, noise preferential routes are established to ensure that departing and arriving aeroplanes avoid overflying noise-sensitive areas in the vicinity of the aerodrome as far as practicable. In establishing noise preferential routes",
+    choices: {
+      A: "turns during take-off and climb should not be required unless the bank angle for turns islimited to 20o (climbing at V2 + 10 to 20 kt)",
+      B: "turns during take-off and climb should not be required unless the aeroplane has reached and can maintain throughout the turn a height of no less than 100m above terrain and the highestobstacle",
+      C: "no turns should be required coincident with a reduction of power associated with a noiseabatement procedure",
+      D: "turns during take-off and climb should not be required unless the bank angle for turns islimited to 28o (climbing at V2 + 10 to 20 kt)",
+    },
+    correct: "C",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "According to the recommended noise abatement take-off and climb procedure A established in ICAO, DOC 8168 Volume 1 part v, Chapter 3, thrust reduction to climb power, has to be done as soon as the aircraft reaches",
+    choices: {
+      A: "2000 ft",
+      B: "3000 ft",
+      C: "1500 ft",
+      D: "1000 ft",
+    },
+    correct: "C",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "According to ICAO Document 8168 Part V, when using Procedure A for noise abatement, when must you reduce power",
+    choices: {
+      A: "1000 ft",
+      B: "1500 ft",
+      C: "2000 ft",
+      D: "3000 ft",
+    },
+    correct: "B",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "According to ICAO Doc 8168, a noise abatement departure procedure is NOT to be initiated at less than",
+    choices: {
+      A: "1500 ft above aerodrome elevation",
+      B: "1000 ft above aerodrome elevation",
+      C: "800 ft above aerodrome elevation",
+      D: "2000 ft above aerodrome elevation",
+    },
+    correct: "C",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "According to the recommended noise abatement take-off and climb procedure NADP2, established in ICAO Doc 8168, acceleration and flaps/slats retraction is initiated",
+    choices: {
+      A: "at 1500 ft",
+      B: "not below 1000 ft",
+      C: "at 3000 ft",
+      D: "not below 800 ft",
+    },
+    correct: "D",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question: "Class B noise abatement procedures are used",
+    choices: {
+      A: "Near airfield",
+      B: "Away from airfield",
+      C: "Depends on the prevailing wind",
+      D: "Not applicable",
+    },
+    correct: "A",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "When using ICAO noise abatement Procedure A the flap retraction is commenced at",
+    choices: {
+      A: "1000 ft",
+      B: "2000 ft OPERATIONAL PROCEDURES SPECIAL OPERATIONAL PROCEDURES AND - Noise Abatement",
+      C: "1500 ft",
+      D: "3000 ft",
+    },
+    correct: "D",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "Who has the responsibility for establishing operating procedures for noise abatement purposes during instrument flight in compliance with ICAO PANS OPS 8168 the",
+    choices: {
+      A: "operator",
+      B: "state of the operator",
+      C: "state in which the aeroplane is operating",
+      D: "commander",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "When setting up a minimum noise climb, the minimum height at which a power reduction shall be allowed is",
+    choices: {
+      A: "600m (2000 ft)",
+      B: "450m (1500 ft)",
+      C: "150m (500 ft)",
+      D: "300m (1000 ft)",
+    },
+    correct: "D",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "About procedures for noise attenuation during landing",
+    choices: {
+      A: "They are applied in the case of an instrument approach only",
+      B: "They prohibit the use of reverse thrust",
+      C: "Such procedures do not exist",
+      D: "Such procedures will not involce the prohibition of using reverse thrust",
+    },
+    correct: "D",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "Noise attenuation shall not be the determining factor in the designation of a runway, under the following circumstances: The combination regrouping all the correct statements is: 1. When cross wind component, including gust, exceeds 15 knots 2. When the tail wind component, including gust, exceeds 5 knots 3. When the runway is not clear or dry",
+    choices: {
+      A: "1, 3 OPERATIONAL PROCEDURES SPECIAL OPERATIONAL PROCEDURES AND - Noise Abatement",
+      B: "1, 2",
+      C: "1, 2, 3",
+      D: "2, 3",
+    },
+    correct: "C",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "Following take-off, the noise abatement climb procedures specified by the operator is",
+    choices: {
+      A: "different according to airports and airplane types",
+      B: "for all airplane types, the same for a specific airport",
+      C: "different for a same airplan type, according to airports",
+      D: "for the same airplane type, the same for all airports",
+    },
+    correct: "D",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "Which one of the following factors should prevent a runway being chosen as the preferential landing runway for noise abatement purposes in visual meteorological condition (VMC)?",
+    choices: {
+      A: "It has no ILS or visual approach slope guidance",
+      B: "Cross-wind component, including gusts, is 10 kt",
+      C: "It has a tail wind component of any value",
+      D: "It has a tail wind component of 3 kts and a cross wind, including gusts, of 12 kt",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "Which statement is correct concerning turns on noise abatement procedures?",
+    choices: {
+      A: "All turns must give at least 100m obstacle and terrain clearance",
+      B: "Turns of a bank angle of up to 20 deg are allowed maintaining VAT + 10- 20 kts",
+      C: "Turns of a bank angle of up to 28 deg are allowed maintaining VAT + 10- 20 kts",
+      D: "No turns should be coincident with a reduction in power",
+    },
+    correct: "D",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "What precludes a runway being used for noise abatement procedures if landing in VMC?",
+    choices: {
+      A: "Any tailwind",
+      B: "Cross wind including gusts of 10 kts",
+      C: "Tail wind up to 3 kts",
+      D: "No ILS or visual guidance",
+    },
+    correct: "D",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "Noise abatement for landing",
+    choices: {
+      A: "Precludes the use of thrust reverse",
+      B: "Should not preclude the use of thrust reverse",
+      C: "Stop use of thrust reverse before the threshold",
+      D: "Allows limited use of thrust reverse",
+    },
+    correct: "B",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "the take-off climb procedures for noise abatement to be specified by the operator should be",
+    choices: {
+      A: "for all aeroplane types, the same for a specific aerodrome",
+      B: "for any one aeroplane type, the same for all aerodromes",
+      C: "for all aeroplane types, the same for all aerodromes",
+      D: "different according to aerodromes and aeroplane types",
+    },
+    correct: "B",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "In VMC, a runway should not be chosen as preferential for noise abatement procedures when",
+    choices: {
+      A: "it has a tail wind regardless its magnitude",
+      B: "Cross wind component, including gusts, is 10 kt or less",
+      C: "It has no ILS or visual approach slope guidance",
+      D: "Tail wind component, including gusts, is less than 4 kt",
+    },
+    correct: "C",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "Which statement is correct about noise abatement procedures during landing?",
+    choices: {
+      A: "There are no noise abatement procedures for landing",
+      B: "These procedures prohibit the use of reverse thrust OPERATIONAL PROCEDURES SPECIAL OPERATIONAL PROCEDURES AND - Noise Abatement",
+      C: "These procedures shall not prohibit the use of reverse thrust",
+      D: "These procedures are applied in case of instrument approach only",
+    },
+    correct: "C",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "Which statement is correct concerning noise abatement?",
+    choices: {
+      A: "There is no prohibition on the use of thrust reverse",
+      B: "Reverse thrust is not permitted at any time",
+      C: "At night, thrust reverse is not permitted",
+      D: "Thrust reverse may be permitted, but only at idle power",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "Who is responsible for establishing and distribution amendments to noise abatement procedures?",
+    choices: {
+      A: "The country where the aeroplane is operated",
+      B: "The country where the aeroplane is registered",
+      C: "The country of the operator of the aerodrome",
+      D: "The operator of the aerodrome",
+    },
+    correct: "C",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "When would you not have to turn on a noise abatement procedure?",
+    choices: {
+      A: "Below 1000 ft",
+      B: "When changing radio frequencies",
+      C: "When reducing power",
+      D: "when raising flap",
+    },
+    correct: "C",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "What conditions can the choice of runway preclude noise abatement procedures? 1. Cross wind > 15 knots 2. Tail wind > 5 knots 3. Windshear and thunderstorm reported Answers",
+    choices: {
+      A: "(i), (ii) and (iii)",
+      B: "(i) and (ii) OPERATIONAL PROCEDURES SPECIAL OPERATIONAL PROCEDURES AND - Noise Abatement",
+      C: "(i) and (iii)",
+      D: "(ii) and (iii)",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "After a landing, with overweight and overspeed conditions, the tyres and brakes are extremely hot. The fireguards should approach the landing gear tyres",
+    choices: {
+      A: "under no circumstances",
+      B: "only from left or right side",
+      C: "from any side",
+      D: "only from front or rear side",
+    },
+    correct: "D",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question: "After landing, in case of high temperature of the brakes you",
+    choices: {
+      A: "apply the parking brake and you approacoh the wheels either from fore or aft",
+      B: "release the parking brake and you approach the wheels sidewards",
+      C: "release the parking brake and you approach the wheels either from aft or fore",
+      D: "apply the parking brake and approach the wheels sidewards",
+    },
+    correct: "C",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "The correct statement about extinguishing agents on board aeroplanes is",
+    choices: {
+      A: "Halon is an effective extinguishing agent for use in aeroplanes",
+      B: "Water may only be used for minor fires",
+      C: "A powder extinguisher is suitable for extinguishing a cockpit fire",
+      D: "Burning cargo in a cargo-aeroplane is usually extinguished by using carbon dioxide",
+    },
+    correct: "A",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "After landing heavy and fast, an enginer should approach the landing gear from",
+    choices: {
+      A: "the sides",
+      B: "the front or rear OPERATIONAL PROCEDURES SPECIAL OPERATIONAL PROCEDURES AND - Noise Abatement",
+      C: "neither",
+      D: "only when the gear has cooled down",
+    },
+    correct: "B",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "If you have a fire in a toilet, what fire extinguishers would you use",
+    choices: {
+      A: "All available liquids",
+      B: "Only toilet extinguishers",
+      C: "All available in sequence",
+      D: "All available simultaneously",
+    },
+    correct: "D",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "An aircraft is configured for seating 61 to 200 passengers. What is the requirement for hand held fire extinguishers.",
+    choices: {
+      A: "4 conveniently located in the passenger compartment",
+      B: "5 conveniently located in the passenger compartment",
+      C: "2 conveniently located in the passenger compartment",
+      D: "3 conveniently located in the passenger compartment",
+    },
+    correct: "D",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "Due to risk of tyres explosion, after landing, when the brakes are at a very high temperature, one should approach the landing gear",
+    choices: {
+      A: "from any direction",
+      B: "sidewards",
+      C: "either from aft or fore",
+      D: "from the inboard side",
+    },
+    correct: "C",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "After a fast landing, hot brakes are suspected. What action should be taken?",
+    choices: {
+      A: "Apply the parking brake and approach the aeroplane from the front to rear",
+      B: "Apply the parking brake and approach the aeroplane from the sides",
+      C: "Release the brakes and approach the aeroplane from the sides",
+      D: "Release the brakes and approach the aeroplane from the front or rear OPERATIONAL PROCEDURES SPECIAL OPERATIONAL PROCEDURES AND - Noise Abatement",
+    },
+    correct: "D",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question: "You see smoke coming from the air conditioning. Do you?",
+    choices: {
+      A: "don your oxygen mask and smoke goggles",
+      B: "Turn all the air conditioning off",
+      C: "Investigate to find the source of the smoke",
+      D: "Do an emergency descent",
+    },
+    correct: "A",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "You will use a CO2 fire-extinguisher for:1. a paper fire 2. a plastic fire 3. a hydrocarbon fire 4. an electrical fire. The combination regrouping all the correct statements is",
+    choices: {
+      A: "3, 4",
+      B: "1, 2, 3, 4",
+      C: "2, 3",
+      D: "1, 2, 3",
+    },
+    correct: "B",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "Beneath fire extinguishers the following equipment for fire fighting is on board",
+    choices: {
+      A: "crash axes or crowbars",
+      B: "water and all type of beverages",
+      C: "a hydraulic winch and a big box of tools",
+      D: "a big bunch of fire extinguishing blankets",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "A class B fire is a fire of",
+    choices: {
+      A: "solid material usually of organic nature",
+      B: "liquid or liquefiable solid",
+      C: "electrical sources fire",
+      D: "special fire: metal, gas, chemical product",
+    },
+    correct: "B",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "The fire extinguisher types which may be used on class A fires are: 1. H2O 2. CO2 3. dry-chemical 4. halon. Which of the following combinations contains all of the correct statements?",
+    choices: {
+      A: "2, 3, 4",
+      B: "1, 2, 3, 4",
+      C: "1",
+      D: "3, 4",
+    },
+    correct: "B",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "To use passengers oxygen in case of severe cabin smoke is",
+    choices: {
+      A: "useless because the oxygen units do not operate under smoke conditions",
+      B: "useless because the toxical cabin smoke is mixed with the breathing oxygen",
+      C: "useless because breathing oxygen would explode under smoke conditions",
+      D: "possible and recommended",
+    },
+    correct: "B",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "A water fire extinguisher can be used without restriction for: 1.a paper fire 2.a hydrocarbon fire The combination regrouping all the correct statements is: 1. a fabric fire 2. an electrical fire 3. a wood fire",
+    choices: {
+      A: "2, 3, 4",
+      B: "1, 2, 3, 4, 5",
+      C: "1, 3, 5",
+      D: "2, 4, 5",
+    },
+    correct: "C",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "In case of a fire due to the heating of the brakes, you fight the fire using: 1.a dry powder fire extinguisher 2.a water spray atomizer 3.a water fire-extinguisher 4.a CO2 fire-extinguisher to the maximum The combination regrouping all the correct statements is",
+    choices: {
+      A: "1, 2",
+      B: "2, 3, 4 OPERATIONAL PROCEDURES SPECIAL OPERATIONAL PROCEDURES AND - Noise Abatement",
+      C: "3, 4",
+      D: "1, 4",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "A 1211 halon fire-extinguisher can be used for:a paper firea fabric firean electric firea wood firea hydrocarbon fireThe combination regrouping all the correct statements is",
+    choices: {
+      A: "1, 2, 3, 4, 5",
+      B: "1, 3, 5",
+      C: "2, 3, 4",
+      D: "2, 4, 5",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "H2O extinguishers are fit to fight",
+    choices: {
+      A: "electrical source fires",
+      B: "Class B fires",
+      C: "Class A fires",
+      D: "special fires: metals, gas, chemical products",
+    },
+    correct: "C",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "A fire occurs in a wheel and immediate action is required to extinguish it. The safest extinguishant to use is",
+    choices: {
+      A: "water",
+      B: "dry powder",
+      C: "CO2 (carbon dioxide)",
+      D: "foam",
+    },
+    correct: "B",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "In case of an engine nozzle fire while on ground you",
+    choices: {
+      A: "pull the fire shut off handle and trigger the engines fire-extinguishers OPERATIONAL PROCEDURES SPECIAL OPERATIONAL PROCEDURES AND - Noise Abatement",
+      B: "carry out a damp cranking",
+      C: "carry out a dry cranking",
+      D: "fight thenozzle fire with a water fire-extinguisher",
+    },
+    correct: "C",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "You will use a powder fire-extinguisher for: The combination regrouping all the correct statements is: 1. a paper fire 2. a plastic fire 3. hydrocarbon fire 4. an electrical fire",
+    choices: {
+      A: "1, 2, 3",
+      B: "1, 2, 3, 4",
+      C: "2, 3",
+      D: "1, 4",
+    },
+    correct: "B",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "Fire fighting in the toilets must be performed with",
+    choices: {
+      A: "all available liquids",
+      B: "all available extinguishers simultaneously",
+      C: "all available extinguishers in sequence",
+      D: "only the extinguisher corresponding to the toilets",
+    },
+    correct: "B",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "To extinguish a fire in the cockpit, you use: 1.a water fire-extinguisher 2.a powder or chemical fire-extinguisher 3.a halon fire-extinguisher 4.a CO2 fire-extinguisher The combination regrouping all the correct statements is",
+    choices: {
+      A: "1, 2, 3, 4",
+      B: "3, 4",
+      C: "1, 2",
+      D: "2, 3, 4",
+    },
+    correct: "B",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "You will use a water fire-extinguisher (straight jet) on a fire of: 1. solids (fabric, carpet, etc) 2.liquids (ether, gasoline, etc) 3. gasmetals (sodium, etc). 4. electrical fires. The combination regrouping all the correct statements is",
+    choices: {
+      A: "3 and 4",
+      B: "2",
+      C: "3",
+      D: "1",
+    },
+    correct: "D",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "CO2 type extinguishers are fit to fight: 4.special fires: metals, gas, chemical product Which of the following combinations contains all the correct statements: 1. class A fires 2. class B fires 3.electrical source fires",
+    choices: {
+      A: "1, 3, 4",
+      B: "1, 2, 4",
+      C: "2, 3, 4",
+      D: "1, 2, 3",
+    },
+    correct: "D",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "If smoke appears in the air conditioning, the first action to take is to",
+    choices: {
+      A: "Determine which system is causing the smoke",
+      B: "Begin an emergency descent",
+      C: "Put on the mask and goggles",
+      D: "Cut off all air conditioning units",
+    },
+    correct: "C",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "To fight a fire in an air conditioned cargo hold",
+    choices: {
+      A: "Fire fighting is not necessary, since the transport of combustible goods in an air conditionedcargo hold is forbidden",
+      B: "Extinguish fire and reduce air conditioning",
+      C: "Extinguish fire only",
+      D: "You turn off the cargo hold ventilation and extinguish fire",
+    },
+    correct: "D",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "An engine fire warning will switch on the relevant fire shut off-handle. The fire shut-off handle will be switched off when",
+    choices: {
+      A: "fire is no longer detected",
+      B: "the fire shut-off handle has been pulled",
+      C: "the fire-extinguisher has been triggered",
+      D: "all the fire-extinguishers connected to this engine have been triggered",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "A CO2 fire extinguisher can be used for: 1.a paper fire 2.a hydrocarbon fire The combination regrouping all the correct statements is: 1. a fabric fire 2. an electrical fire 3. a wood fire",
+    choices: {
+      A: "2, 3, 4",
+      B: "1, 3, 5",
+      C: "1, 2, 3, 4, 5",
+      D: "2, 4, 5",
+    },
+    correct: "C",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "You will use a halon extinguisher for a fire of: 1.solids, (fabric, plastic, etc) 2. liquids (alcohol, gasoline, etc) 3. gasmetals (aluminium, magnesium, etc) 4. Electrical fires. The combination regrouping all the correct statements is",
+    choices: {
+      A: "1, 2, 3",
+      B: "1, 2, 3, 4",
+      C: "2, 3, 4",
+      D: "1, 2, 4",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "What action is required in flight for a fire in an air conditioned cargo hold?",
+    choices: {
+      A: "Put out the fire",
+      B: "Reduce the airflow and put out the fire",
+      C: "Turn off the ventilation and put out the fire",
+      D: "Don't do anything because it is not permissible to have flammable or toxic materials in modernaeroplane holds OPERATIONAL PROCEDURES SPECIAL OPERATIONAL PROCEDURES AND - Noise Abatement",
+    },
+    correct: "C",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "For a flight deck fire which of the ollowing do you use? 1.CO2 1. Halon 2. Dry Powder 3. Water",
+    choices: {
+      A: "(iii), (iv)",
+      B: "(i), (ii)",
+      C: "(i), (ii), (iii), (iv)",
+      D: "(i), (ii), (iii)",
+    },
+    correct: "B",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "When does the fire handle warning light go out?",
+    choices: {
+      A: "When all bottles to that engine are discharged",
+      B: "When fire detected as being out",
+      C: "When fire handle is pulled",
+      D: "When that fire bottle has been fired",
+    },
+    correct: "B",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "The fire extinguisher types which may be used on class B fires are: 1.H2O Which of the following combinations contains all of the correct statements: 1. CO2 2. dry-chemical 4.halogen",
+    choices: {
+      A: "3, 4",
+      B: "1, 2, 3, 4",
+      C: "2",
+      D: "2, 3, 4",
+    },
+    correct: "D",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "A Halon fire extinguisher should preferably be used on which of the following types of fire",
+    choices: {
+      A: "Paper OPERATIONAL PROCEDURES SPECIAL OPERATIONAL PROCEDURES AND - Noise Abatement",
+      B: "Plastic",
+      C: "Hydrocarbon",
+      D: "Brake",
+    },
+    correct: "C",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "CO2 type fire extinguishers are usable on: 4.Special fires metal, chemical 1. Class A fires 2. Class B fires 3.Electrical fires",
+    choices: {
+      A: "(ii), (iii) and (iv)",
+      B: "(i), (ii) and (iv)",
+      C: "(i), (iii) and (iv)",
+      D: "(i), (ii) and (iii)",
+    },
+    correct: "D",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "A class A fire is a fire of",
+    choices: {
+      A: "liquid or liquefiable solid",
+      B: "solid material, generally of organic nature",
+      C: "electrical origin",
+      D: "metal or gas or chemical (special fares)",
+    },
+    correct: "B",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "Water fire extinguisher with a directed spray can be used on which fires?",
+    choices: {
+      A: "Solid fires",
+      B: "Liquid fires",
+      C: "Gas fires",
+      D: "Special fires",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "In case of an engine jet pipe fire while of the ground you",
+    choices: {
+      A: "pull the fire shut off handle and trigger the engines fire extinguishers",
+      B: "carry out a dry motoring cycle",
+      C: "fight the jet pipe fire with a water fire extinguisher",
+      D: "carry out a wet motoring cycle",
+    },
+    correct: "B",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "The system which must be switched off in case of a belly compartment fire is generally the",
+    choices: {
+      A: "ventilation of the cargo compartment",
+      B: "pressurisation",
+      C: "total airconditioning",
+      D: "trim air",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "Why should you not use oxygen masks when the cabin is affected by smoke?",
+    choices: {
+      A: "Because the oxygen would spontaneously combust",
+      B: "Because the mask allows the smoke to mix with the oxygen",
+      C: "Because the chemical oxygen generator does not work in smoky conditions",
+      D: "You should use the oxygen masks in smoky conditions",
+    },
+    correct: "B",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "A dry-chemikcal type fire extinguisher is fit to fight? 4.special fires: metals, gas, chemicals Which of the following combinations contains all of the correct statements? 1. class A fires 2. class B fires 3.electrical source fires",
+    choices: {
+      A: "3, 4",
+      B: "1, 2, 3",
+      C: "1, 2, 3, 4",
+      D: "2, 4",
+    },
+    correct: "C",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "What type of fire extinguisher do you use on a magnesium fire?",
+    choices: {
+      A: "Water",
+      B: "Sand",
+      C: "Halon",
+      D: "Foam",
+    },
+    correct: "B",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "The use of passenger oxygen in the case of severe smoke in the cabin is",
+    choices: {
+      A: "Useless because the oxygen units do not operate under smoke conditions",
+      B: "Useless because breating oxygen would explode under smoke conditions",
+      C: "Possible and recommended",
+      D: "Useless because the toxic cabin smoke is mixed with the breathing oxygen",
+    },
+    correct: "D",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "The principle of operation of a fire loop detector is an the temperature increases, the",
+    choices: {
+      A: "resistance decreases",
+      B: "reference current decreases",
+      C: "pressure decreases",
+      D: "pressure decreases",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "A water fire-extinguisher (straight jet) can be used on a fire of: 4.metals (sodium, etc) The combination regrouping all the correct statements is: 1. solids (fabric, carpet, etc) 2. liquids (ether, gasoline, etc) 3.gas",
+    choices: {
+      A: "3",
+      B: "2",
+      C: "1",
+      D: "3 and 4",
+    },
+    correct: "C",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "Halon or equivalent fire extinguishers can be used in case of fire fighting in an aeroplane",
+    choices: {
+      A: "in the fuel tanks and in the cargo holds",
+      B: "in the cockpit and cargo holds",
+      C: "in the wheel bays and lavatories",
+      D: "in the avionics bay and the wheel bays",
+    },
+    correct: "B",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "In case of an engine tail pipe fire while on the ground you should abort the starting procedure and",
+    choices: {
+      A: "carry out a dry cranking",
+      B: "carry out a damp cranking",
+      C: "pull the fire shut off handle and trigger the engine's fire-extinguishers",
+      D: "fight the fire with a water fire-extinguisher",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "To fight a fire in an air conditioned class E cargo hold, the correct initial action is to",
+    choices: {
+      A: "discharge the fire extinguishers in the affected compartment",
+      B: "shut off the ventilating airflow within the affected compartment",
+      C: "confirm visually the fire",
+      D: "evacuate the smoke",
+    },
+    correct: "B",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "The engine fire warning system on a multi-engine aircraft consists of",
+    choices: {
+      A: "One warning light, individual bells",
+      B: "Individual warning lights, common bell",
+      C: "Individual warning lights, individual bells",
+      D: "One warning light, one bell",
+    },
+    correct: "B",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "If there is a fire in the cargo compartment in the lower half of the fuselage, what is your action?",
+    choices: {
+      A: "Turn off the ventilation OPERATIONAL PROCEDURES SPECIAL OPERATIONAL PROCEDURES AND - Noise Abatement",
+      B: "Turn off all the air conditioning",
+      C: "Reduce the airflow",
+      D: "Turn off the pressurisation",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "Which statement is most correct with regard to the use of fire extinguishers?",
+    choices: {
+      A: "CO2 is best used in a cargo aeroplane on cargo fires",
+      B: "Water is best used on small fires",
+      C: "Halon is best used on fires within the passenger compartment",
+      D: "Dry powder is best used on cockpit fires",
+    },
+    correct: "C",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "In a situation where there is dense smoke in the cabin",
+    choices: {
+      A: "It is recommended to use O2 only above 10,000 ft in this case",
+      B: "It is useless to use passenger O2 because it will explode",
+      C: "It is recommended to use passenger O2 and is sensible",
+      D: "It is useless to use passenger O2 masks because they mix O2 with the cabin air",
+    },
+    correct: "D",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "In the event of a jet pipe fire on the ground, what do you do?",
+    choices: {
+      A: "Wet motor",
+      B: "Dry motor",
+      C: "Pull fire handle",
+      D: "Fight with water",
+    },
+    correct: "C",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "What items for use in fire fighting would you expect to see close to a fire extinguisher?",
+    choices: {
+      A: "axe",
+      B: "gloves",
+      C: "breating equipment OPERATIONAL PROCEDURES SPECIAL OPERATIONAL PROCEDURES AND - Noise Abatement",
+      D: "blanket",
+    },
+    correct: "B",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "On what type of fire would you use a CO2 extinguisher?",
+    choices: {
+      A: "Paper",
+      B: "Hydrocarbon",
+      C: "Plastic",
+      D: "Electrical",
+    },
+    correct: "D",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "The correct colour for hand held fire extinguisher labels is",
+    choices: {
+      A: "black for CO2",
+      B: "red for water",
+      C: "yellow for BCF",
+      D: "blue for foam",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "A fire in the toilet waste bin is extinguished with",
+    choices: {
+      A: "BCF",
+      B: "a liquid agent",
+      C: "2 types of extinguisher simultaneously",
+      D: "2 types of extinguisher one after the other",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "A fire extinguisher must be carried in the cockpit. It should contain",
+    choices: {
+      A: "BCF",
+      B: "CO2",
+      C: "Water",
+      D: "Foam",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "Engine fire warnings include",
+    choices: {
+      A: "a red light that can be cancelled and an audio warning that can be cancelled",
+      B: "a red light that cannot be cancelled and an audio warning that can be cancelled",
+      C: "a red light that can be cancelled and an audio warning that cannot be cancelled",
+      D: "a red light and an audio warning that cannot be cancelled until the fire is out",
+    },
+    correct: "B",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "A slow decompression may be caused by: 1.a slight airtightness defect The combination regrouping all the correct statements is: 1. a bad functioning of the pressurisation 2. the loss of a window 3. the loss of a door",
+    choices: {
+      A: "1, 2, 3, 4",
+      B: "1, 2",
+      C: "3, 4",
+      D: "1, 2, 3",
+    },
+    correct: "B",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "An aeroplane suffers an explosive decompression at an altitude of 31,000 ft. What is the initial action by the operating crew?",
+    choices: {
+      A: "Disconnect the autopilot",
+      B: "To put on oxygen masks",
+      C: "Transmit a MAYDAY message",
+      D: "Place the seat belts sign to ON",
+    },
+    correct: "B",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "When flying in straight and level flight at FL 290 for some considerable time a small leak develops in the cabin which causes a slow depressurisation, this can be seen on the cabin rate of climb indicator which will indicate",
+    choices: {
+      A: "a rate of descent of approximately 300 fpm",
+      B: "a rate of climb",
+      C: "zero",
+      D: "a rate of descent dependent upon the cabin differential pressure",
+    },
+    correct: "B",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "The minimum requirements for Supplemental Oxygen to be supplied in pressurised aeroplanes during and following an emergency descent are that for pilots it shall be available for the entire flight time that the cabin pressure altitude exceeds a minimum of X feet. That minimum of X feet is",
+    choices: {
+      A: "15,000 ft",
+      B: "14,000 ft",
+      C: "13,000 ft",
+      D: "25,000 ft",
+    },
+    correct: "C",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "During an explosive decompression at flight level 370 (FL 370), your first action will be",
+    choices: {
+      A: "to put on the oxygen mask",
+      B: "to set the transponder to 7700",
+      C: "to warn the ATC",
+      D: "to comfort your passengers",
+    },
+    correct: "A",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "(Refer to figure 071-04)Due to a cabin pressurisation defect the maximum differential pressure is limited to 3 psi. Assuming the oxygen masks will be deployed at 14,000 feet, the maximum achievable flight altitude is approximately",
+    choices: {
+      A: "22,500 ft",
+      B: "24,500 ft",
+      C: "27,000 ft",
+      D: "29,000 ft",
+    },
+    correct: "B",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "The time of useful consciousness in case of an explosive decompression at an altitude of 40,000 ft is",
+    choices: {
+      A: "1 minute",
+      B: "30 seconds",
+      C: "12 seconds",
+      D: "5 minutes",
+    },
+    correct: "C",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "Following an explosive decompression, if you are using an oxygen diluter demand system, the regulator controls the amount of air that is mixed with pure oxygen when the supply selector is at the normal position. At what approximate altitude will the regulator supply to the mask become pure oxygen only?",
+    choices: {
+      A: "25,000 ft",
+      B: "32,000 ft",
+      C: "14,000 ft",
+      D: "8,000 ft",
+    },
+    correct: "B",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "If cabin altitude increases during level flight, the differential pressure",
+    choices: {
+      A: "attains its maximum permitted operating limit",
+      B: "increases",
+      C: "remains constant",
+      D: "decreases",
+    },
+    correct: "D",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "(Refer to figure 071-04)Due to a cabin pressurisation defect the maximum differential pressure is limited to 2 psi. Assuming the oxygen masks will be deployed at 14,000 feet, the maximum achievable flight altitude is approximately",
+    choices: {
+      A: "20,750 ft",
+      B: "12,000 ft",
+      C: "8,600 ft",
+      D: "2,900 ft",
+    },
+    correct: "A",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "For an oxygen diluter demand system, the regulator controls the amount of pure oxygen mixed with air. Following explosive decompression with the regulator set to normal, at what approximate altitude will pure oxygen be supplied",
+    choices: {
+      A: "8,000 ft",
+      B: "24,000 ft",
+      C: "14,000 ft",
+      D: "32,000 ft",
+    },
+    correct: "D",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "Oxygen should be used after rapid decompression in an emergency descent until what altitude?",
+    choices: {
+      A: "10,000 ft",
+      B: "15,000 ft",
+      C: "13,000 ft",
+      D: "14,000 ft",
+    },
+    correct: "A",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question: "When the pressurisation system fails, the differential pressure",
+    choices: {
+      A: "rises",
+      B: "falls",
+      C: "remains the same",
+      D: "fluctuates",
+    },
+    correct: "B",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question: "What is supplementary oxygen used for?",
+    choices: {
+      A: "To passengers in an aircraft, following a loss of pressurisation",
+      B: "For passengers who may require it, following a loss of pressurisation",
+      C: "For passengers with breathing difficulties",
+      D: "Protect crew when combating a fire",
+    },
+    correct: "B",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "Flying at FL 390, before what cabin altitude must the Oxygen drop out masks be automatically presented?",
+    choices: {
+      A: "12,000 ft",
+      B: "13,000 ft",
+      C: "14,000 ft",
+      D: "15,000 ft",
+    },
+    correct: "D",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "Following a rapid decompression, above what height does a lack of 02 affect performance",
+    choices: {
+      A: "14,000 ft OPERATIONAL PROCEDURES SPECIAL OPERATIONAL PROCEDURES AND - Noise Abatement",
+      B: "2,500 ft",
+      C: "8,000 ft",
+      D: "25,000 ft",
+    },
+    correct: "C",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "A fast decompression is recognisable by the following elements: 1.mist in the cabin 2. blast towards the exterior of the aircraft 3. expansion of body gases 4. blast of air released violently from the lungs. The combination regrouping all the correct statements is",
+    choices: {
+      A: "1, 2, 3, 4",
+      B: "2, 3, 4",
+      C: "1, 2, 3",
+      D: "1, 4",
+    },
+    correct: "A",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "In a pressurisation malfunction: 1. Noise increase 2. Change in RCDI 3. Pressure differential decreases Answers",
+    choices: {
+      A: "1, 2",
+      B: "2, 3",
+      C: "1, 3",
+      D: "1, 2, 3",
+    },
+    correct: "D",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "Gradual decompression is caused by: 1.Window leak 2. Door leak 3. Window blown 4. Emergency escape hatch open",
+    choices: {
+      A: "(i), (ii)",
+      B: "(i), (ii), (iii), (iv)",
+      C: "(iii), (iv)",
+      D: "(ii), (iii)",
+    },
+    correct: "A",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "After compression and descent, there will be enough supplementary oxygen available for flight crew for all flight time above",
+    choices: {
+      A: "13,000 ft OPERATIONAL PROCEDURES SPECIAL OPERATIONAL PROCEDURES AND - Noise Abatement",
+      B: "15,000 ft",
+      C: "25,000 ft",
+      D: "14,000 ft",
+    },
+    correct: "A",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "An aeroplane suffers cabin decompression at 31,000 ft, what is the crew's initial reaction",
+    choices: {
+      A: "Disconnect autopilot",
+      B: "Put FASTEN SEAT BELTS sign on",
+      C: "Declare MAYDAY",
+      D: "Don 02 masks",
+    },
+    correct: "D",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "(Refer to figure 071-04)Due to a cabin pressurisation defect the maximum differential pressure is limited to 2 psi. Assuming you don't want the cabin altitude being greater than 10,000 feet, the maximum achievable flight altitude is approximately",
+    choices: {
+      A: "12,000 ft",
+      B: "5,000 ft",
+      C: "15,100 ft",
+      D: "15,000 ft",
+    },
+    correct: "C",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "A slow decompression may be caused by: The combination regrouping all the correct statements is: 1. a leak in a doorseal during normal pressurised flight 2. loss of a cabin window 3. malfunction of all pressurised systems 4. loss of a door",
+    choices: {
+      A: "2, 4",
+      B: "1, 2, 3, 4",
+      C: "1, 3",
+      D: "1, 2, 3",
+    },
+    correct: "C",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "A warning device alerts the crew in case of an excessive cabin altitude. This warning must be triggered on reaching the following altitude",
+    choices: {
+      A: "10,000 ft (approx. 3000 m)",
+      B: "14,000 ft (approx. 4200 m)",
+      C: "8,000 ft (approx. 2400 m)",
+      D: "12,000 ft (approx. 3600 m)",
+    },
+    correct: "A",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "following a decompression, the maximum pressure altitude at which each member of the flight crew on flight deck duty are able to fly with no supplemental oxygen with no flight time limitation is",
+    choices: {
+      A: "15,000 ft",
+      B: "13,000 ft",
+      C: "10,000 ft",
+      D: "8,000 ft",
+    },
+    correct: "C",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "oxygen masks for use by flight crew members shall be a quick donning type of mask, in pressurised aeroplanes operating at pressure altitudes above",
+    choices: {
+      A: "41,000 ft",
+      B: "10,000 ft",
+      C: "39,000 ft",
+      D: "25,000 ft",
+    },
+    correct: "D",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "for a pressurised aeroplane, the minimum requirement for supplemental oxygen needed to supply 100% of the passengers following a cabin pressurisation failure, is",
+    choices: {
+      A: "the entire flight time when the cabin pressure altitude exceeds 13,000 ft",
+      B: "30 minutes",
+      C: "the entire flight time where the cabin pressure altitude exceeds 15,000 ft, but in no case lessthan 10 minutes",
+      D: "the entire flight time after 30 minutes at pressure altitude greater than 10,000 ft but notexceeding 13,000 ft",
+    },
+    correct: "C",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "for a pressurised aircraft, the definition of supplemental oxygen is",
+    choices: {
+      A: "oxygen supplied to the aeroplane occupants in the case of cabin pressurisation failure",
+      B: "oxygen supplied to a passenger who needs oxygen for physiological reasons",
+      C: "oxygen used for protection against smoke and carbon dioxide",
+      D: "oxygen specifically carried for therapeutic purposes",
+    },
+    correct: "A",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "A slow decompression may be caused by: 1.A slight air leak from an overwing exit The combination regrouping all the correct statements is: 1. A malfunction of the pressurisation 2. The loss of a window 3. The loss of a door",
+    choices: {
+      A: "1, 2, 3",
+      B: "1, 2",
+      C: "3, 4",
+      D: "1, 2, 3, 4",
+    },
+    correct: "B",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "What is the time of useful consciousness after a rapid decompression at 40,000 ft?",
+    choices: {
+      A: "12 seconds",
+      B: "30 seconds",
+      C: "10 minutes",
+      D: "3 minutes",
+    },
+    correct: "A",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "What would be evident during a rapid decompression? 1. Violent rush of gas from lungs 2.Expansion of body gases 3.Blast of air to the exterior 4.Mist in the cabin",
+    choices: {
+      A: "1, 2, 4",
+      B: "2, 3, 4",
+      C: "1, 2, 3",
+      D: "All of the above OPERATIONAL PROCEDURES SPECIAL OPERATIONAL PROCEDURES AND - Noise Abatement",
+    },
+    correct: "D",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "The cockpit windows suddenly mist up, the temperature drops and the background noise level increases. This indicates",
+    choices: {
+      A: "over pressurisation",
+      B: "a failure of the environmental control system",
+      C: "the automatic cabin fire extinguisher system has gone off",
+      D: "explosive decompression",
+    },
+    correct: "D",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question: "When the pressurisation system fails, the RCDI shows",
+    choices: {
+      A: "A climb",
+      B: "A descent",
+      C: "No change",
+      D: "Fluctuations",
+    },
+    correct: "A",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "Mist in the cabin accompanied by a drop in pressure and temperature are indications of",
+    choices: {
+      A: "A rapid decompression",
+      B: "A slow decompression",
+      C: "An electrical fire",
+      D: "A plastic fire",
+    },
+    correct: "A",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "At what cabin altitude would the flight crew be alerted if the cabin pressure was reducing unnoticed?",
+    choices: {
+      A: "10,000 ft",
+      B: "11,000 ft",
+      C: "13,000 ft OPERATIONAL PROCEDURES SPECIAL OPERATIONAL PROCEDURES AND - Windshear and Microbust",
+      D: "800 ft",
+    },
+    correct: "A",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "Normal flow on a diluter deman oxygen system is obtained by selecting",
+    choices: {
+      A: "NORMAL",
+      B: "NORMAL and breathing in",
+      C: "100% and breathing in",
+      D: "EMERGENCY",
+    },
+    correct: "B",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "During a landing approach, the aircraft is subjected to windshear with an increasing tail wind. In the absence of a pilot action, the aircraft: 1. Flies above the glide path 2. Flies below the glide path 3. Has an increasing true airspeed 4. Has a decreasing true airspeed. The combination of correct statements is",
+    choices: {
+      A: "2, 4",
+      B: "2, 3",
+      C: "1, 3",
+      D: "1, 4",
+    },
+    correct: "A",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "During a landing approach, the aircraft is subjected to windshear with a decreasing head wind. In the absence of a pilot action, the aircraft: 1. Flies above the glide path 2. Flies below the glide path 3. Has an increasing true airspeed 4. Has a decreasing true airspeed. The combination of correct statements is",
+    choices: {
+      A: "2, 4",
+      B: "2, 3",
+      C: "1, 3",
+      D: "1, 4",
+    },
+    correct: "A",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "An aircraft which experiences a headwind of 40 kt while making its way towards the centre of a microburst may expect, when crossing the microburst, to face a windshear of",
+    choices: {
+      A: "60 kt",
+      B: "40 kt",
+      C: "80 kt",
+      D: "20 kt OPERATIONAL PROCEDURES SPECIAL OPERATIONAL PROCEDURES AND - Windshear and Microbust",
+    },
+    correct: "C",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "In final approach, you encounter a strong rear wind gust or strong down wind which forces you to go around. The combination of correct statements is: 1. maintain the same aircraft configuration (gear and flaps) 2. reduce the drags (gear and flaps) 3. gradually increase the attitude up to triggering of stick shaker 4. avoid excessive attitude change",
+    choices: {
+      A: "2, 3",
+      B: "1, 4",
+      C: "1, 3",
+      D: "2, 4",
+    },
+    correct: "C",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "During a landing approach, the aircraft is subjected to windshear with an increasing head wind. In the absence of a pilot action, the aircraft:1. Flies above the glide path 2. Flies below the glide path 3. Has an increasing true airspeed 4. Has a decreasing true airspeed. The combination of correct statements is",
+    choices: {
+      A: "2, 3",
+      B: "1, 4",
+      C: "1, 3",
+      D: "2, 4",
+    },
+    correct: "C",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "During a landing approach, the aircraft is subjected to windshear with a decreasing tail wind. In the absence of a pilot action, the aircraft:1. Flies above the glide path 2. Flies below the glide path 3. Has an increasing true airspeed 4.Has a decreasing true airspeed. The combination of correct statements is",
+    choices: {
+      A: "2, 4",
+      B: "1, 4",
+      C: "2, 3",
+      D: "1, 3",
+    },
+    correct: "D",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "If an aircraft hits windshear with an increasing tailwind: 1. TAS increases 2. TAS decreases 3. Aircraft descends below glideslope 4. Aircraft climbs above glideslope",
+    choices: {
+      A: "(i), (iii)",
+      B: "(i), (iv)",
+      C: "(ii), (iii)",
+      D: "(ii), (iv)",
+    },
+    correct: "C",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question: "A horizontal tailwind gust may cause an aeroplane to",
+    choices: {
+      A: "climb",
+      B: "climb or descend depending on gust strength",
+      C: "descend",
+      D: "have no effect on the flight path",
+    },
+    correct: "C",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "If you encounter a microburst just after take-off, at the beginning you will have:a head winda strong rear windbetter climb performancea diminution of climb gradientan important thrust dropThe combination regrouping all the correct statements is",
+    choices: {
+      A: "2, 4",
+      B: "1, 4",
+      C: "4, 5",
+      D: "1, 3",
+    },
+    correct: "D",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question: "On the approach you hit windshear and have to go around. Do you",
+    choices: {
+      A: "Do nothing to your gear and flaps",
+      B: "Take gear and flap in",
+      C: "Pitch up to the stick shaker",
+      D: "Avoid excessive attitude manoeuvres",
+    },
+    correct: "C",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "On the approach, you experience a decrease in tail wind, what happens to the aeroplane without any corrections being applied? 1. Climbs above glide path 2. Descends below glide path 3. TAS increases 4. TAS decreases",
+    choices: {
+      A: "1, 3",
+      B: "1, 4",
+      C: "2, 3",
+      D: "2, 4",
+    },
+    correct: "A",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "In the worst case scenario of recovery from the effects of a microburst, having increased to full go around power, in co-ordinating power and pitch it may be necessary to",
+    choices: {
+      A: "reduce speed to V2 and hold",
+      B: "climb away at Vat + 20 kt",
+      C: "increase the pitch angle until the stick shaker is felt and hold at slightly below this angle",
+      D: "slowly increase speed whilst maintaining a positive rate of climb",
+    },
+    correct: "C",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "Just after take-off an aircraft encounters a microburst situated directly ahead. The initial indications will be:an increase in head windan increase in tail windbetter climb performancea decrease in climb gradientThe combination regrouping all the correct statements is",
+    choices: {
+      A: "1, 4",
+      B: "2, 3",
+      C: "1, 3",
+      D: "2, 4",
+    },
+    correct: "C",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question: "On encountering windshear what do you do?",
+    choices: {
+      A: "Apply take-off power and pull to the stick shaker",
+      B: "Apply small increase in power",
+      C: "Apply moderate power and pull to the stick shaker",
+      D: "Pull to the stick shaker",
+    },
+    correct: "A",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "What do you do in a microburst? 1. Apply engine power 2. Retract speed brakes 3. Retract flaps and gear 4. Retract all drag devices 5. Pitch up to stick shaker",
+    choices: {
+      A: "1, 3, 5",
+      B: "1, 4, 5",
+      C: "1, 2, 5",
+      D: "2, 3, 5",
+    },
+    correct: "C",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "While approaching the outer-marker, the tower informs you about the presence of a microburst. You will expect to encounter",
+    choices: {
+      A: "windshears (vertical and horizontal)",
+      B: "wake turbulence",
+      C: "supercooled water",
+      D: "convection motion of air mass",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "Wind shear is",
+    choices: {
+      A: "a vertical wind velocity variation over a short distance",
+      B: "a horizontal wind velocity variation over a short distance",
+      C: "a vertical or horizontal wind velocity and/or wind direction over a short distance",
+      D: "a vertical or horizontal wind velocity and/or wind direction over a large distance",
+    },
+    correct: "C",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "How can the direction of wing tip vortices be described?",
+    choices: {
+      A: "Both clockwise",
+      B: "Both counter clockwise",
+      C: "From above the wing to below the wing",
+      D: "From below the wing to above the wing",
+    },
+    correct: "D",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "In a mountainous region you encounter windshear and see an increase in airspeed. You",
+    choices: {
+      A: "reduce power to stay on the glidepath",
+      B: "reduce power to 1.2VS and make a precision landing",
+      C: "bring to level flight, allow speed to fall and intercept the glidepath from above",
+      D: "allow speed to increase while staying on the glidepath and monitoring speed",
+    },
+    correct: "D",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "In windshear associated with a microburst, you experience a 40 kts headwind. Coming out of the microburst, you will experience a windshear of",
+    choices: {
+      A: "-20 kts",
+      B: "-40 kts",
+      C: "-60 kts",
+      D: "-80 kts",
+    },
+    correct: "D",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "Windshear may be described as a change in wind direction and/or speed in space, including updraughts and downdraughts. To counter the effects of windshear the amount of control action that is required is",
+    choices: {
+      A: "medium",
+      B: "small",
+      C: "substantial",
+      D: "null",
+    },
+    correct: "C",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "One of the main characteristics of windshear is that it",
+    choices: {
+      A: "can occur at any altitude in both the vertical and horizontal planes",
+      B: "occurs only at a low altitude (2000 ft) and never in the vertical plane",
+      C: "occurs only at a low altitude (2000 ft) and never in the horizontal plane",
+      D: "can occur at any altitude and only in the horizontal plane",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "Which one of the following magnitudes will be the first to change its value when penetrating a windshear?",
+    choices: {
+      A: "Pitch angle OPERATIONAL PROCEDURES SPECIAL OPERATIONAL PROCEDURES AND - Windshear and Microbust",
+      B: "Vertical speed",
+      C: "Ground speed",
+      D: "Indicated airspeed",
+    },
+    correct: "D",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "On the approach you experience an increasing headwind. What happens to the aircraft: 1. Descends below the glide path 2. Climbs above the glide path 3. TAS increases 4. TAS decreases",
+    choices: {
+      A: "1 and 4",
+      B: "1 and 3",
+      C: "2 and 4",
+      D: "2 and 3",
+    },
+    correct: "D",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "What is the first indication of windshear? A change in",
+    choices: {
+      A: "pitch angle",
+      B: "ground speed",
+      C: "vertical speed",
+      D: "indicated airspeed",
+    },
+    correct: "D",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "What are the characteristics of windshear?",
+    choices: {
+      A: "It occurs at any altitude in the horizontal and vertical plane",
+      B: "It can occur at any altitude only in the horizontal plane",
+      C: "it occurs only below 2000 ft and never in the horizontal plane",
+      D: "It only occurs below 2000 ft and never in the vertical plane",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "Which parameter will change first, when penetrating an horizontal windshear?",
+    choices: {
+      A: "Groundspeed",
+      B: "Pitch angle",
+      C: "Vertical speed",
+      D: "Indicated airspeed",
+    },
+    correct: "D",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "Under a microburst, what happens?",
+    choices: {
+      A: "Air is diverging and local pressure increases",
+      B: "Air rotates and local pressure decreases",
+      C: "Air is diverging and local pressure decreases",
+      D: "Air rotates and local pressure increases",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "What would you expect to encounter in a microburst?",
+    choices: {
+      A: "Rain",
+      B: "Hail",
+      C: "Windshear",
+      D: "Thunder and lightning",
+    },
+    correct: "C",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "When you encounter windshear, what input is needed by the pilot?",
+    choices: {
+      A: "Small",
+      B: "Nil",
+      C: "Substantial",
+      D: "Moderate",
+    },
+    correct: "C",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "What is wind shear?",
+    choices: {
+      A: "Horizontal change in wind speed",
+      B: "Vertical change in wind speed OPERATIONAL PROCEDURES SPECIAL OPERATIONAL PROCEDURES AND - Windshear and Microbust",
+      C: "Vertical or horizontal change in wind velocity over a short distance",
+      D: "Vertical and horizontal change in wind velocity over a long distance",
+    },
+    correct: "C",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "In a microburst downdrafts in the order of 3000 to 4000 ft/min can produce vector changes in horizontal wind of",
+    choices: {
+      A: "30 to 40 kts",
+      B: "10 to 20 kts",
+      C: "60 to 80 kts",
+      D: "100 to 140 kts",
+    },
+    correct: "C",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "In accordance with DOC 4444 (ICAO) when a MEDIUM and a LIGHT aircraft are using the same runway, or parallel runways separated by less than 760m, (in approach or departure phases of flight), shall be applied a wake turbulence radar separation minima of",
+    choices: {
+      A: "2 NM",
+      B: "4 NM",
+      C: "3 NM",
+      D: "5 NM",
+    },
+    correct: "D",
+    ref: "All",
+  },
+  {
+    question: "An airplane creates a wake turbulence when",
+    choices: {
+      A: "generating lift",
+      B: "flying at high speed",
+      C: "using a high engine RPM",
+      D: "flying with its gear and flaps extended",
+    },
+    correct: "A",
+    ref: "All",
+  },
+  {
+    question:
+      "According with DOC 4444 (ICAO), a wake turbulence non-radar separation minima of 3 minutes shall be applied to",
+    choices: {
+      A: "LIGHT aircraft taking-off behind a MEDIUM aircraft from a parallel runway separated by less than760m (using whole runway)",
+      B: "LIGHT aircraft landing behind a MEDIUM aircraft OPERATIONAL PROCEDURES SPECIAL OPERATIONAL PROCEDURES AND - Windshear and Microbust",
+      C: "LIGHT aircraft taking-off behind a MEDIUM aircraft when aircraft are using the same runway",
+      D: "MEDIUM aircraft landing behind a HEAVY aircraft",
+    },
+    correct: "B",
+    ref: "All",
+  },
+  {
+    question:
+      "To avoid wake turbulence, when departing behind a larger aircraft, the pilot should manoeuvre",
+    choices: {
+      A: "Below and downwind from the larger aircraft",
+      B: "Above and downwind from the larger aircraft",
+      C: "Above and upwind from the larger aircraft",
+      D: "Below and upwind from the larger aircraft",
+    },
+    correct: "C",
+    ref: "All",
+  },
+  {
+    question:
+      "For the purposes of wake turbulence separation, what is the ICAO minimum radar separation distance if a heavy aeroplane is following directly behind another heavy aeroplane on the approach to the same runway?",
+    choices: {
+      A: "9.3 km (5 NM)",
+      B: "7.4 km (4 NM)",
+      C: "11.1 km (6 NM)",
+      D: "3.7 km (2 NM)",
+    },
+    correct: "B",
+    ref: "All",
+  },
+  {
+    question: "The wake turbulence",
+    choices: {
+      A: "starts when pulling out the drag devices and stops when retracting the drag devices",
+      B: "starts as soon as the aeroplane is running for take-off and stops as soon as it has come to astop at landing",
+      C: "starts when the airplane reaches a height of 300 ft above the ground and stops when it crossesthis height before landing",
+      D: "starts during the rotation and stops as soon as the airplanes wheels touch the ground",
+    },
+    correct: "D",
+    ref: "All",
+  },
+  {
+    question:
+      "The wake turbulance caused by an aircraft is mainly the result of: The combination regrouping all the correct statements is: 1. An aerodynamical effect (wing tip vortices) 2. The engines action (propellers rotation or engine gas exhausts) 3. The importance of the drag devices (size of the landing gear, of the flaps, etc).",
+    choices: {
+      A: "1, 2 and 3",
+      B: "3",
+      C: "2 and 3",
+      D: "1",
+    },
+    correct: "D",
+    ref: "All",
+  },
+  {
+    question:
+      "According to DOC 4444 (ICAO), a wake turbulence non-radar separation minima of 2 minutes shall be applied to",
+    choices: {
+      A: "MEDIUM aircraft taking-off behind a HEAVY aircraft from an intermediate part of a parallelseparated by less than 760m",
+      B: "MEDIUM aircraft landing behind a HEAVY aircraft",
+      C: "LIGHT aircraft taking-off behind a MEDIUM aircraft from an intermediate part of the same runway",
+      D: "LIGHT aircraft landing behind a MEDIUM aircraft",
+    },
+    correct: "B",
+    ref: "All",
+  },
+  {
+    question:
+      "DOC 4444 (ICAO) establishes that wake turbulence separation minima shall be based on a grouping of aircraft types into three categories according to the maximum certificated take-off mass. Heavy (H) Category, are all aircraft types of",
+    choices: {
+      A: "146,000 kgs or more",
+      B: "135,000 kgs or more",
+      C: "less than 136,000 kgs but more than 126,000 kgs",
+      D: "136,000 kgs or more",
+    },
+    correct: "D",
+    ref: "All",
+  },
+  {
+    question:
+      "For purposes of wake turbulence separation, what is the ICAO minimum radar separation time if a light aeroplane (7000 kg or less) is following a medium aeroplane (less than 136,000 kg but more than 7,000 kg) on the approach to landing?",
+    choices: {
+      A: "2 minutes",
+      B: "4 minutes",
+      C: "5 minutes",
+      D: "3 minutes",
+    },
+    correct: "D",
+    ref: "All",
+  },
+  {
+    question:
+      "For the purpose of wake turbulence separation, what is the minimum separation time that is permitted when a light aircraft is taking off behind a heavy aircraft from an intermediate part of the same runway?",
+    choices: {
+      A: "5 minutes",
+      B: "4 minutes",
+      C: "3 minutes",
+      D: "2 minutes",
+    },
+    correct: "C",
+    ref: "All",
+  },
+  {
+    question:
+      "When taking-off behind a wide-body aircraft, with wind coming from the left side, you adopt a path, whenever possible?",
+    choices: {
+      A: "distinct from the preceding airplane, by remaining at the right of and under its path",
+      B: "distinct from the preceding airplane, by remaining at the left of and above its path",
+      C: "identical to the one of the preceding airplane",
+      D: "distinct from the preceding airplane, by remaining behind it and under its path",
+    },
+    correct: "B",
+    ref: "All",
+  },
+  {
+    question:
+      "The wake turbulence is the most severe when the aircraft is: 1.slow The combination of correct statement is: 1. heavy 2. in a clean configuration 3. flying with a high thrust",
+    choices: {
+      A: "1, 4",
+      B: "1, 2, 3",
+      C: "1, 2, 3, 4",
+      D: "2, 3, 4",
+    },
+    correct: "B",
+    ref: "All",
+  },
+  {
+    question:
+      "The greatest wake turbulence occurs when the generating aircraft is",
+    choices: {
+      A: "Small, light, at maximum speed in full flaps configuration",
+      B: "Large, heavy, at maximum speed in full flaps configuration",
+      C: "Small, light, at low speed in clean configuration",
+      D: "Large, heavy, at low speed in clean configuration",
+    },
+    correct: "D",
+    ref: "All",
+  },
+  {
+    question:
+      "In accordance with ICAO and PANS RAC procedures, which letter should be entered into a flight plan to denote an aeroplane which has a weight of less than 136,000 kg but greater than 7,000 kg",
+    choices: {
+      A: "H",
+      B: "M",
+      C: "L",
+      D: "S",
+    },
+    correct: "B",
+    ref: "All",
+  },
+  {
+    question: "Wake turbulence should be taken into account when",
+    choices: {
+      A: "a preceding aeroplane has performed low altitude high roll rate rolling manoeuvres over therunway",
+      B: "when just before the landing a much lighter aeroplane has landed with a strong crosswind on along runway",
+      C: "during cruise the vertical separation is reduced to 1000 ft",
+      D: "a much heavier aeroplane has landed just previously on the same runway, a light crosswindcondition exist and all high-lift devices are being used",
+    },
+    correct: "D",
+    ref: "All",
+  },
+  {
+    question:
+      "In a 5 kt right crosswind component behind a taking off aircraft",
+    choices: {
+      A: "The runway will be clear of any hazard turbulence",
+      B: "The left wake turbulence stays approximately on the runway",
+      C: "The right and left wake turbulence stays approximately on the runway",
+      D: "The right wake turbulence stays approximately on the runway",
+    },
+    correct: "D",
+    ref: "All",
+  },
+  {
+    question: "The wake turbulence is greater when the aircraft has a",
+    choices: {
+      A: "low weight and low speed",
+      B: "low weight and high speed",
+      C: "high weight and low speed",
+      D: "high weight and high speed",
+    },
+    correct: "C",
+    ref: "All",
+  },
+  {
+    question:
+      "When taking-off after a widebody aircraft which has just landed, you should take-off",
+    choices: {
+      A: "in front of the point where the aircrafts wheels have touched down",
+      B: "beyond the point where the aircrafts wheels have touched down",
+      C: "at the point where the aircrafts wheels have touched down and on the wind side of the runway",
+      D: "at the point where the aircrafts wheels have touched the ground and on the underwind side of therunway",
+    },
+    correct: "B",
+    ref: "All",
+  },
+  {
+    question:
+      "According to DOC 4444 (ICAO), a wake turbulence radar separation minima of 9.3 km (5.0 NM) shall be applied when a",
+    choices: {
+      A: "LIGHT aircraft is crossing behind a HEAVY aircraft, at the same altitude or less than 300 m(1000 ft)",
+      B: "LIGHT aircraft is crossing behind a MEDIUM aircraft, at the same altitude or less than 300m(1000 ft)",
+      C: "HEAVY aircraft is crossing behind a HEAVY aircraft, at the same altitude or less than 300m (1000ft)",
+      D: "MEDIUM aircraft is crossing behind a MEDIUM aircraft, at the same altitude or less than 300 m(1000 ft)",
+    },
+    correct: "B",
+    ref: "All",
+  },
+  {
+    question:
+      "The time needed for the dissipation of a turbulent wake created by a wide-body aircraft during take-off is about",
+    choices: {
+      A: "3 minutes",
+      B: "30 seconds",
+      C: "1 minute",
+      D: "10 minutes",
+    },
+    correct: "A",
+    ref: "All",
+  },
+  {
+    question:
+      "When taking-off behind a wide-body aircraft, with wind coming from the right side, you adopt a path, whenever possible?",
+    choices: {
+      A: "identical to the one of the preceding airplane",
+      B: "distinct from the preceding airplane, by remaining on the left of and under its path",
+      C: "distinct from the preceding airplane, by remaining on the right of and above its path",
+      D: "different from the preceding airplane, by remaining behind it and under its path",
+    },
+    correct: "C",
+    ref: "All",
+  },
+  {
+    question:
+      "To which situation is 3 mins wake turbulence separation applied?",
+    choices: {
+      A: "Light following a medium departing from a runway intersection on a parallel runway less than760m apart",
+      B: "A light taking off after a heavy has taken off in the opposite direction",
+      C: "A medium landing after a heavy aircraft",
+      D: "A light aircraft departing after a heavy on the same runway",
+    },
+    correct: "A",
+    ref: "All",
+  },
+  {
+    question: "Wake turbulence risk is highest",
+    choices: {
+      A: "if, just before landing a much lighter aircraft has landed at the same runway with heavycrosswind",
+      B: "when a heavy aircraft has just performed a take-off at a closely situated parallel runway with alight crosswind",
+      C: "following a preceding aircraft at high speed",
+      D: "when a preceding aircraft has briefly applied take-off thrust just prior to take off",
+    },
+    correct: "B",
+    ref: "All",
+  },
+  {
+    question:
+      "Tip vortices which are responsible for wake turbulence appear as soon as the following is established",
+    choices: {
+      A: "drag",
+      B: "lift",
+      C: "spin up",
+      D: "lift destruction",
+    },
+    correct: "B",
+    ref: "All",
+  },
+  {
+    question:
+      "Under what conditions is a radar separation of 5 nm required for wake turbulence spacing",
+    choices: {
+      A: "Heavy following a heavy",
+      B: "Medium following a heavy",
+      C: "Light following a heavy",
+      D: "Heavy following a medium",
+    },
+    correct: "B",
+    ref: "All",
+  },
+  {
+    question: "Where is the best position following a heavier aeroplane?",
+    choices: {
+      A: "Above its flight path and downwind",
+      B: "Below its flight path and upwind",
+      C: "Below its flight path and upwind",
+      D: "Upwind and above its flight path",
+    },
+    correct: "D",
+    ref: "All",
+  },
+  {
+    question: "Wake turbulence starts",
+    choices: {
+      A: "when selecting the drag dev ices and stops when retracting the drag devices",
+      B: "when the airplane reaches a height of 300 ft above the ground and stops when it crosses thisheight before landing",
+      C: "during rotation and stops as soon as the airplanes wheels touch the ground",
+      D: "as soon as the aeroplane is commencing the take-off run and stops as soon as it has comed to astop after landing",
+    },
+    correct: "C",
+    ref: "All",
+  },
+  {
+    question:
+      "For purpose of wake turbulence separation, what is the ICAO minimum radar separation distance and minimum time if a medium aeroplane (less than 136,000 kg and more than 7,000 kg) is following directly behind a heavy aeroplane on the approach to the same runway?",
+    choices: {
+      A: "7.4 km (4 NM) and 2 minutes",
+      B: "11.1 km (6 NM) and 3 minutes",
+      C: "9.3 km (5 NM) and 2 minutes",
+      D: "9.3 km (5 NM) and 3 minutes",
+    },
+    correct: "C",
+    ref: "All",
+  },
+  {
+    question: "In a microburst combined with a violent storm the winds at",
+    choices: {
+      A: "high altitude converge on the centre of the phenomenon and the atmospheric pressure increases bya few hectopascals",
+      B: "low altitude diverge from the centre of the phenomenon and the atmospheric pressure decreases bya few hectopascals",
+      C: "low altitude diverge from the centre of the phenomenon and the atmospherica pressure increasesby a few hectopascals",
+      D: "low altitude converge on the centre of the phenomenon and the atmospheric pressure decreases bya few hectopascals",
+    },
+    correct: "C",
+    ref: "All",
+  },
+  {
+    question: "The tip vortices circulate about each wing tip",
+    choices: {
+      A: "counter-clockwise",
+      B: "clockwise",
+      C: "from the underwing toward the upper side of the wing",
+      D: "from the upper side of the wing toward the underwing",
+    },
+    correct: "C",
+    ref: "All",
+  },
+  {
+    question:
+      "According to DOC 4444 (ICAO) a wake turbulence non-radar separation minima of 3 minutes shall be applied",
+    choices: {
+      A: "to an arriving LIGHT aircraft following a MEDIUM aircraft departure when operating on a runwaywith a displaced landing threshold, if the projected flight paths are expected to cross",
+      B: "between a LIGHT aircraft and a MEDIUM aircraft making a missed approach and the LIGHT aircraftutilizing an opposite-direction runway for take-off",
+      C: "to LIGHT aircraft taking-off behind a MEDIUM aircraft from an intermediate part of parallelrunway separated by less than 760m",
+      D: "to a departing MEDIUM aircraft following a HEAVY aircraft arrival when operating on a runwaywith a displaced landing threshold",
+    },
+    correct: "C",
+    ref: "All",
+  },
+  {
+    question: "When is 3 minutes separation applied?",
+    choices: {
+      A: "A light aeroplane departing after a heavy aeroplane from the same position",
+      B: "A medium aeroplane departing after a heavy aeroplane has made a missed approach in the oppositedirection",
+      C: "A light aeroplane landing following a medium aeroplane",
+      D: "A medium aeroplane landing following a heavy aeroplane",
+    },
+    correct: "C",
+    ref: "All",
+  },
+  {
+    question:
+      "The wake turbulence is the most severe when the aircraft is: 1.slow The combination of correct statement is: 1. heavy 2. in a clean configuration 3. flying with a high thrust",
+    choices: {
+      A: "1, 2 and 3",
+      B: "1, 3 and 4",
+      C: "2, 3 and 4 OPERATIONAL PROCEDURES SPECIAL OPERATIONAL PROCEDURES AND - Windshear and Microbust",
+      D: "All of the above",
+    },
+    correct: "A",
+    ref: "All",
+  },
+  {
+    question: "What flying conditions give the worst wake turbulence?",
+    choices: {
+      A: "Large, heavy, slow and clean",
+      B: "Large, heavy, fast and full flaps, large",
+      C: "Large, high power, slow and full flaps",
+      D: "Large, high powers fast and clean",
+    },
+    correct: "A",
+    ref: "All",
+  },
+  {
+    question:
+      "You are a heavy aeroplane behind a heavy aeroplane on the approach. What is the required separation?",
+    choices: {
+      A: "7.4 km, 4 nm",
+      B: "3.6 km, 2 nm",
+      C: "5.5 km, 3 nm",
+      D: "9.2 km, 5 nm",
+    },
+    correct: "A",
+    ref: "All",
+  },
+  {
+    question:
+      "For a light aircraft departing after a medium what is the minimum time for wake turbulence separation?",
+    choices: {
+      A: "3 min",
+      B: "2 min",
+      C: "1 min",
+      D: "5 min",
+    },
+    correct: "B",
+    ref: "All",
+  },
+  {
+    question:
+      "What is the major factor causing wake turbulence? 1.Wing Tip Vortices 2.Engines 3.High Lift Devices 4.Size of the Landing Gear",
+    choices: {
+      A: "1",
+      B: "2, 3",
+      C: "1, 4",
+      D: "3",
+    },
+    correct: "A",
+    ref: "All",
+  },
+  {
+    question:
+      "A strongly swept back wing stalls. If the wake of the wing contracts the horizontal tail, the effect on the stall behaviour can be",
+    choices: {
+      A: "tendency to increase speed after initial stall",
+      B: "nose up tendency and/or lack of elevator response",
+      C: "nose down tendency",
+      D: "increase sensitivity of elevator inputs",
+    },
+    correct: "B",
+    ref: "All",
+  },
+  {
+    question:
+      "When a LIGHT aircraft is landing behind a MEDIUM aircraft, the wake turbulence non-radar minimum time approach separation, according with DOC 4444 (ICAO) shall be",
+    choices: {
+      A: "1 min",
+      B: "2 min",
+      C: "3 min",
+      D: "4 min",
+    },
+    correct: "C",
+    ref: "All",
+  },
+  {
+    question:
+      "In calm wind conditions, an aircraft at take-off creates tip vortices that",
+    choices: {
+      A: "stagnate on the runway",
+      B: "separate outwards on each side of the runway",
+      C: "separate outwards to the right side only",
+      D: "separate outwards to the left side only",
+    },
+    correct: "B",
+    ref: "All",
+  },
+  {
+    question: "What is the weight range for medium category aircraft?",
+    choices: {
+      A: "5,700 kg to 100,000 kg",
+      B: "7,000 kg to 125,000 kg",
+      C: "5,700 kg to 136,000 kg",
+      D: "7,000 kg to 136,000 kg",
+    },
+    correct: "D",
+    ref: "All",
+  },
+  {
+    question:
+      "Following an act of unlawful interference on board an aeroplane, to whom the commander should submit a report of the act to",
+    choices: {
+      A: "the Authority of the State of the operator only",
+      B: "the local authority only",
+      C: "both the local authority and the Authority of the State of the operator",
+      D: "the Authority of the State within which the aeroplane is operating at the time of the unlawfulinterference",
+    },
+    correct: "C",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "In addition to informing each State, whose citizens are known to be on board an aircraft, the State of the country in which an aircraft has landed after an act of unlawful interference must immediately notify the",
+    choices: {
+      A: "State of the operator, the CAA and ICAO",
+      B: "State of Registry of the aircraft and the CAA",
+      C: "State of Registry of the aircraft, the State of the operator and ICAO",
+      D: "State of Registry of the aircraft and the State of the operator only",
+    },
+    correct: "C",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "when a commercial transport passenger airplane is equipped with a door in the flight crew compartment area, this door must include",
+    choices: {
+      A: "a locking system to prevent any unauthorised access",
+      B: "a device preventing the flight crew from being locked in the cockpit",
+      C: "distinctive red or yellow coloured markings indicating the access area (in case of a blockeddoor)",
+      D: "a sealing system allowing the maintenance for as long as possible of the pressure in the cockpitin case of a depressurisation in the compartment area",
+    },
+    correct: "A",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "What transponder code should be used to provide recognition of an aircraft which is being subjected to unlawful interference",
+    choices: {
+      A: "code 7700",
+      B: "code 7600",
+      C: "code 7500",
+      D: "code 2000",
+    },
+    correct: "C",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "What is the transponder code to be used by an aircraft that is subject to unlawful interference (hijacked) is",
+    choices: {
+      A: "7500",
+      B: "7600",
+      C: "7700",
+      D: "7800",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "In case of a hi-jack, the squawk code is",
+    choices: {
+      A: "2000",
+      B: "7600",
+      C: "7700",
+      D: "7500",
+    },
+    correct: "D",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "When you have been unlawfully interfered with, the state in which you land is required to inform certain people:1. State of the Operator 2. ICAO 3. State of registration of aircraft 4. CAA",
+    choices: {
+      A: "All of the above",
+      B: "1, 2",
+      C: "1, 2, 3",
+      D: "2, 4",
+    },
+    correct: "C",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "According to ICAO Annex 17, following an unlawful interference, who shall take adequate measures for the safety of passengers and crew of an aircraft, until their journey can be continued? The",
+    choices: {
+      A: "contracting State in which the unlawful interference occurs",
+      B: "CAA",
+      C: "Commander of the aircraft",
+      D: "aircraft's operator",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "A bomb alert is received at cruise altitude, fuel is not a problem that needs to be considered, what do you do?",
+    choices: {
+      A: "Descend to safety altitude",
+      B: "Go to the maximum altitude not affected by pressure",
+      C: "Go to cabin altitude pressure and remain clean until the final approach",
+      D: "Descend to cabin pressure altitude or safety altitude whichever is the higher, and go to landingconfiguration as a safety measure",
+    },
+    correct: "D",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "For aeroplanes having a seating capacity of more than 44 passengers, it must be shown by actual demonstration that the maximum seating capacity, including the required numberof crew members, can be evacuated from the aeroplane to the ground in",
+    choices: {
+      A: "90 seconds",
+      B: "132 seconds",
+      C: "120 seconds",
+      D: "60 seconds",
+    },
+    correct: "A",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "What is the evacuation time for an aeroplane with more than 44 seats?",
+    choices: {
+      A: "60 secs OPERATIONAL PROCEDURES SPECIAL OPERATIONAL PROCEDURES AND - Windshear and Microbust",
+      B: "90 secs",
+      C: "120 secs",
+      D: "132 secs",
+    },
+    correct: "B",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "the time for emergency evacuation where the seating capacity is more than 44 is",
+    choices: {
+      A: "2 min with 50% of the exits unavailable",
+      B: "90 sec with 50% of the exits unavailable",
+      C: "90 min with 50% of the exits unavailable",
+      D: "90 sec with all the exits available in a real emergency",
+    },
+    correct: "B",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "An aircraft is flying in heavy rain. To carry out a safe approach, it is necessary to",
+    choices: {
+      A: "carry out an approach with flaps up, in order to avoid exposing too much lifting surface to therain",
+      B: "reduce the approach speed, because the runway may be very slippery on landing",
+      C: "maintain the normal approach speed up to landing",
+      D: "increase its approach speed, because the rain affects the lift by deteriorating the boundarylayer",
+    },
+    correct: "D",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "Mist in the cabin, pressure and temperature drop characterise?",
+    choices: {
+      A: "a slow depressurisation",
+      B: "a fast depressurisation",
+      C: "an electrical fire",
+      D: "a plastic fire",
+    },
+    correct: "B",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "The safety position for adults looks like: seat belts fastened",
+    choices: {
+      A: "head placed on a knee cushion, arms around the thigh OPERATIONAL PROCEDURES SPECIAL OPERATIONAL PROCEDURES AND - Windshear and Microbust",
+      B: "head down as far as possible, grasp the passenger in front of you",
+      C: "head down as far as possible, grasp the legs with your arms",
+      D: "cross the arm in front of the face",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "In case of a ditching, the cabin attendants will: 1. evacuate women and children first 2. have the passengers embark directly in the liferafts 3. prevent passenger movements which may impede the airplanes floatation ability 4. ensure the complete evacuation of the airplane. The combination regrouping all the correct statements is: Answers",
+    choices: {
+      A: "2, 3",
+      B: "2, 3, 4",
+      C: "1, 2, 3, 4",
+      D: "1, 4",
+    },
+    correct: "B",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "The correct definition of a safe forced landing is",
+    choices: {
+      A: "an inevitable landing on land or sea from which one may reasonably expect no injuries on board",
+      B: "a landing on land or sea from which it is guaranteed no injuries will result to the occupants",
+      C: "a voluntary landing on land or sea carried out by the crew in order to protect the aircraft andits occupants",
+      D: "an inevitable landing on land or sea from which one may reasonably expect no injuries on boardor on the surface",
+    },
+    correct: "D",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "Following an emergency landing which will need an escape from the aircraft, you will: The combination regrouping all the correct statements is: 1. Remain on the runway 2. Clear the runway using the first available taxiway 3. Keep one engine or the APU running in order to maintain the electrical power supply on 4. Turn off all systems",
+    choices: {
+      A: "2, 3",
+      B: "1, 3",
+      C: "1, 4",
+      D: "2, 4",
+    },
+    correct: "C",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "After ditching, when must a passenger inflate the lift jacket?",
+    choices: {
+      A: "If the water is deep",
+      B: "Before leaving the aeroplane",
+      C: "On entering the water",
+      D: "When exiting the aeroplane",
+    },
+    correct: "D",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "What are the tasks to be undertaken by cabin crew when evacuating passengers? 1. Women and children first 2. Ensure no movement of passengers for floatation 3. Direct into life rafts 4. Ensure aircraft evacuated",
+    choices: {
+      A: "(i), (ii), (iii) and (iv)",
+      B: "(ii), (iii) and (iv)",
+      C: "(iii) and (iv)",
+      D: "(ii) and (iv)",
+    },
+    correct: "C",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "The attitudes to be adopted by the passengers, sitting in the travelling direction, in case of an emergency landing are: The combination regrouping all the correct statements is: 1. legs together and feet flat on the floor 2. head resting against the back of the front seat 3. forearms on the armrests 4. seat belt very tightly fastened 5. head resting on the forearm",
+    choices: {
+      A: "2, 3, 4",
+      B: "2, 4, 5",
+      C: "1, 4, 5",
+      D: "1, 2, 3, 4",
+    },
+    correct: "C",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "In a ditching situation, except for infants, the passengers shall be instructed to inflate their life jackets",
+    choices: {
+      A: "as soon as ditching is prepared",
+      B: "immediately on the opening of the exits",
+      C: "immediately on ditching",
+      D: "when exiting the aircraft OPERATIONAL PROCEDURES SPECIAL OPERATIONAL PROCEDURES AND - Windshear and Microbust",
+    },
+    correct: "D",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "After an overweight landing on a short runway, do you check",
+    choices: {
+      A: "Pressure of tyres",
+      B: "pressure of hydraulic fluid",
+      C: "Temperature of hydraulic fluid",
+      D: "Temperature of brakes",
+    },
+    correct: "D",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "Information about evacuation can be found in the",
+    choices: {
+      A: "Journey Logbook",
+      B: "Operation Manual",
+      C: "Operational Flight Plan",
+      D: "Flight Manual",
+    },
+    correct: "B",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "In case you have to assume the emergency brace position, do you: The correct combination is: 1. legs together, feet flat on the floor 2. Arms on arm rests 3. Head on forearms 4. Head on seat in front 5. Seat belt tight round waist",
+    choices: {
+      A: "All of the above",
+      B: "1, 2, 3, 4",
+      C: "1, 3, 4, 5",
+      D: "1, 2, 4, 5",
+    },
+    correct: "C",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "What action should you take after an emergency landing requiring emergency evacuation? The correct combination is: 1. Remain on runway 2. Take first taxiway exit off runway 3. Shut off all systems 4. Keep one engine or APU on to supply electrical equipment.",
+    choices: {
+      A: "1, 4",
+      B: "2, 3",
+      C: "1, 3",
+      D: "2, 4",
+    },
+    correct: "C",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "After an accident or serious incident in flight, the state where the aeroplane lands should report to",
+    choices: {
+      A: "State of Registry/ICAO",
+      B: "State of Registry/State of the Operator",
+      C: "State of Registry/JAA",
+      D: "State of Registry/ State of the Operator/ICAO",
+    },
+    correct: "D",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "Who is responsible for initiating the procedures outlined in the Operations Manual in the event of an emergency?",
+    choices: {
+      A: "In the air the aircraft commander, on the ground the flight dispatcher",
+      B: "In the air the pilot, on the ground the operator",
+      C: "In the air the flight crew, on the ground ATC",
+      D: "In the air the cabin crew, on the ground the handling agent",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "A four-jet aircraft must be equipped with an in-flight fuel jettisoning system in order to reduce the aircraft weight in an emergency",
+    choices: {
+      A: "until the central tank is empty in order to cope with the wing and landing gear constraints atlanding touchdown",
+      B: "unless it is capable of meeting the climb requirements: 2.7% in approach configuration with 1engine inoperative and 3.2% in landing configuration with all engines operative",
+      C: "in order to reach the maximum structural landing weight in less than 15 minutes after activationof the jettisoning system",
+      D: "in order to reduce the landing distance to 60% of the effective runway length OPERATIONAL PROCEDURES SPECIAL OPERATIONAL PROCEDURES AND - Windshear and Microbust",
+    },
+    correct: "B",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "From the following list: Which of the above are requirements that must be shown to exist during fuel jettisoning tests? 1. Fuel jettisoning system and its operation are free from fire hazard 2. The fuel discharges clear of any part of the aeroplane 3. Fuel fumes do not enter any part of the aeroplane 4. The jettisoning operation does not adversely affect the controllability of the aeroplane",
+    choices: {
+      A: "1, 3, 4",
+      B: "1, 2, 3, 4",
+      C: "1, 4",
+      D: "2, 3",
+    },
+    correct: "B",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "When jettisoning fuel for certification the following conditions must be demonstrated: 1. Fuel jettisoning must be free from fire hazards 2. Fuel discharges clear of aircraft 3. Fuel or fumes do not enter the aircraft 4. Fuel jettisoning does not affect the controllability of the aircraft 5. Fuel can be jettisoned within 30 minutes",
+    choices: {
+      A: "(i), (ii), (iii) and (iv)",
+      B: "(i), (ii) and (iii)",
+      C: "(ii), (iii) and (v)",
+      D: "1. , (iii), (iv) and (v)",
+    },
+    correct: "A",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "If obliged to jettison part of the fuel in flight, it would be better to do so",
+    choices: {
+      A: "under flight level 50 (FL 50)",
+      B: "in a holding stack, after control clearance",
+      C: "in a straight line and at a relatively high flight level",
+      D: "during final phase of approach OPERATIONAL PROCEDURES SPECIAL OPERATIONAL PROCEDURES AND - Windshear and Microbust",
+    },
+    correct: "C",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "In what period of time must a fuel jettisoning system be capable of jettisoning sufficient fuel to meet the precise climb and discontinued approach requirements",
+    choices: {
+      A: "15 minutes",
+      B: "30 minutes",
+      C: "60 minutes",
+      D: "90 minutes",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "In what minimum time must sufficient fuel be jettisoned in order to comply with approach/climb gradient specifications?",
+    choices: {
+      A: "90 minutes",
+      B: "60 minutes",
+      C: "30 minutes",
+      D: "15 minutes",
+    },
+    correct: "D",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "The time limit for fuel jettison to reduce from MTOM to emergency landing mass is",
+    choices: {
+      A: "15 minutes",
+      B: "30 minutes",
+      C: "10 minutes",
+      D: "20 minutes",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "Where is it best to carry out fuel jettison?",
+    choices: {
+      A: "Below flight level 50",
+      B: "In a holding pattern if cleared by ATC",
+      C: "Straight and level at a high altitude as possible",
+      D: "On final approach",
+    },
+    correct: "C",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "In order to carry hazardous materials on board a public transport airplane, they must be accompanied with a",
+    choices: {
+      A: "transport document for hazardous materials",
+      B: "representative of the company owning the materials",
+      C: "specialised handling employee",
+      D: "system to warn the crew in case of a leak or of an abnormal increase in temperature",
+    },
+    correct: "A",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "Who makes sure that the air transportation of an item of dangerous goods is not prohibited?",
+    choices: {
+      A: "The shipper when completing the shippers declaration for dangerous goods",
+      B: "The captain, always using the list of prohibited aircraft items",
+      C: "The operator",
+      D: "It is not specified",
+    },
+    correct: "A",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "A passenger is allowed to carry match-boxes: The combination regrouping all the correct statements is: 1. on himself/herself 2. in his/her hand luggage 3. in his/her checked luggage",
+    choices: {
+      A: "1, 2, 3",
+      B: "1",
+      C: "1, 2",
+      D: "2, 3",
+    },
+    correct: "B",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "When carrying hazardous dangerous air cargo on an aeroplane with passengers what must you have?",
+    choices: {
+      A: "A trained person accompanying the goods",
+      B: "Details on procedures if split during an emergency",
+      C: "A company representative",
+      D: "Transport documentation",
+    },
+    correct: "D",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "(Refer to figure 071-06)Considering the two holds of an aircraft. Each hold consists of 4 compartments to accommodate freight pallets or luggage containers. You are asked to load: 2 pallets of live animals marked AVl- 2 luggage containers marked BAG 1 mortal remains marked HUM- 1 pallet of food product marked EAT- 1 pallet of radioactive materials marked RRY- 1 pallet of toxic materials marked RHF. The locations still vacant shall be markedXXX. According to the table of compatibility of special freight and hazardous materials given in the appendix, the most operational distribution in the holds shall be",
+    choices: {
+      A: "Hold 1 : EAT - BAG - RRY - RHF; Hold 2 : BAG - AVl - AVl - HUM",
+      B: "Hold 1 : EAT - BAG - AVl - AVl Hold 2 : BAG - HUM - RRY - RHF",
+      C: "Hold 1 : BAG - BAG - RRY - HUM Hold 2 : AVl - AVl - XXX - EAT (RHF disembarked)",
+      D: "Hold 1 : BAG - RHF - HUM - RRY Hold 2 : AVl - AVl - BAG - EAT",
+    },
+    correct: "D",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "which of the following are considered dangerous goods that are required to be carried on board the aeroplane? 1. Portable fire extinguishers 2. Emeergency oxygen supplies 3. Passenger food 4. First aid kits 5. Alcoholic beverages",
+    choices: {
+      A: "1, 2",
+      B: "1, 2, 4",
+      C: "1, 3, 4",
+      D: "2, 4, 5",
+    },
+    correct: "B",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "The authorisation for the transport of hazardous materials is specified on the",
+    choices: {
+      A: "airworthiness certificate",
+      B: "registration certificate",
+      C: "air carrier certificate",
+      D: "insurance certificate",
+    },
+    correct: "C",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "The general information, instructions and recommendations on the transport of hazardous materials are specified in the",
+    choices: {
+      A: "operation manual",
+      B: "flight manual",
+      C: "AIP (Aeronautical Information Publication)",
+      D: "air carrier certificate",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "ICAO (International Civil Aviation Organisation) Appendix 18 is a document dealing with",
+    choices: {
+      A: "the technical operational use of aircraft",
+      B: "the air transport of live animals",
+      C: "the noise pollution of aircraft",
+      D: "the safety of the air transport of hazardous materials",
+    },
+    correct: "D",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "Products or materials are considered to be dangerous goods if the products or materials in question are defined as such by",
+    choices: {
+      A: "The directives of the Community Union",
+      B: "The UNO document entitled Dangerous Goods Regulations",
+      C: "The ICAO document entitled Technical Instructions for the safe transport of dangerous goods byair",
+      D: "The IATA document entitled Regulations governing the transportation of dangerous goods by air",
+    },
+    correct: "C",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "The dangerous goods transport document, if required, shall be drawn up by",
+    choices: {
+      A: "the shipper",
+      B: "the operator",
+      C: "the captain",
+      D: "the handling agent",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "In the hazardous materials transportation act, the freight compliance with the regulatory arrangements is the responsibility of the",
+    choices: {
+      A: "sender",
+      B: "captain",
+      C: "station manager",
+      D: "aerodrome manager",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "From the following list: Which are classed as Dangerous Goods that are required to be on the aeroplane 1. Fire extinguishers 2. Portable oxygen supplies 3. First-aid kits 4. Passenger meals 5. Alcoholic beverages",
+    choices: {
+      A: "1, 2, and 5 only",
+      B: "1, 2 and 3 only",
+      C: "3, 4 and 5 only",
+      D: "2, 3 and 4 only",
+    },
+    correct: "B",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "In addition to the languages required by the State of Origin, what language should be set for the markings related to dangerous goods",
+    choices: {
+      A: "English, French or Spanish",
+      B: "French",
+      C: "Spanish",
+      D: "English",
+    },
+    correct: "D",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "Carriage of dangerous goods is allowed, provided that",
+    choices: {
+      A: "no passenger is carried on the same flight",
+      B: "national aviation administration permission has been granted",
+      C: "government permission has been granted",
+      D: "the airline complies with the Technical Instructions OPERATIONAL PROCEDURES SPECIAL OPERATIONAL PROCEDURES AND - Windshear and Microbust",
+    },
+    correct: "D",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "Who is responsible for ensuring that the regulatory procedures for the transportation of dangerous goods is complied with?",
+    choices: {
+      A: "Captain",
+      B: "Sender",
+      C: "Station Manager",
+      D: "Aerodrome Manager",
+    },
+    correct: "B",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "The information concerning dangerous products that passengers may carry, are listed in the",
+    choices: {
+      A: "aircrafts flight manual",
+      B: "IATA document Dangerous products transportation",
+      C: "JAR-OPS documentation",
+      D: "ICAO document named Technical safety instructions for the air transportation of dangerousproducts",
+    },
+    correct: "D",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "Regarding the carriage of dangerous goods, the transport document, if required, is drawn up by",
+    choices: {
+      A: "The operator",
+      B: "The captain",
+      C: "The handling agent",
+      D: "The shipper",
+    },
+    correct: "D",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "ICAO (International Civil Aviation Organisation) Appendix 18 is a document dealing with the",
+    choices: {
+      A: "safety of the air transport of hazardous materials",
+      B: "technical operational use of aircraft",
+      C: "air transport of live animals",
+      D: "noise pollution of aircraft",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "Where is permanent approval for the carriage of dangerous goods given?",
+    choices: {
+      A: "Certificate of Airworthiness",
+      B: "Aircraft registration",
+      C: "Air Operators Certificate",
+      D: "Insurance Certificate",
+    },
+    correct: "C",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "(Refer to figure 071-05)For the two labels represented in the appendix, the principal and secondary risks are respectively",
+    choices: {
+      A: "corrosive material, toxic",
+      B: "corrosive material, infectious",
+      C: "infectious material, corrosive",
+      D: "toxic material, corrosive",
+    },
+    correct: "D",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "(Refer to figure 071-05)If a packet is marked with the label shown in the appendix (Label A) it is",
+    choices: {
+      A: "an explosive substance",
+      B: "a corpse",
+      C: "an infectious substance",
+      D: "a toxic material",
+    },
+    correct: "D",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "As a pilot in command, during flight preparation, if you are notified that a dangerous package has been damaged during its loading, you",
+    choices: {
+      A: "accept it after a visual inspection",
+      B: "mention it on the Notification to Captain",
+      C: "ensure that arrangements are made for its removal",
+      D: "mention it on the shipper's declaration",
+    },
+    correct: "C",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "Assuming that the operator is approved by his national authority, carriage of dangerous goods is allowed, provided that",
+    choices: {
+      A: "the operator complies with the technical instructions (ICAO DOC 9284) OPERATIONAL PROCEDURES SPECIAL OPERATIONAL PROCEDURES AND - Windshear and Microbust",
+      B: "the dangerous goods transport document is approved by the national authority prior to eachflight",
+      C: "the operator has certified the dangerous goods",
+      D: "no passengers and dangerous goods are carried on the same flight",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "The authorisation for the transport of dangerous goods is specified on the",
+    choices: {
+      A: "airworthiness certificate",
+      B: "registration certificate",
+      C: "air operator certificate",
+      D: "insurance certificate",
+    },
+    correct: "C",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "The dangerous goods regulations ICAO annex 18 require that, when delivering cargo for transport, the responsibility for compliance with the regulations are to",
+    choices: {
+      A: "aerodrome manager",
+      B: "commander",
+      C: "station manager",
+      D: "sender",
+    },
+    correct: "D",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "The dangerous goods transport document regarding the safe transport of dangerous goods by air is specified in the",
+    choices: {
+      A: "air transport permit",
+      B: "technical instructions",
+      C: "flight manual",
+      D: "operations manual",
+    },
+    correct: "B",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "The regulations for transportation of dangerous goods are contained in",
+    choices: {
+      A: "ICAO Appendix 8",
+      B: "ICAO Annex 18 OPERATIONAL PROCEDURES SPECIAL OPERATIONAL PROCEDURES AND - Windshear and Microbust",
+      C: "the Washington Convention",
+      D: "ICAO Annex 17",
+    },
+    correct: "B",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "Where dangerous goods are carried on a flight which takes place wholly or partly outside the territory of a State, which language must be used on the transport document in addition to any other language?",
+    choices: {
+      A: "Spanish",
+      B: "French",
+      C: "English",
+      D: "English, French, Spanish, Russian, Chinese",
+    },
+    correct: "C",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "Where is the general information about the carriage of dangerous goods to be found?",
+    choices: {
+      A: "Operations Manual",
+      B: "AIC",
+      C: "Aircraft flight notes",
+      D: "Journey LogBook",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "What are Class 6 dangerous goods?",
+    choices: {
+      A: "Explosives",
+      B: "Toxic",
+      C: "Radioactive",
+      D: "Flammable liquids",
+    },
+    correct: "B",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "Who checks that any dangerous cargo offered for shipping is legal?",
+    choices: {
+      A: "The pilot-in-command",
+      B: "The operator",
+      C: "The shipper",
+      D: "No one specified OPERATIONAL PROCEDURES SPECIAL OPERATIONAL PROCEDURES AND - Windshear and Microbust",
+    },
+    correct: "C",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "Which language must dangerous goods is labelled in?",
+    choices: {
+      A: "English",
+      B: "French",
+      C: "Spanish",
+      D: "English, French or Spanish",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "Where is information on dangerous goods allowed to be carried by passengers found?",
+    choices: {
+      A: "CARS",
+      B: "ICAO Annex 18 for carriage of dangerous goods",
+      C: "Dangerous Goods Procedures in Ops manual",
+      D: "AFM",
+    },
+    correct: "B",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "What manual should you use to find the specific instructions for the carriage of dangerous goods",
+    choices: {
+      A: "Technical Instructions",
+      B: "ICAO Annex 18",
+      C: "ICAO Annex 16",
+      D: "AFM",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "What does ICAO Annex 18 relate to?",
+    choices: {
+      A: "Dangerous goods",
+      B: "Flight time limitation",
+      C: "Facilitation",
+      D: "Flight Crew Licensing",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "For a given aircraft and runway contamination, increased pressure altitude will",
+    choices: {
+      A: "maintains or increases the hydroplaning speed",
+      B: "decreases the hydroplaning speed",
+      C: "maintains the hydroplaning speed",
+      D: "increases the hydroplaning speed",
+    },
+    correct: "D",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "For an airplane with a tyre pressure of 8 bars, there is a risk of dynamic hydroplaning as soon as the: The combination regrouping all the correct statements is: 1. Water height is equal to the depth of the tyre grooves 2. Speed is greater than 96 kt 3. Water height is equal to the half of the depth of the tyre grooves 4. Speed is greater than 127 kt",
+    choices: {
+      A: "3 and 4",
+      B: "1 and 4",
+      C: "2 and 3",
+      D: "1 and 2",
+    },
+    correct: "D",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "For an airplane with a tyre pressure of 12 bars, there is a risk of dynamic hydroplaning as soon as the: The combination regrouping all the correct statements is: 1. Water height is equal to the depth of the tyre grooves 2. Speed is greater than 114 kt 3. Water height is equal to the half of the depth of the tyre grooves 4. Speed is greater than 83 kt",
+    choices: {
+      A: "1 and 4",
+      B: "1 and 2",
+      C: "2 and 3",
+      D: "3 and 4",
+    },
+    correct: "B",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "In case of landing on a flooded runway and in heavy rain: The combination regrouping all the correct statements is: 1. you increase your approach speed 2. you land firmly in order to obtain a firm contact of the wheels with the runway and immediately land your nose gear 3. you decrease your approach speed 4. you use systematically all the lift dumper devices 5. you land as smoothly as possible 6. you brake energetically",
+    choices: {
+      A: "1, 2, 4",
+      B: "3, 5",
+      C: "2, 3, 4",
+      D: "1, 4, 5, 6",
+    },
+    correct: "A",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "a runway is referred to as contaminated when more than 25% of the required runway surface is covered with the one of the following elements: 1.a water film sufficiently thick to give a shiny appearance to the runway 2.a water film or loose or slushy snow equivalent to more than 3 mm of water 3.compacted snow (a solid mass which may not be compacted further) 4.ice, including wet ice 5 moist grass The combination regrouping all the correct statements is",
+    choices: {
+      A: "1, 3, 4",
+      B: "1, 2, 3, 4",
+      C: "2, 3, 4",
+      D: "1, 3, 4, 5",
+    },
+    correct: "C",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "The braking efficiency is a piece of information presenting itself in the form of a",
+    choices: {
+      A: "letter falling between A and E",
+      B: "percentage varying from 10% to 100%",
+      C: "zero followed by two decimals",
+      D: "combination of the terms: poor, medium, good",
+    },
+    correct: "D",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question: "A braking action of 0.25 and below reported on a SNOWTAM is",
+    choices: {
+      A: "poor",
+      B: "unreliable",
+      C: "medium",
+      D: "good",
+    },
+    correct: "A",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "The touch down areas located at both ends of the runways are typical for the appearance of",
+    choices: {
+      A: "rubber reversion hydroplaning",
+      B: "dynamic hydroplaning",
+      C: "viscous hydroplaning",
+      D: "rubber steaming hydroplaning",
+    },
+    correct: "C",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question: "The presence of dynamic hydroplaning depends primarily on the",
+    choices: {
+      A: "aircraft's weight",
+      B: "depth of the standing water on the runway",
+      C: "strength of the head wind",
+      D: "amount of the lift off speed",
+    },
+    correct: "B",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "For an airplane with a tyre pressure of 14 bars, there is a risk of dynamic hydroplaning as soon as the: The combination regrouping all the correct statements is: 1. water height is equal to the depth of the tyre grooves 2. speed is greater than 123 kt 3. water height is equal to the half of the depth of the tyre grooves 4. speed is greater than 95 kt",
+    choices: {
+      A: "2 and 3",
+      B: "1 and 4",
+      C: "3 and 4 OPERATIONAL PROCEDURES SPECIAL OPERATIONAL PROCEDURES AND - Windshear and Microbust",
+      D: "1 and 2",
+    },
+    correct: "D",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "For an airplane with a tyre pressure of 10 bars, there is a risk of dynamic hydroplaning as soon as the: The combination regrouping all the correct statements is: 1. water height is equal to the depth of the tyre grooves 2. speed is greater than 104 kt 3. water height is equal to the half of the depth of the tyre grooves 4. speed is greater than 96 kt",
+    choices: {
+      A: "1, 2",
+      B: "1, 4",
+      C: "2, 3",
+      D: "3, 4",
+    },
+    correct: "A",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "The tire pressure of an aircraft main landing gear is 10.8 bars. The speed at which the hydroplaning phenomenon will appear is approximately",
+    choices: {
+      A: "112 kt",
+      B: "56 kt",
+      C: "87 kt",
+      D: "145 kt",
+    },
+    correct: "A",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "Assuming contaminated runway conditions, if an aeroplanes mainwheel tyre pressure is 206 psi, the approximate speed above which dynamic hydroplaning may occur in the event of applying brakes is",
+    choices: {
+      A: "80 kt",
+      B: "114 kt OPERATIONAL PROCEDURES SPECIAL OPERATIONAL PROCEDURES AND - Windshear and Microbust",
+      C: "100 kt",
+      D: "129 kt",
+    },
+    correct: "D",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "For an airplane with a tyre pressure of 16 bars, there is a risk of dynamic hydroplaning as soon as: The combination regrouping all the correct statements is: 1. Water height is equal to the depth of the tyre grooves 2. Speed is greater than 132 kt 3. Water height is equal to the half of the depth of the tyre grooves 4. Speed is greater than 117 kt",
+    choices: {
+      A: "1, 2",
+      B: "1, 4",
+      C: "2, 3",
+      D: "3, 4",
+    },
+    correct: "A",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "Item D of a SNOWTAM gives the cleared lengthof a runway in metres. If this is less than the published length, how is this reported",
+    choices: {
+      A: "by a four figure group added to item D, which gives the length in metres",
+      B: "it is not reported",
+      C: "in plain language at item T (the final paragraph) of a SNOWTAM",
+      D: "as a percentage of the total length of the runway available as the final items of a SNOWTAM",
+    },
+    correct: "C",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "If airworthiness documents do not show any additional correction factor for landing performance determination on a wet runway, the landing distance shall be increased by",
+    choices: {
+      A: "20%",
+      B: "15%",
+      C: "105",
+      D: "5%",
+    },
+    correct: "B",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "Braking action is described as 0.25 or below. Is it good/medium/poor?",
+    choices: {
+      A: "Poor OPERATIONAL PROCEDURES SPECIAL OPERATIONAL PROCEDURES AND - Windshear and Microbust",
+      B: "Medium to Poor",
+      C: "Medium",
+      D: "Good to medium",
+    },
+    correct: "A",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "An aeroplane with a tyre pressure of 10 Bar is in danger of dynamic hydroplaning if: 1. The aeroplane speed is in excess of 107 kts 2. The water depth is equal to the tyre tread depth 3. The aeroplane speed is in excess of 95 kts 4. The water depth is equal to half the tyre tread depth",
+    choices: {
+      A: "1, 2",
+      B: "1, 4",
+      C: "2, 3",
+      D: "3, 4",
+    },
+    correct: "A",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question: "Viscous hydroplaning is caused by",
+    choices: {
+      A: "a smooth and clear runway surface",
+      B: "a smooth and dirty runway surface",
+      C: "bald tyres",
+      D: "a rough runway surface",
+    },
+    correct: "B",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "An aircraft with a tyre pressure of 14 Bar will be subject to hydroplaning when: 1. The water depth is equal to the tyre tread depth 2. The speed is greater than 123 kts 3. The water depth is equal to half the tyre tread depth 4. The speed is greater than 95 kts",
+    choices: {
+      A: "(i) and (ii)",
+      B: "(ii) and (iii)",
+      C: "(i) and (iv)",
+      D: "(iii) and (iv)",
+    },
+    correct: "A",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "In a SNOWTAM, if the cleared length of runway is less than the published length, what and where would the information be displayed?",
+    choices: {
+      A: "Box D with the cleared length expressed as a percentage",
+      B: "Box D with the cleared length is metres",
+      C: "Box T explained in plain English",
+      D: "Box C with the runway designator",
+    },
+    correct: "B",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question: "How is braking efficiency presented?",
+    choices: {
+      A: "Decimal followed by two significant figures",
+      B: "Sequentially from A to E",
+      C: "Poor, medium, good",
+      D: "As a function of the length of the runway",
+    },
+    correct: "C",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "For an aeroplane with a tyre pressure of 10 bars, there is a risk of dynamic hydroplaning as soon as the",
+    choices: {
+      A: "Water depth is equal to the half of the depth of the tyre grooves",
+      B: "Speed is greater than 108 kt",
+      C: "Speed is greater than 96 kt",
+      D: "Runway temperature is greater than 40oC",
+    },
+    correct: "B",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "For an aeroplane with a tyre pressure of 12 bars, there is a risk of dynamic hydroplaning as soon as the",
+    choices: {
+      A: "Speed is greater than 83 kt",
+      B: "Water depth is equal to the half of the depth of the tyre grooves",
+      C: "Speed is greater than 119 kt",
+      D: "Speed is greater than 95 kt",
+    },
+    correct: "C",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "For an aeroplane with a tyre pressure of 14 bars, there is a risk of dynamic hydroplaning as soon as the",
+    choices: {
+      A: "Tail wind is greater than 10 kt OPERATIONAL PROCEDURES SPECIAL OPERATIONAL PROCEDURES AND - Windshear and Microbust",
+      B: "Speed is greater than 129 kt",
+      C: "Water depth is equal to the half of the depth of the tyre grooves",
+      D: "Speed is greater than 95 kt",
+    },
+    correct: "B",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "For an aeroplane with a tyre pressure of 16 bars, there is a risk of dynamic hydroplaning as soon as the",
+    choices: {
+      A: "Speed is greater than 138 kt",
+      B: "Speed is greater than 117 kt",
+      C: "Water depth is equal to the depth of the tyre grooves",
+      D: "Cross wind is greater than 15 kt",
+    },
+    correct: "A",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question: "When there is a risk of hydroplaning the pilot of an aeroplane",
+    choices: {
+      A: "should make a positive landing and apply maximum reverse thrust and brakes as quickly aspossible",
+      B: "should use maximum reverse thrust, however should start braking below the hydroplaning speed",
+      C: "should use normal landing, braking and reverse technique",
+      D: "must wait for landing until the risk for hydroplaning is no longer existing",
+    },
+    correct: "A",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "Landing on a flooded runway in heavy rain: The combination regrouping all the correct statements is: 1. Decrease your approach speed 2. Make a positive touch down on the main gear and lower the nose gear as soon as practicable 3. Increase the approach speed 4. Make a smooth touchdown 5. Use all available lift dumpers in a systematic manner 6. Brake heavily",
+    choices: {
+      A: "2, 4, 5, 6",
+      B: "2, 5",
+      C: "1, 2, 5",
+      D: "1, 4, 5",
+    },
+    correct: "B",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "What is the most important factor to be taken into account concerning dynamic hydroplaning?",
+    choices: {
+      A: "Weight of the aeroplane",
+      B: "Lift off speed",
+      C: "Depth of the water",
+      D: "Configuration of the aeroplane",
+    },
+    correct: "B",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "If no other figure is published, by what factor must the landing distance on a wet runway be connected by?",
+    choices: {
+      A: "5%",
+      B: "10%",
+      C: "15%",
+      D: "20%",
+    },
+    correct: "C",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "In the H field of a SNOWTAM the information displayd is 0.25. This means that the braking action is",
+    choices: {
+      A: "Medium",
+      B: "Medium to poor",
+      C: "Poor",
+      D: "Medium to good",
+    },
+    correct: "C",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "An aircraft has a tyre pressure of 12.4 bar. Dynamic hydroplaning is likely to begin at",
+    choices: {
+      A: "106 kt OPERATIONAL PROCEDURES SPECIAL OPERATIONAL PROCEDURES AND - Windshear and Microbust",
+      B: "121 kt",
+      C: "143 kt",
+      D: "82 kt",
+    },
+    correct: "B",
+    ref: "CPL A AND ATPL A",
+  },
+  {
+    question:
+      "Viscous hydroplaning occurs primary if the runway is covered with a thin film of water and",
+    choices: {
+      A: "is rough textured",
+      B: "is very smooth and clean",
+      C: "is very smooth and dirty",
+      D: "the tyre treads are not in a good state",
+    },
+    correct: "C",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "a runway is considered damp when",
+    choices: {
+      A: "its surface is not dry, and when surface moisture does not give it a shiny appearance",
+      B: "surface moisture gives it a shiny appearance",
+      C: "it is covered with a firm of water of less than 3 mm",
+      D: "it is covered with a film of water of less than 1 mm",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "The maximum validity of a SNOWTAM is",
+    choices: {
+      A: "24 hours",
+      B: "12 hours",
+      C: "6 hours",
+      D: "3 hours",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "Your flight manual does not include specific supplementary information on landing distances on wet runways and the service bulletins or weather reports indicate that the runway may be wet at the estimated time of arrival. The required landing distance on a dry runway must be increased by",
+    choices: {
+      A: "20%",
+      B: "18% OPERATIONAL PROCEDURES SPECIAL OPERATIONAL PROCEDURES AND - Windshear and Microbust",
+      C: "15%",
+      D: "17.6%",
+    },
+    correct: "C",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "A runway covered with 4 mm thick water is said to be",
+    choices: {
+      A: "flooded",
+      B: "wet",
+      C: "contaminated",
+      D: "damp",
+    },
+    correct: "C",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "What is the definition of a wet runway?",
+    choices: {
+      A: "25% contamination of the runway with water depth less than 3 mm",
+      B: "More than 25% coverage of water greater than 3 mm deep",
+      C: "Water standing on a runway without grooves or a porous pavement",
+      D: "Water standing on a runway with water depth less than 3 mm, appearing non-reflective",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "Which combination of statements describes a wet runway? The combination regrouping all the correct statements is: 1. it is covered with a quantity of water or loose or slushy snow less than or equal to the equivalent of 3 mm of water 2. the amount of surface moisture is sufficient to modify its colour but does not give it a shiny appearance 3. the amount of surface moisture is sufficient to make it reflective, but does not create large stagnant sheets of water 4. it bears stagnant sheets of water",
+    choices: {
+      A: "1, 4",
+      B: "2, 4",
+      C: "2, 3",
+      D: "1, 3",
+    },
+    correct: "D",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "A runway is considered to be contaminated when its surface is covered more than",
+    choices: {
+      A: "10% with ice",
+      B: "25% with compacted snow",
+      C: "20% with melted snow",
+      D: "15% with melted snow",
+    },
+    correct: "B",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "A runway is considered to be wet when; 1. Slush/snow equivalent or water less than 3 mm in depth 2. Change of colour but not shiny 3. Shiny appearance 4. Large stagnant sheets of water",
+    choices: {
+      A: "4 only",
+      B: "2, 4",
+      C: "1, 3",
+      D: "3, 4",
+    },
+    correct: "C",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "At high All Up Mass, unintentional over-pitching is likely to occur",
+    choices: {
+      A: "in a transition to or from the hover",
+      B: "as a result of excessive cyclic movement",
+      C: "after attaining effective translational lift",
+      D: "when commencing a flare",
+    },
+    correct: "A",
+    ref: "CPL H AND ATPL H",
+  },
+  {
+    question:
+      "At normal operating rotor RPM ground resonance can be prevented from developing to a critical point, if action is taken early enough, by",
+    choices: {
+      A: "applying collective pitch control and lifting off",
+      B: "engaging the autopilot or the stability augmentation system, if fitted",
+      C: "compensating for helicopter movement with cyclic control",
+      D: "avoiding any control input until all vibration has ceased",
+    },
+    correct: "A",
+    ref: "CPL H AND ATPL H",
+  },
+  {
+    question:
+      "Blade sailing, with the attendant possibility of a blade strike on the tail boom or rear fuselage, is most likely to occur",
+    choices: {
+      A: "during an autorotative descent",
+      B: "during very low rotort RPM conditions, particularly whilst starting or stopping the rotor ingusty conditions",
+      C: "whilst hovering in strong winds",
+      D: "when carrying out extreme manoeuvres",
+    },
+    correct: "B",
+    ref: "CPL H AND ATPL H",
+  },
+  {
+    question:
+      "For a twin-engine helicopter if it is not possible to return to the heliport of departure due to meteorological reasons, the commander must select a take-off alternate within",
+    choices: {
+      A: "1 hour flight time at normal cruise speed",
+      B: "30 minutes at best range speed with one engine inoperative",
+      C: "30 minutes at normal cruise speed",
+      D: "1 hour at best range speed with one engine inoperative",
+    },
+    correct: "A",
+    ref: "CPL H AND ATPL H",
+  },
+  {
+    question:
+      "Ground resonance occurring when rotor RPM is within operating limits can be alleviated by",
+    choices: {
+      A: "avoiding any control input until all vibration has ceased",
+      B: "applying the rotor brake as rapidly as possible",
+      C: "compensating for helicopter movement withy cyclic control",
+      D: "applying collective pitch and lifting off",
+    },
+    correct: "D",
+    ref: "CPL H AND ATPL H",
+  },
+  {
+    question:
+      "If ground resonance is encountered in a helicopter, the correct recovery action is",
+    choices: {
+      A: "to apply pitch for take-off immediately, regardless of rotor RPM",
+      B: "to shut down immediately, regardless of rotor RPM",
+      C: "to take-off if rotor RPM sufficient, to shut down and apply rotor brake if rotor RPMinsufficient",
+      D: "to increase rotor RPM to take-off power and get airborne",
+    },
+    correct: "C",
+    ref: "CPL H AND ATPL H",
+  },
+  {
+    question:
+      "If the engine fails in the hover, at 3 ft skid height in still air, in a single engine helicopter the recommended action is",
+    choices: {
+      A: "counteract yaw with pedals, use cyclic to raise tail rotor, lower collective slightly tomaintain rotor RPM",
+      B: "use rudder to prevent yaw, hold cyclic steady, lower collective briefly then raise to cushionlanding",
+      C: "counteract yaw with pedals, maintain position with cyclic, cushion touchdown with collective",
+      D: "use rudder to prevent yaw, push cyclic forward for touchdown , use collective to cushion landing",
+    },
+    correct: "C",
+    ref: "CPL H AND ATPL H",
+  },
+  {
+    question:
+      "In a helicopter with manual throttle, if the main rotor is overpitched the corrective action is to",
+    choices: {
+      A: "reduce engine power and leave collective pitch constant",
+      B: "reduce both engine power and collective pitch",
+      C: "increase engine power and collective pitch",
+      D: "reduce collective pitch and increase engine power",
+    },
+    correct: "D",
+    ref: "CPL H AND ATPL H",
+  },
+  {
+    question:
+      "In the event of an engine failure in a single engine helicopter in the cruise, the recommended sequence of immediate actions is",
+    choices: {
+      A: "correct yaw with pedals, lower collective, transmit mayday, select landing site, use cyclic andcollctive to position for landing",
+      B: "lower collective, counteract yaw with pedals, select attitude for appropriate airspeed withcyclic, select landing site, transmit mayday, position helicopter for an into wind landing",
+      C: "flare with cyclic, counteract yaw with pedals, establish descent with collective, select landingsite, adjust collective for range, land into wind, transmit mayday",
+      D: "select airspeed, lower collective, adjust yaw pedals, transmit mayday, autorotate to openground, adjust speed for landing",
+    },
+    correct: "B",
+    ref: "CPL H AND ATPL H",
+  },
+  {
+    question:
+      "Should a helicopter suffer from retreating blade stall in flight, to reduce the effects",
+    choices: {
+      A: "the cyclic control should be pulled back to decrease speed in a flare manoeuvre",
+      B: "the collective pitch should be increased",
+      C: "the cyclic control should be pushed forward to increase speed",
+      D: "the collective pitch should be reduced",
+    },
+    correct: "D",
+    ref: "CPL H AND ATPL H",
+  },
+  {
+    question: "To minimise the dangers of blade sailing",
+    choices: {
+      A: "ensure that rotor RPM during start-up or shut-down are increased or decreased as slowly aspossible",
+      B: "the start-up and shut-down should be carried out facing directly into wind",
+      C: "flapping restrictors, if fitted, should be withdrawn before start-up or shut- down",
+      D: "the start-up and shut-down should be carried out with the helicopter facing slightly out of wind",
+    },
+    correct: "D",
+    ref: "CPL H AND ATPL H",
+  },
+];
+
+export default operationalProcedures;

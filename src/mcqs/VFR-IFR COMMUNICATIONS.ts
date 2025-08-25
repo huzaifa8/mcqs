@@ -1,0 +1,1784 @@
+const vfrIrCommunications = [
+  {
+    question: "What is normally used for ATIS broadcasts?",
+    choices: {
+      A: "DME voice channel",
+      B: "Voice channel of an ILS",
+      C: "NDB frequencies",
+      D: "Discreet VHF frequency or/and VOR",
+    },
+    correct: "D",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "What does the term BLIND TRANSMISSION mean?",
+    choices: {
+      A: "A transmission where no reply is required from the receiving station",
+      B: "A transmission of information relating to air navigation that is not addressed to aspecific station or stations",
+      C: "A transmission of messages relating to en-route weather information which may affect the safelyof aircraft operations that is not addressed to a specific station or stations",
+      D: "A transmission from one station to another station in circumstances where two-way communication cannot be established but it is believed that thecalled station is able to receive thetransmission",
+    },
+    correct: "D",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "Which abbreviation is used for the term CONTROL ZONE?",
+    choices: {
+      A: "CTA",
+      B: "CZ",
+      C: "CTZ",
+      D: "CTR",
+    },
+    correct: "D",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "What does the abbreviation FIR mean?",
+    choices: {
+      A: "Flight information required",
+      B: "Flight information region",
+      C: "Flow information received",
+      D: "Flight information radar",
+    },
+    correct: "B",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "What does the abbreviation HJ mean?",
+    choices: {
+      A: "No specific working hours",
+      B: "Sunset to sunrise",
+      C: "Sunrise to sunset",
+      D: "Continuous day and night service",
+    },
+    correct: "C",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "What does the abbreviation HX mean?",
+    choices: {
+      A: "Continuous day and night service",
+      B: "Sunrise to sunset",
+      C: "Sunset to sunrise",
+      D: "No specific working hours",
+    },
+    correct: "D",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "Which abbreviation is used for Co-ordinated universal time?",
+    choices: {
+      A: "UTC",
+      B: "CUT",
+      C: "GMT",
+      D: "COUT",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "What does the abbreviation AFIS mean?",
+    choices: {
+      A: "Aerodrome flashing identification signal",
+      B: "Automatic flight information service",
+      C: "Aeronautical flight information system",
+      D: "Aerodrome flight information service",
+    },
+    correct: "D",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "The three main categories of aeronautical communications service are",
+    choices: {
+      A: "IFR, VFR, SVFR VFR-IFR COMMUNICATIONS DEFINITIONS - Q-code groups commonly used in RTF air-ground communications",
+      B: "Air Ground, Flight Information Service, ATC",
+      C: "Ground, Approach, Tower",
+      D: "Ground/Tower, Approach/Departure, Area Radar",
+    },
+    correct: "B",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "What does QTE mean?",
+    choices: {
+      A: "Magnetic heading to the station",
+      B: "Magnetic bearing from the station",
+      C: "True heading to the station (no wind)",
+      D: "True bearing from the station",
+    },
+    correct: "D",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "What is the Q-code for MAGNETIC HEADING TO THE STATION (NO WIND)?",
+    choices: {
+      A: "QDM",
+      B: "QDR",
+      C: "QNE",
+      D: "QTE",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "What does QDM mean?",
+    choices: {
+      A: "True bearing from the station",
+      B: "Magnetic bearing from the station",
+      C: "True heading to the station (no wind)",
+      D: "Magnetic heading to the station (no wind)",
+    },
+    correct: "D",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "QNH is the Q-code to indicate?",
+    choices: {
+      A: "The atmospheric pressure measured at the aerodrome reference point (ARP)",
+      B: "The atmospheric pressure at aerodrome elevation (or at runway threshold)",
+      C: "The altimeter sub-scale setting to obtain elevation when on the ground VFR-IFR COMMUNICATIONS DEFINITIONS - Q-code groups commonly used in RTF air-ground communications",
+      D: "The atmospheric pressure referred to the highest obstacle located on the surface of an aerodrome",
+    },
+    correct: "C",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "If you are requested to report your height, to which Q-code-setting would you refer?",
+    choices: {
+      A: "QBI",
+      B: "QNH",
+      C: "QDM",
+      D: "QFE",
+    },
+    correct: "D",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "What is the Q-code for magnetic bearing from the station?",
+    choices: {
+      A: "QTE",
+      B: "QDR",
+      C: "QDM",
+      D: "QFE",
+    },
+    correct: "B",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "Which Q-code is used to report altitude?",
+    choices: {
+      A: "QNH",
+      B: "AFE",
+      C: "QFF",
+      D: "QNJ",
+    },
+    correct: "D",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "What is the Q-code for TRUE BEARING FROM THE STATION?",
+    choices: {
+      A: "QFE",
+      B: "QDR",
+      C: "QDM",
+      D: "QTE",
+    },
+    correct: "D",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "What does QDR mean?",
+    choices: {
+      A: "True heading to the station",
+      B: "Magnetic heading to the station (no wind)",
+      C: "True bearing from the station",
+      D: "Magnetic bearing from the station",
+    },
+    correct: "D",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "An aircraft is requested to fly at 2500 feet on the airfield QFE. All references to vertical position should now be referred to as",
+    choices: {
+      A: "Height",
+      B: "Altitude",
+      C: "Pressure Altitude",
+      D: "Flight Level",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "If a ground D/F controller passes a bearing thus: your true bearing is 256o class alpha. This means",
+    choices: {
+      A: "QTE accurate to ±5o",
+      B: "QUJ accurate to ±3o",
+      C: "QDR accurate to ±2o",
+      D: "QTE accurate to ±2o",
+    },
+    correct: "D",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "You obtain a clearance to descend to an ALTITUDE of 2500 feet, in the UK the clearance should also include the following pressure setting or settings",
+    choices: {
+      A: "QFE",
+      B: "QNE",
+      C: "QFE or QNH",
+      D: "QNH",
+    },
+    correct: "D",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "Air traffic control messages (clearances, instructions, etc) belong to the category of",
+    choices: {
+      A: "Flight safety messages VFR-IFR COMMUNICATIONS DEFINITIONS - Q-code groups commonly used in RTF air-ground communications",
+      B: "Flight regularity messages",
+      C: "Service messages",
+      D: "Class B messages",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "Which of the messages listed below shall not be handled by the aeronautical mobile service?",
+    choices: {
+      A: "Meteorological messages",
+      B: "Radio teletype messages",
+      C: "Flight safety messages",
+      D: "Urgency messages",
+    },
+    correct: "B",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "The message to an aeronautical ground station PLEASE CALL A TAXI-CAB FOR US. WE WILL ARRIVE AT 1045 IS",
+    choices: {
+      A: "An unauthorized message",
+      B: "A flight regularity message",
+      C: "A flight safety message",
+      D: "An urgency message",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "The priority of the instruction TAXI TO RUNWAY 05 is",
+    choices: {
+      A: "Same as LINE-UP RUNWAY 07 AND WAIT",
+      B: "Greater than TRANSMIT FOR QDM",
+      C: "Greater than CAUTION, CONSTRUCTION WORK LEFT OF TAXIWAY",
+      D: "Less than CLEARED TO LAND",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "The order of priority of the following messages in the aeronautical mobile service is",
+    choices: {
+      A: "Flight regularity message, distress message, meteorological message",
+      B: "Meteorological message, direction finding message, flight safety message",
+      C: "Flight safety message, meteorological message, flight regularity message VFR-IFR COMMUNICATIONS DEFINITIONS - Q-code groups commonly used in RTF air-ground communications",
+      D: "Flight safety message, direction finding message, urgency message",
+    },
+    correct: "C",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "Flight safety messages are",
+    choices: {
+      A: "Operation messages concerning non-routine landings",
+      B: "Air traffic control messages",
+      C: "Messages concerning the safety of an aircraft, a vessel, any other vehicle or a person",
+      D: "Messages relating to direction finding",
+    },
+    correct: "B",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "A message concerning an aircraft being threatened by grave and imminent danger, requiring immediate assistance is called",
+    choices: {
+      A: "Flight safety message",
+      B: "Distress message",
+      C: "Urgency message",
+      D: "Class B message",
+    },
+    correct: "B",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "The message addressed to an Area Control Center REQEUST RADAR VECTORS TO CIRCUMNAVIGATE ADVERSE WEATHER is",
+    choices: {
+      A: "A meteorological message",
+      B: "A flight safety message",
+      C: "An urgency message",
+      D: "A message relating to direction finding",
+    },
+    correct: "B",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "The clearance: CLEARED FOR IMMEDIATE TAKE-OFF RUNWAY 03 is",
+    choices: {
+      A: "A flight safety message",
+      B: "An urgency message",
+      C: "An unauthorized message",
+      D: "A flight regularity message",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "The order of priority of the following messages in the aeronautical mobile service is",
+    choices: {
+      A: "Distress message, urgency message, direction finding message",
+      B: "Direction finding message, distress message, urgency message",
+      C: "Distress message, flight safety message, urgency message",
+      D: "Meteorological message, direction finding message, flight regularity Message",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "A message concerning aircraft parts and material urgently required is",
+    choices: {
+      A: "A flight security message",
+      B: "An urgency message",
+      C: "A flight safety message",
+      D: "A flight regularity message",
+    },
+    correct: "D",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "Aeronautical messages are given an order of priority. Which of the following statements reflects the correct order of priority?",
+    choices: {
+      A: "Meteorological messages take precedence over Direction Finding messages",
+      B: "Flight Safety messages will be handled before Urgency messages",
+      C: "Messages relating to Direction Finding take precedence over Flight Regularity messages",
+      D: "Flight Safety messages take precedence over Direction Finding messages",
+    },
+    correct: "C",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "You receive the following ATC message: G-ABCD after departure cleared to zone boundary via route Charlie. Climb to altitude 2000 feet QNH1010, squawk 6318 This message is: Answers",
+    choices: {
+      A: "a clearance to take-off and depart to the zone boundary via route Charlie At 2000 feet",
+      B: "a clearance to line-up",
+      C: "a Flight Safety message",
+      D: "a Flight Regularity message",
+    },
+    correct: "C",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "What is the correct way to transmit and read back frequency 120.375 MHz (VHF channel separated by 25 KHz)",
+    choices: {
+      A: "One two zero decimal three seven",
+      B: "One twenty decimal three seven",
+      C: "One two zero three seven",
+      D: "D - One two zero three seven",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "What is the correct way of transmitting the number 3500 when indicating an altitude or a height?",
+    choices: {
+      A: "three five double zero",
+      B: "three five zero zero",
+      C: "three five hundred",
+      D: "three thousand five hundred",
+    },
+    correct: "D",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "During the transmission of numbers containing a decimal point",
+    choices: {
+      A: "The term DECIMAL can be omitted if no chance of misunderstanding Exists",
+      B: "The terms DECIMAL can be omitted with friendly ATS units only",
+      C: "The term DECIMAL must always be transmitted",
+      D: "The term DECIMAL must be spoken only if followed by three digits",
+    },
+    correct: "C",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "What is the correct way of transmitting 1001 as a QNH?",
+    choices: {
+      A: "QNH one double 0 one",
+      B: "QNH one zero zero one",
+      C: "QNH one thousand and one",
+      D: "QNH one double zero one",
+    },
+    correct: "B",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "An aircraft is flying north-east at 2500 feet. TOWER requests heading and level. What is the correct response",
+    choices: {
+      A: "045 and 2.500 VFR-IFR COMMUNICATIONS GENERAL OPERATING PROCEDURES - Transmission of time",
+      B: "Heading north-east at level 25",
+      C: "Heading 45 at 2.500 feet",
+      D: "Heading 045 at 2.500 feet",
+    },
+    correct: "D",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "An altitude of 2600 feet is transmitted as",
+    choices: {
+      A: "two thousand six hundred feet",
+      B: "two six hundred feet",
+      C: "two six thousand feet",
+      D: "two six zero zero feet",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "When transmitting time, which time system shall be used?",
+    choices: {
+      A: "Local time (LT), 24-hour clock",
+      B: "Co-ordinated universal time (UTC)",
+      C: "No specific system, as only the minutes are normally required",
+      D: "Local time (LT) A.M. and P.M.",
+    },
+    correct: "B",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "The time is 9:20 A.M. What is the correct way of transmitting this time if there is no possibility of confusion about the hour?",
+    choices: {
+      A: "Two zero",
+      B: "Twenty",
+      C: "Two zero this hour",
+      D: "Nine twenty A.M.",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "The time is 4:15 PM. What is the correct way of transmitting this time if there is any possibility of confusion about the hour?",
+    choices: {
+      A: "One six one five",
+      B: "Four fifteen PM",
+      C: "Sixteen fifteen VFR-IFR COMMUNICATIONS GENERAL OPERATING PROCEDURES - Transmission of time",
+      D: "Four fifteen in the afternoon",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question: 'A time of "11.20" hours is transmitted as',
+    choices: {
+      A: "one one two zero or two zero",
+      B: "eleven twenty hours",
+      C: "eleven twenty",
+      D: "twenty past eleven",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "The time of 1400 UTC is transmitted as",
+    choices: {
+      A: "one thousand four hundred",
+      B: "one four zero zero",
+      C: "fourteen hundred UTC",
+      D: "one four zero zero uniform tango Charlie",
+    },
+    correct: "B",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "When may the name of the location or the call sign suffix in the call sign of an aeronautical station be omitted?",
+    choices: {
+      A: "In dense traffic during rush hours",
+      B: "Never",
+      C: "Only after the aeronautical station has used the abbreviated call sign",
+      D: "When satisfactory communication has been established and provided it will not be confusing to doso.",
+    },
+    correct: "D",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "In the event that a pilot is required to make a blind transmission, this should be made",
+    choices: {
+      A: "Only once on the designated frequency",
+      B: "Twice on the designated frequency",
+      C: "On the emergency frequency only",
+      D: "During VFR flights only VFR-IFR COMMUNICATIONS GENERAL OPERATING PROCEDURES - Transmission of time",
+    },
+    correct: "B",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "A message preceded by the phrase TRANSMITTING BLIND DUE RECEIVER FAILURE shall be transmitted",
+    choices: {
+      A: "On the regional guard frequency",
+      B: "On the frequency presently in use",
+      C: "On the international emergency frequency",
+      D: "On all available aeronautical stations",
+    },
+    correct: "B",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "When transmitting a message preceded by the phrase TRANSMITTING BLIND DUE TO RECEIVER FAILURE during an en- route flight, the Aircraft station shall also",
+    choices: {
+      A: "Land at the nearest airfield/airport",
+      B: "Join base leg when approaching the airfield for landing",
+      C: "Advise the time of its next intended transmission",
+      D: "Return to the airport of departure",
+    },
+    correct: "C",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "How should aircraft XY-ABC call Stephenville TOWER on initial call?",
+    choices: {
+      A: "TOWER XY-ABC",
+      B: "Stephenville TOWER X-BC",
+      C: "Stephenville XY-ABC",
+      D: "Stephenville TOWER XY-ABC",
+    },
+    correct: "D",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "Before transmitting the pilot should¿..",
+    choices: {
+      A: "make sure that the aircraft is levelled off",
+      B: "listen out on the frequency to ensure no interference with another station alreadytransmitting will occur",
+      C: "always write the message and read it during the transmission",
+      D: "make sure that the emergency frequency is tuned in at the same time",
+    },
+    correct: "B",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "My message will be more effective and understandable if I",
+    choices: {
+      A: "maintain the speaking volume at a constant level",
+      B: "use the words twice method",
+      C: "stress the end of message",
+      D: "stress every beginning of message",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "RADAR instructs aircraft X-BC: X-BC SQUAWK IDENT. What does this mean",
+    choices: {
+      A: "X-BC shall reselect his assigned mode and code",
+      B: "Radar identification has been achieved by correlating an observed radar blip with aircraft XY-ABC",
+      C: "X-BC should perform an identification turn of at least 020 degrees",
+      D: "X-BC shall operate the IDENT button",
+    },
+    correct: "D",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "Which phrase shall be used if you want to say: AN ERROR HAS BEEN MADE IN THIS TRANSMISSION (or message indicated). THE CORRECT VERSION IS",
+    choices: {
+      A: "QNH 1017, negative QNH 1016",
+      B: "QNH 1017, correction QNH 1016",
+      C: "QNH 1017, negative 1016",
+      D: "QNH 1017, negative I say again 1016",
+    },
+    correct: "B",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "What is meant by good microphone technique?",
+    choices: {
+      A: "Keep the microphone far away since it improves the readability",
+      B: "Speak very loudly into the microphone",
+      C: "Use a normal conversation tone, speak clearly and distinctly",
+      D: "Make large use of hesitation sounds as ER",
+    },
+    correct: "C",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "What does the phrase READ BACK mean",
+    choices: {
+      A: "Did you correctly receive the message?",
+      B: "Let me know that you have received and understood this message",
+      C: "Repeat all, or the specified part, of this message back to me exactly as received",
+      D: "Check and confirm with originator",
+    },
+    correct: "C",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "What does the phrase Roger mean",
+    choices: {
+      A: "A direct answer in the affirmative",
+      B: "I have received all of your last transmission",
+      C: "A direct answer in the negative",
+      D: "Cleared for take-off or cleared to land",
+    },
+    correct: "B",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "What does the phrase GO AHEAD mean",
+    choices: {
+      A: "Taxi on",
+      B: "Proceed with your message",
+      C: "Pass me the following information¿",
+      D: "Yes",
+    },
+    correct: "B",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "If a controller would like to say to you PASS ME THE FOLLOWING INFORMATION, he would use the expression",
+    choices: {
+      A: "READBACK",
+      B: "REPORT",
+      C: "SAY AGAIN",
+      D: "REQUEST",
+    },
+    correct: "B",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "Which phrase shall be used if you want to say Yes",
+    choices: {
+      A: "Roger",
+      B: "Yes VFR-IFR COMMUNICATIONS GENERAL OPERATING PROCEDURES - Transmission of time",
+      C: "Affirm",
+      D: "Affirmative",
+    },
+    correct: "C",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "RADAR instructs aircraft X-BC: X-BC SQUAWK STANBY. What does this mean?",
+    choices: {
+      A: "X-BC is requested to standby on the frequency",
+      B: "X-BC is requested to switch to standby position",
+      C: "X-BC is requested to standby for radar vectors",
+      D: "X-BC is requested to standby as the radar controller is busy",
+    },
+    correct: "B",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "What does the instruction VACATE LEFT mean?",
+    choices: {
+      A: "Turn left to leave the runway",
+      B: "Give way to aircraft from the left",
+      C: "Clear the runway immediately",
+      D: "Hold position on the left side of the runway",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "Which phrase shall be used if you want to say: I SHOULD LIKE TO KNOW or I WISH TO OBTAIN ?",
+    choices: {
+      A: "Confirm",
+      B: "Report",
+      C: "Acknowledge",
+      D: "Request",
+    },
+    correct: "D",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "How shall a pilot inform a radar control unit that the aircraft is not equipped with transponder",
+    choices: {
+      A: "No SSR",
+      B: "Negative transponder",
+      C: "Transponder not available",
+      D: "Negative squawk VFR-IFR COMMUNICATIONS GENERAL OPERATING PROCEDURES - Transmission of time",
+    },
+    correct: "B",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "Which phrase shall be used if you want to say ¿PASS ME THE FOLLOWING INFORMATION",
+    choices: {
+      A: "Say again",
+      B: "Request",
+      C: "Report",
+      D: "Check",
+    },
+    correct: "C",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "Which phrase shall be used if the repetition of an entire message is required",
+    choices: {
+      A: "What was your message?",
+      B: "Repeat your message",
+      C: "Say again",
+      D: "Repeat your last transmission",
+    },
+    correct: "C",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "What does the instruction GO AROUND mean?",
+    choices: {
+      A: "Overtake the aircraft ahead",
+      B: "Carry out a missed approach",
+      C: "Make a 360o turn",
+      D: "Proceed with your message",
+    },
+    correct: "B",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "RADAR informs aircraft X-BC: X-BC IDENTIFIED. What does this mean?",
+    choices: {
+      A: "Radar identification has been achieved",
+      B: "X-BC is not visible on the radar screen",
+      C: "X-BC should perform an identification turn",
+      D: "X-BC should operate the IDENT-button",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "Which phraseology is to be used to ask the control tower for permission to taxi on a runway in the direction opposite to that in use?",
+    choices: {
+      A: "Request backtrack on runway",
+      B: "Clearance to backtrack",
+      C: "To enter back runway",
+      D: "Backtrack clearance",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "How shall a pilot inform the control tower that he is prepared for take-off",
+    choices: {
+      A: "Ready to go",
+      B: "Ready for take-off",
+      C: "Ready to line-up",
+      D: "Ready for departure or ready",
+    },
+    correct: "D",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "RADAR instructs aircraft X-BC: X-BC RECYCLE 1015. What does this mean?",
+    choices: {
+      A: "X-BC has been identified at 10:15 (UTC)",
+      B: "X-BC is requested to set new code 1015",
+      C: "X-BC has been identified by SSR code 1015",
+      D: "X-BC is requested to reselect SSR code 1015",
+    },
+    correct: "D",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "Which of these phrases is used to inform the control tower that a pilot perform a missed approach",
+    choices: {
+      A: "Pulling up",
+      B: "Overshooting",
+      C: "Will make another approach",
+      D: "Going around",
+    },
+    correct: "D",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "What does the instruction ORBIT RIGHT mean?",
+    choices: {
+      A: "Make 360o turns to the right VFR-IFR COMMUNICATIONS GENERAL OPERATING PROCEDURES - Transmission of time",
+      B: "Turn right to avoid other traffic",
+      C: "Right-hand circuits are in use",
+      D: "Leave the runway to the right",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "Which word or phrase shall be used if you want to say: WAIT AND I WILL CALL YOU?",
+    choices: {
+      A: "Roger",
+      B: "Go ahead",
+      C: "Standby",
+      D: "Wilco",
+    },
+    correct: "C",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "Which phrase shall be used to confirm that a message has been repeated correctly",
+    choices: {
+      A: "That is right",
+      B: "Correct",
+      C: "Affirm",
+      D: "That is affirmative",
+    },
+    correct: "B",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "Which of these statements best describes the meaning of the phrase STANDBY?",
+    choices: {
+      A: "Wait and I will call you",
+      B: "Continue on present heading and listen out",
+      C: "Select STANDBY on the SSR transponder",
+      D: "Permission granted for action proposed",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "What does the phrase SQUAWK 1234 mean",
+    choices: {
+      A: "Give a short count for DF (direction finder)",
+      B: "Select code 1234 on the SSR transponder",
+      C: "Make a test transmission on 123.4 MHz VFR-IFR COMMUNICATIONS GENERAL OPERATING PROCEDURES - Transmission of time",
+      D: "Standby on frequency 123.4 MHz",
+    },
+    correct: "B",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "Which phrase shall be used if you want to say: I UNDERSTAND YOUR MESSAGE AND WILL COMPLY WITH IT",
+    choices: {
+      A: "Will comply with your instruction",
+      B: "Roger",
+      C: "Wilco",
+      D: "OK, will do it",
+    },
+    correct: "C",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "An aircraft wishes to obtain a bearing from a VDF station that will be plottedon the chart relative to True North. The correct RT call is",
+    choices: {
+      A: "G-BNKD request QDM, G-BNKD",
+      B: "true bearing, true bearing G-BNKD request true bearing, G-BNKD",
+      C: "G-BNKD request QGH, G-BNKD",
+      D: "G-BNKD training fix, training fix, training fix, G-BNKD",
+    },
+    correct: "B",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "Which of the following sequences shows the correct elements of a position report in the correct order? 1.callsign 1. reported position 2. heading (oM) 3. level of altitude 4. next position 5. ETA of the next position 6. aircraft type 7. time of reported position",
+    choices: {
+      A: "(i) (ii) (iii) (iv) (v) (vi)",
+      B: "(i) (vii) (ii) (vi) (iv)",
+      C: "(i) (ii) (viii) (iv) (v) (vi)",
+      D: "(i) (ii) (iv) (v) (vi)",
+    },
+    correct: "C",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "If a pilot receives an instruction from ATC which cannot be carried out, thereply should use the phrase",
+    choices: {
+      A: "CANCEL INSTRUCTION",
+      B: "UNABLE COMPLY",
+      C: "NEGATIVE INSTRUCTION",
+      D: "REGRET CANNOT FOLLOW INSTRUCTION",
+    },
+    correct: "B",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "You are making a long straight in approach to land, at what range would you make the call Long Final?",
+    choices: {
+      A: "2 nm",
+      B: "4 nm",
+      C: "between 8 and 4 nm",
+      D: "3 nm",
+    },
+    correct: "C",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "What is the radiotelephony call sign for the aeronautical station providing surface movement control of aircraft on the manoeuvring area",
+    choices: {
+      A: "GROUND",
+      B: "APPROACH",
+      C: "TOWER",
+      D: "CONTROL",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "What is the radiotelephony call sign suffix for the aeronautical station indicating aerodrome control service",
+    choices: {
+      A: "APRON",
+      B: "CONTROL",
+      C: "AERODROME",
+      D: "TOWER",
+    },
+    correct: "D",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "What is the radiotelephony call sign for the aeronautical station providing flight information service",
+    choices: {
+      A: "FLIGHT CENTRE VFR-IFR COMMUNICATIONS GENERAL OPERATING PROCEDURES - Transmission of time",
+      B: "FLIGHT INFORMATION CENTRE",
+      C: "INFORMATION",
+      D: "CONTROL",
+    },
+    correct: "C",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "An aerodrome located at HEADCORN notified as having an Aerodrome Flight Information Service (AFIS) will identify itself to aircraft using the call-sign",
+    choices: {
+      A: "HEADCORN INFORMATION",
+      B: "HEADCORN RADIO",
+      C: "HEADCORN TOWER",
+      D: "HEADCORN AFIS",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "When is an aircraft station allowed to use its abbreviated call sign?",
+    choices: {
+      A: "In dense traffic",
+      B: "Only after satisfactory communication has been established",
+      C: "Provided no confusion is likely to result",
+      D: "After it has been addressed in this manner by the aeronautical ground station",
+    },
+    correct: "D",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "What is the correct way of spelling out HB-JYC in a radio message?",
+    choices: {
+      A: "Hotel Bravo India Yankee Charlie",
+      B: "Hotel Bravo Juliett India Kilo",
+      C: "Hotel Bravo Juliett Yankee Charlie",
+      D: "Hotel Bravo India Victor Charlie",
+    },
+    correct: "C",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "Which of the following abbreviated call signs of Cherokee XY-ABC is correct",
+    choices: {
+      A: "Cherokee X-BC",
+      B: "Cherokee XY-BC",
+      C: "Cherokee BC VFR-IFR COMMUNICATIONS GENERAL OPERATING PROCEDURES - Transmission of time",
+      D: "Cherokee X-ABC",
+    },
+    correct: "C",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "Which of the following abbreviated call signs of aircraft XY-ABC is correct",
+    choices: {
+      A: "XY-BC",
+      B: "X-BC",
+      C: "ABC",
+      D: "BC",
+    },
+    correct: "B",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "For aircraft call-sign EASY GABCD the correct abbreviation is",
+    choices: {
+      A: "EASY Charlie Delta",
+      B: "Golf Charlie Delta",
+      C: "EASY Golf Charlie Delta",
+      D: "EASY Delta",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "The pilot of an aircraft may abbreviate the aircraft radio call-sign only",
+    choices: {
+      A: "when there is no likelihood of confusion with another aircraft",
+      B: "if it has first been abbreviated by the ground station and there is no likelihood of confusion",
+      C: "on second and subsequent calls to an aeronautical ground station",
+      D: "when the call-sign has been specifically approved by ICAO",
+    },
+    correct: "B",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "Which is the maximum distance at which you might expect solid VHF contact over flat terrain at flight level 100",
+    choices: {
+      A: "About 120 NM",
+      B: "About 300 NM",
+      C: "About 30 NM",
+      D: "About 12 NM",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "Under which of the following circumstances may you expect a solid reception of the TOWER frequency 118.2 MHz",
+    choices: {
+      A: "Aircraft at low level but far away from the ground station",
+      B: "Aircraft at high level in the vicinity of the ground station",
+      C: "Aircraft at low level, far away from the ground station, in the radio shadow zone of a hill",
+      D: "Aircraft at low level, in the vicinity of the ground station, in the radio Shadow zone of a hill",
+    },
+    correct: "B",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "Which phenomena will normally influence the reception of VHF transmission?",
+    choices: {
+      A: "Level of aircraft and terrain elevations",
+      B: "The ionosphere",
+      C: "Electrical discharges as they happen frequently in thunderstorms",
+      D: "Day and night effect",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "Which is the frequency separation between consecutive frequencies in the VHF band",
+    choices: {
+      A: "75 KHz",
+      B: "50 KHz",
+      C: "25 KHz",
+      D: "250 KHz",
+    },
+    correct: "C",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "Which is the maximum distance at which you might expect solid VHF contact over flat terrain at flight level 50",
+    choices: {
+      A: "About 8 NM",
+      B: "About 85 NM",
+      C: "About 15 NM",
+      D: "About 150 NM",
+    },
+    correct: "B",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "To which frequency bands do the frequencies 118.000 ¿ 136.975 MHz of the Aeronautical Mobile Service belong?",
+    choices: {
+      A: "Medium frequency VFR-IFR COMMUNICATIONS GENERAL OPERATING PROCEDURES - Transmission of time",
+      B: "Very low frequency",
+      C: "Low frequency",
+      D: "Very high frequency",
+    },
+    correct: "D",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "What are the propagation characteristics of VHF",
+    choices: {
+      A: "The waves travel along the surface of the earth and penetrate into Valleys in a way thattopographical obstacles have no influence",
+      B: "The waves are reflected at the ionosphere at the height of about 100 km and reach the earthsurface in the form of sky-waves",
+      C: "Practically straight-line similar to light waves",
+      D: "Similar to short waves with practically no atmospheric disturbance",
+    },
+    correct: "C",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "Which is the frequency band containing frequencies of the Aeronautical Mobile Service?",
+    choices: {
+      A: "108.000 - 117.975 MHz",
+      B: "118.000 - 136.975 MHz",
+      C: "1810 - 2850 KHz",
+      D: "11650 - 13200 KHz",
+    },
+    correct: "B",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "On the readability scale what does READABILITY 1 mean?",
+    choices: {
+      A: "Readable but with difficulty",
+      B: "Readable",
+      C: "Perfectly readable",
+      D: "Unreadable",
+    },
+    correct: "D",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "On the readability scale what does READABILITY 2 mean",
+    choices: {
+      A: "Readable but with difficulty VFR-IFR COMMUNICATIONS GENERAL OPERATING PROCEDURES - Transmission of time",
+      B: "No problem to understand",
+      C: "Loud and clear",
+      D: "Unreadable",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "Aircraft XY-ABC is making a test transmission with Stephenville TOWER on frequency 118.7. What is the correct phrasing for this transmission",
+    choices: {
+      A: "Stephenville TOWER XY-ABC signal check",
+      B: "Stephenville TOWER XY-ABC pre-flight check",
+      C: "Stephenville TOWER XY-ABC radio check 118.7",
+      D: "Stephenville TOWER XY-ABC frequency check",
+    },
+    correct: "C",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "On the readability scale what does READABILITY 5 mean",
+    choices: {
+      A: "Perfectly readable",
+      B: "Unreadable",
+      C: "Problem to understand",
+      D: "Readable but with difficulty",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "Readability 5 means",
+    choices: {
+      A: "readable now and then",
+      B: "perfectly readable",
+      C: "unreadable",
+      D: "readable with difficulty",
+    },
+    correct: "B",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "Which elements of instructions or information shall always be read back?",
+    choices: {
+      A: "Surface wind, visibility, ground temperature, runway-in-use, altimeter settings, heading andspeed instructions",
+      B: "Runway-in-use, visibility, surface wind, heading instructions, altimeter settings VFR-IFR COMMUNICATIONS GENERAL OPERATING PROCEDURES - Transmission of time",
+      C: "Runway-in-use, altimeter settings, SSR codes, level instructions,heading and speed instructions",
+      D: "Time check, runway-in-use, altimeter settings, level instructions, SSR codes",
+    },
+    correct: "C",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "Cherokee XY-ABC receives the following instruction: X-BC CLIMB STRAIGHT AHEAD UNTIL 2500 FEET BEFORE TURNING RIGHT, WIND 270 DEGREES 6 KNOTS, CLEARED FOR TAKE-OFF. What is the correct read back",
+    choices: {
+      A: "Straight ahead, 2500 feet right turn, wind west 6 knots, cleared for take- off, X-BC",
+      B: "Wilco, cleared for take-off, X-BC",
+      C: "Right turn after 2500, roger, X-BC",
+      D: "Straight ahead, at 2500 feet right turn, cleared for take-off, X-BC",
+    },
+    correct: "D",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "An aircraft is instructed to hold short of the runway-in-use. What is the correct phraseology to indicate it will follow this instruction?",
+    choices: {
+      A: "Wilco",
+      B: "Holding short",
+      C: "Will stop before",
+      D: "Roger",
+    },
+    correct: "B",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "Shall an ATC route clearance always be read back",
+    choices: {
+      A: "No, if the communication channel is overloaded",
+      B: "No, if the ATC route clearance is transmitted in a published form (eg. Standard InstrumentDeparture Route/SID)",
+      C: "Yes, unless authorized otherwise by ATS authority concerned",
+      D: "No, if the content of the ATC clearance is clear and no confusion is Likely to arise",
+    },
+    correct: "C",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "Aircraft X-BC has been instructed to listen on ATIS frequency 123.25 on which information is being broadcast. What is the correct response to indicate that it will follow this instruction?",
+    choices: {
+      A: "Checking 123.25 X-BC",
+      B: "Changing to 123.25 X-BC",
+      C: "Will contact 123.25 X-BC VFR-IFR COMMUNICATIONS GENERAL OPERATING PROCEDURES - Transmission of time",
+      D: "Monitoring 123.25 X-BC",
+    },
+    correct: "D",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "A pilot is required to read back the following ATC messages",
+    choices: {
+      A: "altimeter settings, weather information, airways clearances, information regarding theproximity of other aircraft and taxi instructions",
+      B: "altimeter settings, weather information, information regarding the proximity of other aircraftand taxi instructions",
+      C: "altimeter settings, airways clearances, SSR operating instructions, level Instructions and anymessage when requested by ATC",
+      D: "ltimeter settings, taxi instructions, take-off clearances, weather Information and any otherinformation given by ATC",
+    },
+    correct: "C",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "When asked by ATC ¿are you able to maintain FL 80¿ the correct reply contains the word",
+    choices: {
+      A: "ROGER",
+      B: "WILCO",
+      C: "AFFIRM or NEGATIVE",
+      D: "CLEARED",
+    },
+    correct: "C",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "What does SQUAWK IDENT mean?",
+    choices: {
+      A: "select the SSR transponder code to 7000",
+      B: "select the SSR transponder model to AL T",
+      C: "operate the SSR transponder special position identification feature",
+      D: "state the aircraft callsign three times",
+    },
+    correct: "C",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "A Radar Information Service (RIS) provides",
+    choices: {
+      A: "radar separation from all other traffic",
+      B: "information for IFR traffic only VFR-IFR COMMUNICATIONS RELEVANT WEATHER INFORMATION TERMS - Aerodrome weather",
+      C: "the bearing, distance and if known, the altitude of conflicting traffic",
+      D: "traffic information and avoiding action",
+    },
+    correct: "C",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "With the SSR transponder selected ON and ALT (Mode C) selected, anATSU requests: G-ABCD, Verify your level, this is to",
+    choices: {
+      A: "identify the aircraft position",
+      B: "check your altimeter setting",
+      C: "calibrate the radar equipment",
+      D: "verify the accuracy of the Mode C level information displayed to the controller",
+    },
+    correct: "D",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "Which information can aircraft in flight obtain by VOL-MET?",
+    choices: {
+      A: "Runway reports",
+      B: "SPECI and TAF",
+      C: "SIGMET",
+      D: "Aviation routine weather reports (METAR) of specific airports",
+    },
+    correct: "D",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "How is the visibility in an aviation routine weather report (METAR) expressed in plain language",
+    choices: {
+      A: "In nautical miles only",
+      B: "Up to 1500 m in metres, above in kilometres",
+      C: "In feet and nautical miles",
+      D: "Up to 5000 m in metres, above in kilometres",
+    },
+    correct: "D",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "How can aviation routine weather reports (METAR) of specific airports be obtained by aircraft in flight",
+    choices: {
+      A: "SIGMET",
+      B: "ATIS",
+      C: "AFIS",
+      D: "VOLMET VFR-IFR COMMUNICATIONS RELEVANT WEATHER INFORMATION TERMS - Weather broadcast",
+    },
+    correct: "D",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "When the term Broken is used in an aviation routine weather report (METAR), the amount of clouds covering the sky is",
+    choices: {
+      A: "5 to 7 octas",
+      B: "1 to 4 octas",
+      C: "8 octas below 10,000 feet",
+      D: "No clouds below 5,000 feet",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "What is the correct way of expressing visibility?",
+    choices: {
+      A: "Visibility 1.2 kilometres",
+      B: "Visibility 1200 feet",
+      C: "Visibility 1.2 nautical miles",
+      D: "Visibility 1200 metres",
+    },
+    correct: "D",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "When the term Cavok is used in an aviation routine weather report (METAR), the values of visibility and clouds are",
+    choices: {
+      A: "Visibility more than 5,000 m, no clouds below 1500 m/GND",
+      B: "Visibility 10 km or more, no clouds below 1500 feet/GND",
+      C: "Visibility more than 8 km, no clouds below 3000 feet/GND",
+      D: "Visibility 10 km or more, no clouds below 5000 feet/GND",
+    },
+    correct: "D",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "When the term Overcast is used in an aviation routine weather report (METAR) the amount of clouds covering the sky is",
+    choices: {
+      A: "50% or more",
+      B: "100%",
+      C: "Less than 50%",
+      D: "No clouds but poor ground visibility",
+    },
+    correct: "B",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "When the term Scattered is used in an aviation routine weather report (METAR), the amount of clouds covering the sky is",
+    choices: {
+      A: "More than half but less than overcast (5 to 7 octas)",
+      B: "Half or less than half (3 or 4 octas)",
+      C: "Sky entirely covered (8 octas)",
+      D: "No clouds below 5000 feet/GND",
+    },
+    correct: "B",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "The phrase BRAKING CO-EFFICIENT 20 from ATC means that the braking action is",
+    choices: {
+      A: "medium",
+      B: "good",
+      C: "medium to poor",
+      D: "poor",
+    },
+    correct: "D",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "What action is required by the pilot of an aircraft station if he/she is unable to establish radio contact with an aeronautical station?",
+    choices: {
+      A: "Squawk mode A code 7500",
+      B: "Divert to the alternate airport",
+      C: "Try to establish communication with other aircraft or aeronautical stations",
+      D: "Land at the nearest aerodrome appropriate to the route of flight",
+    },
+    correct: "C",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "An aircraft station fails to establish radio contact with an aeronautical station on the designated frequency. What action is required by the pilot",
+    choices: {
+      A: "Return to the airport of departure",
+      B: "Continue the flight to the destination airport without any communication",
+      C: "Attempt to establish contact with the station on an alternative frequency",
+      D: "Land at the nearest airport without an ATC unit",
+    },
+    correct: "C",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "What is the transponder code for radio communication failure",
+    choices: {
+      A: "7200 VFR-IFR COMMUNICATIONS RELEVANT WEATHER INFORMATION TERMS - Weather broadcast",
+      B: "7600",
+      C: "7500",
+      D: "7700",
+    },
+    correct: "B",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "Under which of the following circumstances shall an aircraft station squawk 7600?",
+    choices: {
+      A: "In case of radio communication failure",
+      B: "When entering bad weather areas",
+      C: "When approaching a prohibited area",
+      D: "When flying over desert areas",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "If all attempts to establish radio contact with a ground station fail, the pilot of an aeroplane shall transmit messages preceded by the phrase",
+    choices: {
+      A: "PAN PAN, PAN PAN, PAN PAN",
+      B: "Transmitting blind",
+      C: "Read you one, read you one",
+      D: "How do you read?",
+    },
+    correct: "B",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "An aircraft squawking 7700 indicates to the ground station that",
+    choices: {
+      A: "The aircrafts transceiver is unserviceable",
+      B: "The aircraft is being hijacked",
+      C: "The aircraft is in distress",
+      D: "There is a sick passenger on board",
+    },
+    correct: "C",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "Distress is defined as",
+    choices: {
+      A: "A condition concerning the attitude of an aircraft when intercepting the localizer duringan ILS approach",
+      B: "A condition concerning the safety of an aircraft or of a person on board, but which does not VFR-IFR COMMUNICATIONS RELEVANT WEATHER INFORMATION TERMS - Weather broadcast",
+      C: "A condition of being threatened by serious and/or imminent danger and requiring immediateassistance",
+      D: "A condition concerning the safety of a person on board or within sight and requiring immediateassistance",
+    },
+    correct: "C",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "An aircraft in distress shall send the following signal by radiotelephony",
+    choices: {
+      A: "PAN PAN, PAN PAN, PAN PAN",
+      B: "DETRESFA, DETRESFA, DETRESFA",
+      C: "MAYDAY, MAYDAY, MAYDAY",
+      D: "URGENCY, URGENCY, URGENCY",
+    },
+    correct: "C",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "The frequency used for the first transmission of a MAYDAY call shall be",
+    choices: {
+      A: "The distress frequency 121.5 MHz",
+      B: "The frequency currently in use",
+      C: "Any other international emergency frequency",
+      D: "Any frequency at pilots discretion",
+    },
+    correct: "B",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "The distress message shall contain as many as possible of the following elements/details",
+    choices: {
+      A: "Aircraft call sign, nature of distress, pilots intention, present position, level and heading",
+      B: "Aircraft call sign, route of flight, destination airport",
+      C: "Aircraft call sign, aerodrome of departure, position and level",
+      D: "Aircraft call sign, present position, assistance required",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "An aircraft in state of emergency shall squawk",
+    choices: {
+      A: "7600",
+      B: "7700 VFR-IFR COMMUNICATIONS RELEVANT WEATHER INFORMATION TERMS - Weather broadcast",
+      C: "7500",
+      D: "7200",
+    },
+    correct: "B",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "Distress is defined as a condition",
+    choices: {
+      A: "requiring immediate assistance and danger may or may not be threatened",
+      B: "of being threatened by serious and/or imminent danger, and of requiring immediate assistance",
+      C: "concerning the safety of an aircraft or other vehicle, or some person on board or withinsight, but does not require immediate assistance",
+      D: "concerning the safety of any aircraft, ship or other vehicle",
+    },
+    correct: "B",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "A Distress or Urgency call shall be preceded by the pre-fix MAYDAY or PAN PAN transmitted",
+    choices: {
+      A: "Once",
+      B: "Twice",
+      C: "Three times",
+      D: "Until acknowledged",
+    },
+    correct: "C",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "Immediately following the MAYDAY pre-fix, an aircraft in Distress should transmit",
+    choices: {
+      A: "The aircraft call-sign twice",
+      B: "The nature of the emergency",
+      C: "The call-sign of the station addressed, when it is known and the circumstances permit",
+      D: "Its last known position",
+    },
+    correct: "C",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "An aircraft transmitting a distress message is required to give its position as",
+    choices: {
+      A: "The most accurate possible using GPS if fitted",
+      B: "Present or last known position, altitude or level and heading",
+      C: "Position relative to a VRP VFR-IFR COMMUNICATIONS RELEVANT WEATHER INFORMATION TERMS - Weather broadcast",
+      D: "Latitude and longitude",
+    },
+    correct: "B",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "An aircraft in distress that is equipped with a SSR transponder should SQUAWK",
+    choices: {
+      A: "7000",
+      B: "7500",
+      C: "7600",
+      D: "7700",
+    },
+    correct: "D",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "A Distress call shall be preceded by the pre-fix MAYDAY transmitted",
+    choices: {
+      A: "Twice",
+      B: "Three times",
+      C: "Once",
+      D: "One to three times after the aircraft callsign",
+    },
+    correct: "B",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "Which frequency shall be used for the first transmission of an urgency call",
+    choices: {
+      A: "The international emergency frequency",
+      B: "The air-ground frequency in use at the time",
+      C: "The regional guard frequency",
+      D: "Any frequency at pilots discretion",
+    },
+    correct: "B",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "An urgency message shall be preceded by the radio-telephony urgency signal",
+    choices: {
+      A: "ALERFA, spoken three times",
+      B: "URGENCY, spoken three times",
+      C: "MAYDAY, spoken three times",
+      D: "PAN PAN, spoken three times",
+    },
+    correct: "D",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "Urgency is defined as",
+    choices: {
+      A: "A condition of being threatened by serious and/or imminent danger and of requiring immediateassistance",
+      B: "A condition concerning the safety of a person on board or within sight and requiring immediateassistance",
+      C: "A condition concerning the attitude of an aircraft when intercepting the localizer during anILS approach",
+      D: "A condition concerning the safety of an aircraft other vehicles or of a person on board,but which does not require immediate assistance",
+    },
+    correct: "D",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "The subsequent content of a Distress or Urgency message must consist of the following items: 1.Position Transmitted in the order: 1. Intention of person in command 2. Type of aircraft 3. Nature of emergency 5.Call-sign",
+    choices: {
+      A: "(v) (iv) (ii) (iii) (i)",
+      B: "(v) (iv) (i) (ii) (iii)",
+      C: "(v) (iii) (iv) (ii) (i)",
+      D: "(v) (iv) (iii) (ii) (i)",
+    },
+    correct: "C",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "A condition of urgency is defined as",
+    choices: {
+      A: "a condition of being threatened by serious and or immediate danger and of requiring immediateassistance",
+      B: "a condition concerning the safety of an aircraft or other vehicle or of some person onboard orwithin sight and requiring immediate assistance",
+      C: "a condition requiring immediate assistance",
+      D: "a condition concerning the safety of an aircraft or other vehicle or of some person on board orwithin sight, but which does not require immediate assistance",
+    },
+    correct: "D",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "The frequency 121.500 MHz is designated as",
+    choices: {
+      A: "An international emergency frequency VFR-IFR COMMUNICATIONS RELEVANT WEATHER INFORMATION TERMS - Weather broadcast",
+      B: "A frequency for air-to-air communication",
+      C: "A regional UHF frequency",
+      D: "An airline operation frequency",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "Which of the following frequencies is an international emergency frequency",
+    choices: {
+      A: "122.500 MHz",
+      B: "121.500 MHx",
+      C: "121.050 MHz",
+      D: "121.005 MHz",
+    },
+    correct: "B",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "The frequency 243.0 MHz has a wavelength of and lies on the band.",
+    choices: {
+      A: "12.3 cm UHF",
+      B: "1.23 m, UHF",
+      C: "12.3 cm, VHF",
+      D: "1.23 m, VHF",
+    },
+    correct: "D",
+    ref: "CPL A AND H",
+  },
+  {
+    question: "Attenuation of radio waves means",
+    choices: {
+      A: "the weakening of the radiated waves",
+      B: "the atmospheric bending of the waves",
+      C: "only the scattering of the waves by the tropopause",
+      D: "only the absorption of radio energy by the sea",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "The wavelength of a radio aid is 6.97 cm. The corresponding frequency and frequency band are",
+    choices: {
+      A: "4304 MHz SHF",
+      B: "43 MHz VHF",
+      C: "4304 MHz UHF VFR-IFR COMMUNICATIONS RELEVANT WEATHER INFORMATION TERMS - Weather broadcast",
+      D: "43 GHz EHF",
+    },
+    correct: "A",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "What is the lowest frequency where freedom from static interference is likely?",
+    choices: {
+      A: "3 MHz",
+      B: "30 MHz",
+      C: "300 MHz",
+      D: "3 GHz",
+    },
+    correct: "B",
+    ref: "CPL A AND H",
+  },
+  {
+    question:
+      "VHF communications sometimes experience extended ranges as a result of",
+    choices: {
+      A: "ionospheric ducting",
+      B: "reflections from aircraft",
+      C: "surface wave propagation",
+      D: "super refraction",
+    },
+    correct: "D",
+    ref: "CPL A AND H",
+  },
+];
+
+export default vfrIrCommunications;

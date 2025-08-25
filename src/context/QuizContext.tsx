@@ -1,47 +1,31 @@
-// QuizContext.tsx
 import React, { createContext, useContext, useState, useEffect } from "react";
 import type { MCQ } from "../types";
 
-// Import all quizzes
-import humanPerformance from "../json/Human Performance and Behavior.json";
-import ifrCommunications from "../json/IFR Communications.json";
-import vfrIrCommunications from "../json/VFR-IFR COMMUNICATIONS.json";
-import systemsPowerplant from "../json/SYSTEMS, POWERPLANT.json";
-import radioNavigation from "../json/RADIO NAVIGATION.json";
-import principlesOfFlight from "../json/PRINCIPLES OF FLIGHT.json";
-import performance from "../json/performance.json";
-import operationalProcedures from "../json/OPERATIONAL PROCEDURES.json";
-import navigation from "../json/Navigation.json";
-import meteorology from "../json/METEOROLOGY.json";
-import massAndBalance from "../json/MASS AND BALANCE.json";
-import instrumentation from "../json/INSTRUMENTATION.json";
-import flightPlanning from "../json/FLIGHT PLANNING.json";
-import airLawAndATCProcedures from "../json/AIR LAW AND ATC PROCEDURES.json";
-import airLawAndATCProcedures11 from "../json/11- AIR LAW AND ATC PROCEDURES.json";
-
-// Dictionary of all quiz files
-export const allQuizzes: Record<string, MCQ[]> = {
-  "Human Performance and Behavior": humanPerformance,
-  "IFR Communications": ifrCommunications,
-  "VFR-IFR Communications": vfrIrCommunications,
-  "Systems and Powerplant": systemsPowerplant,
-  "Radio Navigation": radioNavigation,
-  "Principles of Flight": principlesOfFlight,
-  Performance: performance,
-  "Operational Procedures": operationalProcedures,
-  Navigation: navigation,
-  Meteorology: meteorology,
-  "Mass and Balance": massAndBalance,
-  Instrumentation: instrumentation,
-  "Flight Planning": flightPlanning,
-  "Air Law and ATC Procedures": airLawAndATCProcedures,
-  "11- Air Law and ATC Procedures": airLawAndATCProcedures11,
+// Dictionary of all quiz files with lazy imports
+export const allQuizzes: Record<string, () => Promise<{ default: MCQ[] }>> = {
+  "Human Performance and Behavior": () =>
+    import("../mcqs/Human Performance and Behavior.ts"),
+  "IFR Communications": () => import("../mcqs/IFR Communications.ts"),
+  "VFR-IFR Communications": () => import("../mcqs/VFR-IFR COMMUNICATIONS.ts"),
+  "Systems and Powerplant": () => import("../mcqs/SYSTEMS, POWERPLANT.ts"),
+  "Radio Navigation": () => import("../mcqs/RADIO NAVIGATION.ts"),
+  "Principles of Flight": () => import("../mcqs/PRINCIPLES OF FLIGHT.ts"),
+  Performance: () => import("../mcqs/Performance.ts"),
+  "Operational Procedures": () => import("../mcqs/OPERATIONAL PROCEDURES.ts"),
+  Navigation: () => import("../mcqs/Navigation.ts"),
+  Meteorology: () => import("../mcqs/METEOROLOGY.ts"),
+  "Mass and Balance": () => import("../mcqs/MASS AND BALANCE.ts"),
+  Instrumentation: () => import("../mcqs/INSTRUMENTATION.ts"),
+  "Flight Planning": () => import("../mcqs/FLIGHT PLANNING.ts"),
+  "Air Law and ATC Procedures": () =>
+    import("../mcqs/AIR LAW AND ATC PROCEDURES.ts"),
+  "11- Air Law and ATC Procedures": () =>
+    import("../mcqs/11- AIR LAW AND ATC PROCEDURES.ts"),
 };
 
 interface QuizContextProps {
   fileKey: string;
   setFile: (file: string) => void;
-
   currentIndex: number;
   answers: { [index: number]: string };
   attemptedCount: number;
@@ -51,6 +35,7 @@ interface QuizContextProps {
   jumpTo: (index: number) => void;
   resetProgress: () => void;
   mcqs: MCQ[];
+  isLoading: boolean;
 }
 
 const QuizContext = createContext<QuizContextProps | undefined>(undefined);
@@ -59,18 +44,16 @@ export const QuizProvider: React.FC<{ children: React.ReactNode }> = ({
   children,
 }) => {
   const FILE_KEY_STORAGE = "quiz-current-file";
-
-  // Load persisted fileKey first
   const [fileKey, setFileKey] = useState<string>(() => {
     return (
       localStorage.getItem(FILE_KEY_STORAGE) || "Human Performance and Behavior"
     );
   });
+  const [isLoading, setIsLoading] = useState(false);
+  const [mcqs, setMcqs] = useState<MCQ[]>([]);
 
-  // Helper for per-file storage key
   const STORAGE_KEY = (file: string) => `quiz-progress-${file}`;
 
-  // Load saved progress for the selected file
   const loadProgress = (file: string) => {
     try {
       const raw = localStorage.getItem(STORAGE_KEY(file));
@@ -82,7 +65,6 @@ export const QuizProvider: React.FC<{ children: React.ReactNode }> = ({
   };
 
   const initialProgress = loadProgress(fileKey);
-
   const [currentIndex, setCurrentIndex] = useState<number>(
     initialProgress.currentIndex
   );
@@ -90,19 +72,28 @@ export const QuizProvider: React.FC<{ children: React.ReactNode }> = ({
     initialProgress.answers
   );
 
-  // Save fileKey whenever it changes
+  // Load quiz data when fileKey changes
+  useEffect(() => {
+    const loadQuiz = async () => {
+      setIsLoading(true);
+      try {
+        const quizModule = await allQuizzes[fileKey]();
+        setMcqs(quizModule.default);
+      } catch (error) {
+        console.error("Failed to load quiz:", error);
+      } finally {
+        setIsLoading(false);
+      }
+    };
+
+    loadQuiz();
+  }, [fileKey]);
+
+  // Save fileKey and progress
   useEffect(() => {
     localStorage.setItem(FILE_KEY_STORAGE, fileKey);
   }, [fileKey]);
 
-  // When fileKey changes, reload its progress
-  useEffect(() => {
-    const saved = loadProgress(fileKey);
-    setCurrentIndex(saved.currentIndex);
-    setAnswers(saved.answers);
-  }, [fileKey]);
-
-  // Persist progress whenever answers or index change
   useEffect(() => {
     localStorage.setItem(
       STORAGE_KEY(fileKey),
@@ -117,7 +108,7 @@ export const QuizProvider: React.FC<{ children: React.ReactNode }> = ({
   };
 
   const next = () => {
-    if (currentIndex < allQuizzes[fileKey].length - 1) {
+    if (currentIndex < mcqs.length - 1) {
       setCurrentIndex((i) => i + 1);
     }
   };
@@ -129,7 +120,7 @@ export const QuizProvider: React.FC<{ children: React.ReactNode }> = ({
   };
 
   const jumpTo = (index: number) => {
-    if (index >= 0 && index < allQuizzes[fileKey].length) {
+    if (index >= 0 && index < mcqs.length) {
       setCurrentIndex(index);
     }
   };
@@ -153,7 +144,8 @@ export const QuizProvider: React.FC<{ children: React.ReactNode }> = ({
         prev,
         jumpTo,
         resetProgress,
-        mcqs: allQuizzes[fileKey],
+        mcqs,
+        isLoading,
       }}
     >
       {children}

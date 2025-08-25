@@ -16,34 +16,83 @@ const Quiz: React.FC = () => {
     fileKey,
     setFile,
     resetProgress,
+    isLoading,
   } = useQuiz();
 
-  const mcq = mcqs[currentIndex];
-  const selected = answers[currentIndex];
-
-  // ✅ Filter by ref
   const [refFilter, setRefFilter] = useState<string>("All Refs");
 
-  // Collect all unique refs in current quiz
+  // Move hooks before any conditionals
   const uniqueRefs = useMemo(() => {
+    if (!mcqs || mcqs.length === 0) return [];
     const refs = mcqs.map((q) => q.ref).filter(Boolean);
     return Array.from(new Set(refs));
   }, [mcqs]);
 
-  // Apply filter
   const filteredMcqs = useMemo(() => {
+    if (!mcqs || mcqs.length === 0) return [];
     return refFilter === "All Refs"
       ? mcqs
       : mcqs.filter((q) => q.ref === refFilter);
   }, [mcqs, refFilter]);
 
-  // Function to get sidebar button color
   const getQuestionColor = (index: number) => {
     const selectedChoice = answers[index];
-    if (index === currentIndex) return "#007bff"; // blue
-    if (!selectedChoice) return "#f1f3f5"; // gray
-    return selectedChoice === mcqs[index].correct ? "#28a745" : "#dc3545"; // green / red
+    if (index === currentIndex) return "#007bff";
+    if (!selectedChoice) return "#f1f3f5";
+    return selectedChoice === mcqs[index]?.correct ? "#28a745" : "#dc3545";
   };
+
+  if (isLoading) {
+    return (
+      <div
+        style={{
+          display: "flex",
+          width: "300px",
+          justifyContent: "center",
+          alignItems: "center",
+          height: "100vh",
+          background: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
+          color: "white",
+        }}
+      >
+        <div style={{ textAlign: "center" }}>
+          <div
+            style={{
+              display: "inline-block",
+              width: "80px",
+              height: "80px",
+              border: "6px solid rgba(255,255,255,.3)",
+              borderRadius: "50%",
+              borderTopColor: "#fff",
+              animation: "spin 1s ease-in-out infinite",
+              marginBottom: "20px",
+            }}
+          ></div>
+          <h2 style={{ margin: "0", fontSize: "28px", fontWeight: "600" }}>
+            Loading Quiz
+          </h2>
+          <p style={{ margin: "10px 0 0", fontSize: "18px", opacity: "0.8" }}>
+            Preparing your questions...
+          </p>
+
+          <style>
+            {`
+              @keyframes spin {
+                to { transform: rotate(360deg); }
+              }
+            `}
+          </style>
+        </div>
+      </div>
+    );
+  }
+
+  if (!mcqs || mcqs.length === 0) {
+    return <div>No questions available for this quiz.</div>;
+  }
+
+  const mcq = mcqs[currentIndex];
+  const selected = answers[currentIndex];
 
   return (
     <div style={{ display: "flex", minHeight: "100vh" }}>
@@ -91,7 +140,6 @@ const Quiz: React.FC = () => {
           Reset Progress
         </button>
 
-        {/* ✅ Ref Filter */}
         {uniqueRefs.length > 0 && (
           <>
             <h3 style={{ marginBottom: "10px" }}>Filter by Ref</h3>
@@ -119,7 +167,6 @@ const Quiz: React.FC = () => {
         <h3 style={{ marginBottom: "10px" }}>Questions</h3>
         <div style={{ maxHeight: "70vh", overflowY: "auto" }}>
           {filteredMcqs.map((q) => {
-            // Need actual index in full mcqs array
             const realIndex = mcqs.indexOf(q);
             const bg = getQuestionColor(realIndex);
             return (
