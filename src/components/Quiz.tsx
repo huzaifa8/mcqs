@@ -118,7 +118,7 @@ const Quiz: React.FC = () => {
 
         <h3 style={{ marginBottom: "10px" }}>Questions</h3>
         <div style={{ maxHeight: "70vh", overflowY: "auto" }}>
-          {filteredMcqs.map((q, i) => {
+          {filteredMcqs.map((q) => {
             // Need actual index in full mcqs array
             const realIndex = mcqs.indexOf(q);
             const bg = getQuestionColor(realIndex);
