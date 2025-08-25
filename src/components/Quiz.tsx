@@ -1,7 +1,6 @@
 // Quiz.tsx
-import React, { useState, useMemo } from "react";
-import { useQuiz } from "../context/QuizContext";
-import { allQuizzes } from "../context/QuizContext";
+import React, { useState, useMemo, useEffect } from "react";
+import { useQuiz, allQuizzes } from "../context/QuizContext";
 
 const Quiz: React.FC = () => {
   const {
@@ -21,19 +20,76 @@ const Quiz: React.FC = () => {
 
   const [refFilter, setRefFilter] = useState<string>("All Refs");
 
-  // Move hooks before any conditionals
+  // 🔹 Reset ref filter when quiz file changes
+  useEffect(() => {
+    setRefFilter("All Refs");
+  }, [fileKey]);
+
+  // Unique refs for dropdown
   const uniqueRefs = useMemo(() => {
     if (!mcqs || mcqs.length === 0) return [];
     const refs = mcqs.map((q) => q.ref).filter(Boolean);
     return Array.from(new Set(refs));
   }, [mcqs]);
 
+  // Filtered questions by ref
   const filteredMcqs = useMemo(() => {
     if (!mcqs || mcqs.length === 0) return [];
     return refFilter === "All Refs"
       ? mcqs
       : mcqs.filter((q) => q.ref === refFilter);
   }, [mcqs, refFilter]);
+
+  // 🔹 Count attempted within current filter
+  const filteredAttemptedCount = useMemo(() => {
+    if (refFilter === "All Refs") return attemptedCount;
+    return filteredMcqs.filter((q) => {
+      const realIndex = mcqs.indexOf(q);
+      return answers[realIndex];
+    }).length;
+  }, [filteredMcqs, refFilter, attemptedCount, answers, mcqs]);
+
+  // 🔹 Correct option distribution (whole quiz)
+  const quizCorrectDistribution = useMemo(() => {
+    const distribution = { A: 0, B: 0, C: 0, D: 0 };
+    mcqs.forEach((q) => {
+      if (["A", "B", "C", "D"].includes(q.correct)) {
+        distribution[q.correct as keyof typeof distribution]++;
+      }
+    });
+    const total = mcqs.length;
+    return {
+      counts: distribution,
+      percentages: {
+        A: total > 0 ? Math.round((distribution.A / total) * 100) : 0,
+        B: total > 0 ? Math.round((distribution.B / total) * 100) : 0,
+        C: total > 0 ? Math.round((distribution.C / total) * 100) : 0,
+        D: total > 0 ? Math.round((distribution.D / total) * 100) : 0,
+      },
+      total,
+    };
+  }, [mcqs]);
+
+  // 🔹 Correct option distribution (filtered)
+  const filteredCorrectDistribution = useMemo(() => {
+    const distribution = { A: 0, B: 0, C: 0, D: 0 };
+    filteredMcqs.forEach((q) => {
+      if (["A", "B", "C", "D"].includes(q.correct)) {
+        distribution[q.correct as keyof typeof distribution]++;
+      }
+    });
+    const total = filteredMcqs.length;
+    return {
+      counts: distribution,
+      percentages: {
+        A: total > 0 ? Math.round((distribution.A / total) * 100) : 0,
+        B: total > 0 ? Math.round((distribution.B / total) * 100) : 0,
+        C: total > 0 ? Math.round((distribution.C / total) * 100) : 0,
+        D: total > 0 ? Math.round((distribution.D / total) * 100) : 0,
+      },
+      total,
+    };
+  }, [filteredMcqs]);
 
   const getQuestionColor = (index: number) => {
     const selectedChoice = answers[index];
@@ -91,8 +147,14 @@ const Quiz: React.FC = () => {
     return <div>No questions available for this quiz.</div>;
   }
 
-  const mcq = mcqs[currentIndex];
-  const selected = answers[currentIndex];
+  // If currentIndex doesn't belong to filter, snap to first filtered
+  const safeIndex =
+    filteredMcqs.indexOf(mcqs[currentIndex]) !== -1
+      ? currentIndex
+      : mcqs.indexOf(filteredMcqs[0]);
+
+  const mcq = mcqs[safeIndex];
+  const selected = answers[safeIndex];
 
   return (
     <div style={{ display: "flex", minHeight: "100vh" }}>
@@ -102,7 +164,7 @@ const Quiz: React.FC = () => {
           width: "300px",
           borderRight: "1px solid #ddd",
           padding: "15px",
-          background: "#f8f9fa",
+          background: "rgb(36 36 36)",
         }}
       >
         <h3 style={{ marginBottom: "10px" }}>Quizzes</h3>
@@ -196,8 +258,41 @@ const Quiz: React.FC = () => {
       {/* Main quiz area */}
       <main style={{ flex: 1, padding: "20px" }}>
         <h2>
-          {fileKey} - Question {currentIndex + 1} / {mcqs.length}
+          {fileKey} - Question {safeIndex + 1} / {mcqs.length}
         </h2>
+        {refFilter !== "All Refs" && (
+          <h4 style={{ color: "#555" }}>
+            Ref "{refFilter}" → {filteredAttemptedCount}/{filteredMcqs.length}{" "}
+            attempted
+          </h4>
+        )}
+
+        {/* 🔹 Show distribution stats */}
+        <div style={{ margin: "20px 0" }}>
+          <h3>Correct Option Distribution (Whole Quiz)</h3>
+          {(["A", "B", "C", "D"] as const).map((letter) => (
+            <div key={letter}>
+              Choice {letter}: {quizCorrectDistribution.percentages[letter]}% (
+              {quizCorrectDistribution.counts[letter]} of{" "}
+              {quizCorrectDistribution.total})
+            </div>
+          ))}
+
+          {refFilter !== "All Refs" && (
+            <>
+              <h3>Correct Option Distribution (Filtered by {refFilter})</h3>
+              {(["A", "B", "C", "D"] as const).map((letter) => (
+                <div key={letter}>
+                  Choice {letter}:{" "}
+                  {filteredCorrectDistribution.percentages[letter]}% (
+                  {filteredCorrectDistribution.counts[letter]} of{" "}
+                  {filteredCorrectDistribution.total})
+                </div>
+              ))}
+            </>
+          )}
+        </div>
+
         <p>{mcq.question}</p>
 
         <ul>
@@ -206,10 +301,10 @@ const Quiz: React.FC = () => {
               <label>
                 <input
                   type="radio"
-                  name={`q-${currentIndex}`}
+                  name={`q-${safeIndex}`}
                   value={key}
                   checked={selected === key}
-                  onChange={() => setAnswer(currentIndex, key)}
+                  onChange={() => setAnswer(safeIndex, key)}
                 />{" "}
                 {key}: {value}
               </label>
@@ -228,30 +323,29 @@ const Quiz: React.FC = () => {
         <div style={{ marginTop: "1rem" }}>
           <button
             onClick={prev}
-            disabled={currentIndex === 0}
+            disabled={safeIndex === 0}
             style={{
               marginRight: "10px",
               padding: "8px 12px",
               borderRadius: "6px",
               border: "none",
-              background: currentIndex === 0 ? "#ccc" : "#007bff",
+              background: safeIndex === 0 ? "#ccc" : "#007bff",
               color: "white",
-              cursor: currentIndex === 0 ? "not-allowed" : "pointer",
+              cursor: safeIndex === 0 ? "not-allowed" : "pointer",
             }}
           >
             Prev
           </button>
           <button
             onClick={next}
-            disabled={currentIndex === mcqs.length - 1}
+            disabled={safeIndex === mcqs.length - 1}
             style={{
               padding: "8px 12px",
               borderRadius: "6px",
               border: "none",
-              background: currentIndex === mcqs.length - 1 ? "#ccc" : "#007bff",
+              background: safeIndex === mcqs.length - 1 ? "#ccc" : "#007bff",
               color: "white",
-              cursor:
-                currentIndex === mcqs.length - 1 ? "not-allowed" : "pointer",
+              cursor: safeIndex === mcqs.length - 1 ? "not-allowed" : "pointer",
             }}
           >
             Next
@@ -259,7 +353,7 @@ const Quiz: React.FC = () => {
         </div>
 
         <p style={{ marginTop: "20px" }}>
-          Attempted: {attemptedCount} / {mcqs.length}
+          Overall Attempted: {attemptedCount} / {mcqs.length}
         </p>
       </main>
     </div>
