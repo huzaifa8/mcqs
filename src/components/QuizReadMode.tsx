@@ -166,7 +166,17 @@ const QuizReadMode: React.FC = () => {
               }}
             >
               <h3 style={{ margin: 0, flex: 1 }}>
-                Q{index + 1}: {mcq.question}
+                Q{index + 1}: {mcq.question}{" "}
+                <span
+                  style={{
+                    border: "2px solid yellow",
+                    marginLeft: 10,
+                    padding: 5,
+                    color: "yellow",
+                  }}
+                >
+                  {mcq.correct}
+                </span>
               </h3>
               <div style={{ display: "flex", gap: "10px", flexWrap: "wrap" }}>
                 {mcq.ref && (
@@ -183,18 +193,6 @@ const QuizReadMode: React.FC = () => {
                     Ref: {mcq.ref}
                   </span>
                 )}
-                <span
-                  style={{
-                    background: "#28a745",
-                    color: "white",
-                    padding: "4px 8px",
-                    borderRadius: "4px",
-                    fontSize: "12px",
-                    fontWeight: "bold",
-                  }}
-                >
-                  Correct: {mcq.correct}
-                </span>
               </div>
             </div>
 
