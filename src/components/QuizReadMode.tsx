@@ -37,7 +37,7 @@ const QuizReadMode: React.FC = () => {
 
   const getOptionStyle = (choiceKey: string, correctKey: string) => {
     if (choiceKey === correctKey) {
-      return { fontWeight: "bold", color: "#28a745" }; // Green for correct
+      return { fontWeight: "bold", color: "yellow" }; // Yellow for correct
     } else {
       return { opacity: 0.6, color: "#6c757d" }; // Faded for incorrect
     }
