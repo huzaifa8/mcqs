@@ -1,6 +1,7 @@
 // Quiz.tsx
 import React, { useState, useMemo, useEffect } from "react";
 import { useQuiz, allQuizzes } from "../context/QuizContext";
+import QuizReadMode from "./QuizReadMode";
 
 const Quiz: React.FC = () => {
   const {
@@ -19,6 +20,7 @@ const Quiz: React.FC = () => {
   } = useQuiz();
 
   const [refFilter, setRefFilter] = useState<string>("All Refs");
+  const [isReadMode, setIsReadMode] = useState(false);
 
   // 🔹 Reset ref filter when quiz file changes
   useEffect(() => {
@@ -164,7 +166,7 @@ const Quiz: React.FC = () => {
           width: "300px",
           borderRight: "1px solid #ddd",
           padding: "15px",
-          background: "rgb(36 36 36)",
+          background: "#000",
         }}
       >
         <h3 style={{ marginBottom: "10px" }}>Quizzes</h3>
@@ -226,6 +228,22 @@ const Quiz: React.FC = () => {
           </>
         )}
 
+        <button
+          onClick={() => setIsReadMode(!isReadMode)}
+          style={{
+            width: "100%",
+            marginBottom: "20px",
+            padding: "8px",
+            borderRadius: "6px",
+            border: "none",
+            background: "#28a745",
+            color: "white",
+            cursor: "pointer",
+          }}
+        >
+          {isReadMode ? "Switch to Quiz Mode" : "Switch to Read Mode"}
+        </button>
+
         <h3 style={{ marginBottom: "10px" }}>Questions</h3>
         <div style={{ maxHeight: "70vh", overflowY: "auto" }}>
           {filteredMcqs.map((q) => {
@@ -256,106 +274,111 @@ const Quiz: React.FC = () => {
       </aside>
 
       {/* Main quiz area */}
-      <main style={{ flex: 1, padding: "20px" }}>
-        <h2>
-          {fileKey} - Question {safeIndex + 1} / {mcqs.length}
-        </h2>
-        {refFilter !== "All Refs" && (
-          <h4 style={{ color: "#555" }}>
-            Ref "{refFilter}" → {filteredAttemptedCount}/{filteredMcqs.length}{" "}
-            attempted
-          </h4>
-        )}
-
-        {/* 🔹 Show distribution stats */}
-        <div style={{ margin: "20px 0" }}>
-          <h3>Correct Option Distribution (Whole Quiz)</h3>
-          {(["A", "B", "C", "D"] as const).map((letter) => (
-            <div key={letter}>
-              Choice {letter}: {quizCorrectDistribution.percentages[letter]}% (
-              {quizCorrectDistribution.counts[letter]} of{" "}
-              {quizCorrectDistribution.total})
-            </div>
-          ))}
-
+      {isReadMode ? (
+        <QuizReadMode />
+      ) : (
+        <main style={{ flex: 1, padding: "20px" }}>
+          <h2>
+            {fileKey} - Question {safeIndex + 1} / {mcqs.length}
+          </h2>
           {refFilter !== "All Refs" && (
-            <>
-              <h3>Correct Option Distribution (Filtered by {refFilter})</h3>
-              {(["A", "B", "C", "D"] as const).map((letter) => (
-                <div key={letter}>
-                  Choice {letter}:{" "}
-                  {filteredCorrectDistribution.percentages[letter]}% (
-                  {filteredCorrectDistribution.counts[letter]} of{" "}
-                  {filteredCorrectDistribution.total})
-                </div>
-              ))}
-            </>
+            <h4 style={{ color: "#555" }}>
+              Ref "{refFilter}" → {filteredAttemptedCount}/{filteredMcqs.length}{" "}
+              attempted
+            </h4>
           )}
-        </div>
 
-        <p>{mcq.question}</p>
+          {/* 🔹 Show distribution stats */}
+          <div style={{ margin: "20px 0" }}>
+            <h3>Correct Option Distribution (Whole Quiz)</h3>
+            {(["A", "B", "C", "D"] as const).map((letter) => (
+              <div key={letter}>
+                Choice {letter}: {quizCorrectDistribution.percentages[letter]}%
+                ({quizCorrectDistribution.counts[letter]} of{" "}
+                {quizCorrectDistribution.total})
+              </div>
+            ))}
 
-        <ul>
-          {Object.entries(mcq.choices).map(([key, value]) => (
-            <li key={key} style={{ marginBottom: "6px" }}>
-              <label>
-                <input
-                  type="radio"
-                  name={`q-${safeIndex}`}
-                  value={key}
-                  checked={selected === key}
-                  onChange={() => setAnswer(safeIndex, key)}
-                />{" "}
-                {key}: {value}
-              </label>
-            </li>
-          ))}
-        </ul>
+            {refFilter !== "All Refs" && (
+              <>
+                <h3>Correct Option Distribution (Filtered by {refFilter})</h3>
+                {(["A", "B", "C", "D"] as const).map((letter) => (
+                  <div key={letter}>
+                    Choice {letter}:{" "}
+                    {filteredCorrectDistribution.percentages[letter]}% (
+                    {filteredCorrectDistribution.counts[letter]} of{" "}
+                    {filteredCorrectDistribution.total})
+                  </div>
+                ))}
+              </>
+            )}
+          </div>
 
-        {selected && (
-          <p style={{ marginTop: "10px", fontWeight: "bold" }}>
-            {selected === mcq.correct
-              ? "✅ Correct!"
-              : `❌ Wrong (Correct: ${mcq.correct})`}
+          <p>{mcq.question}</p>
+
+          <ul>
+            {Object.entries(mcq.choices).map(([key, value]) => (
+              <li key={key} style={{ marginBottom: "6px" }}>
+                <label>
+                  <input
+                    type="radio"
+                    name={`q-${safeIndex}`}
+                    value={key}
+                    checked={selected === key}
+                    onChange={() => setAnswer(safeIndex, key)}
+                  />{" "}
+                  {key}: {value}
+                </label>
+              </li>
+            ))}
+          </ul>
+
+          {selected && (
+            <p style={{ marginTop: "10px", fontWeight: "bold" }}>
+              {selected === mcq.correct
+                ? "✅ Correct!"
+                : `❌ Wrong (Correct: ${mcq.correct})`}
+            </p>
+          )}
+
+          <div style={{ marginTop: "1rem" }}>
+            <button
+              onClick={prev}
+              disabled={safeIndex === 0}
+              style={{
+                marginRight: "10px",
+                padding: "8px 12px",
+                borderRadius: "6px",
+                border: "none",
+                background: safeIndex === 0 ? "#ccc" : "#007bff",
+                color: "white",
+                cursor: safeIndex === 0 ? "not-allowed" : "pointer",
+              }}
+            >
+              Prev
+            </button>
+            <button
+              onClick={next}
+              disabled={safeIndex === mcqs.length - 1}
+              style={{
+                padding: "8px 12px",
+                borderRadius: "6px",
+                border: "none",
+                background: safeIndex === mcqs.length - 1 ? "#ccc" : "#007bff",
+                color: "white",
+                cursor:
+                  safeIndex === mcqs.length - 1 ? "not-allowed" : "pointer",
+              }}
+            >
+              Next
+            </button>
+          </div>
+
+          <p style={{ marginTop: "20px" }}>
+            Overall Attempted: {attemptedCount} / {mcqs.length}
           </p>
-        )}
-
-        <div style={{ marginTop: "1rem" }}>
-          <button
-            onClick={prev}
-            disabled={safeIndex === 0}
-            style={{
-              marginRight: "10px",
-              padding: "8px 12px",
-              borderRadius: "6px",
-              border: "none",
-              background: safeIndex === 0 ? "#ccc" : "#007bff",
-              color: "white",
-              cursor: safeIndex === 0 ? "not-allowed" : "pointer",
-            }}
-          >
-            Prev
-          </button>
-          <button
-            onClick={next}
-            disabled={safeIndex === mcqs.length - 1}
-            style={{
-              padding: "8px 12px",
-              borderRadius: "6px",
-              border: "none",
-              background: safeIndex === mcqs.length - 1 ? "#ccc" : "#007bff",
-              color: "white",
-              cursor: safeIndex === mcqs.length - 1 ? "not-allowed" : "pointer",
-            }}
-          >
-            Next
-          </button>
-        </div>
-
-        <p style={{ marginTop: "20px" }}>
-          Overall Attempted: {attemptedCount} / {mcqs.length}
-        </p>
-      </main>
+        </main>
+      )}
     </div>
   );
 };
