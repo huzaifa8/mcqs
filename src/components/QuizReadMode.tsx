@@ -159,7 +159,7 @@ const QuizReadMode: React.FC = () => {
               style={{
                 display: "flex",
                 justifyContent: "space-between",
-                alignItems: "flex-start",
+                alignItems: "center",
                 marginBottom: "15px",
                 flexWrap: "wrap",
                 gap: "10px",
@@ -171,7 +171,8 @@ const QuizReadMode: React.FC = () => {
                   style={{
                     border: "2px solid yellow",
                     marginLeft: 10,
-                    padding: 5,
+                    padding: "0px 5px",
+                    fontSize: 30,
                     color: "yellow",
                   }}
                 >
